@@ -1,0 +1,153 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : filter
+Version: O-2018.06-SP4
+Date   : Mon Oct 18 16:59:46 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: SAMPLES_reg[0][1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: FILTER_OUT_DATA_reg[10]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  filter             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SAMPLES_reg[0][1]/CK (DFFR_X1)                          0.00       0.00 r
+  SAMPLES_reg[0][1]/Q (DFFR_X1)                           0.20       0.20 r
+  MUL0/A[1] (Mult_Nbit13_10)                              0.00       0.20 r
+  MUL0/mult_17/a[1] (Mult_Nbit13_10_DW_mult_tc_0)         0.00       0.20 r
+  MUL0/mult_17/U660/Z (XOR2_X1)                           0.11       0.31 r
+  MUL0/mult_17/U403/ZN (INV_X1)                           0.07       0.37 f
+  MUL0/mult_17/U655/ZN (NAND2_X1)                         0.12       0.49 r
+  MUL0/mult_17/U466/ZN (OAI22_X1)                         0.06       0.55 f
+  MUL0/mult_17/U101/S (HA_X1)                             0.08       0.63 f
+  MUL0/mult_17/U652/ZN (AOI222_X1)                        0.11       0.74 r
+  MUL0/mult_17/U405/ZN (INV_X1)                           0.03       0.77 f
+  MUL0/mult_17/U651/ZN (AOI222_X1)                        0.09       0.86 r
+  MUL0/mult_17/U404/ZN (INV_X1)                           0.03       0.89 f
+  MUL0/mult_17/U650/ZN (AOI222_X1)                        0.09       0.99 r
+  MUL0/mult_17/U401/ZN (INV_X1)                           0.03       1.01 f
+  MUL0/mult_17/U649/ZN (AOI222_X1)                        0.09       1.11 r
+  MUL0/mult_17/U400/ZN (INV_X1)                           0.03       1.13 f
+  MUL0/mult_17/U648/ZN (AOI222_X1)                        0.09       1.23 r
+  MUL0/mult_17/U398/ZN (INV_X1)                           0.03       1.25 f
+  MUL0/mult_17/U647/ZN (AOI222_X1)                        0.09       1.35 r
+  MUL0/mult_17/U397/ZN (INV_X1)                           0.03       1.38 f
+  MUL0/mult_17/U646/ZN (AOI222_X1)                        0.09       1.47 r
+  MUL0/mult_17/U390/ZN (INV_X1)                           0.03       1.50 f
+  MUL0/mult_17/U645/ZN (AOI222_X1)                        0.09       1.59 r
+  MUL0/mult_17/U389/ZN (INV_X1)                           0.03       1.62 f
+  MUL0/mult_17/U644/ZN (AOI222_X1)                        0.09       1.71 r
+  MUL0/mult_17/U396/ZN (INV_X1)                           0.03       1.74 f
+  MUL0/mult_17/U643/ZN (AOI222_X1)                        0.09       1.83 r
+  MUL0/mult_17/U395/ZN (INV_X1)                           0.03       1.86 f
+  MUL0/mult_17/U642/ZN (AOI222_X1)                        0.09       1.95 r
+  MUL0/mult_17/U392/ZN (INV_X1)                           0.03       1.98 f
+  MUL0/mult_17/U641/ZN (AOI222_X1)                        0.09       2.07 r
+  MUL0/mult_17/U391/ZN (INV_X1)                           0.03       2.10 f
+  MUL0/mult_17/U640/ZN (AOI222_X1)                        0.09       2.19 r
+  MUL0/mult_17/U394/ZN (INV_X1)                           0.03       2.22 f
+  MUL0/mult_17/U639/ZN (AOI222_X1)                        0.09       2.31 r
+  MUL0/mult_17/U393/ZN (INV_X1)                           0.03       2.34 f
+  MUL0/mult_17/U638/ZN (AOI222_X1)                        0.09       2.43 r
+  MUL0/mult_17/U399/ZN (INV_X1)                           0.03       2.46 f
+  MUL0/mult_17/U11/CO (FA_X1)                             0.09       2.55 f
+  MUL0/mult_17/U10/CO (FA_X1)                             0.09       2.64 f
+  MUL0/mult_17/U9/CO (FA_X1)                              0.09       2.73 f
+  MUL0/mult_17/U8/CO (FA_X1)                              0.09       2.82 f
+  MUL0/mult_17/U7/CO (FA_X1)                              0.09       2.91 f
+  MUL0/mult_17/U6/CO (FA_X1)                              0.09       3.00 f
+  MUL0/mult_17/U5/CO (FA_X1)                              0.09       3.09 f
+  MUL0/mult_17/U436/Z (XOR2_X1)                           0.08       3.17 f
+  MUL0/mult_17/U434/Z (XOR2_X1)                           0.07       3.24 f
+  MUL0/mult_17/product[25] (Mult_Nbit13_10_DW_mult_tc_0)
+                                                          0.00       3.24 f
+  MUL0/O[25] (Mult_Nbit13_10)                             0.00       3.24 f
+  ADD_1/B[7] (Adder_Nbit8)                                0.00       3.24 f
+  ADD_1/add_18/B[7] (Adder_Nbit8_DW01_add_0)              0.00       3.24 f
+  ADD_1/add_18/U1_7/S (FA_X1)                             0.16       3.39 r
+  ADD_1/add_18/SUM[7] (Adder_Nbit8_DW01_add_0)            0.00       3.39 r
+  ADD_1/O[7] (Adder_Nbit8)                                0.00       3.39 r
+  ADD_2/B[7] (Adder_Nbit9_1)                              0.00       3.39 r
+  ADD_2/add_18/B[7] (Adder_Nbit9_1_DW01_add_0)            0.00       3.39 r
+  ADD_2/add_18/U1_7/S (FA_X1)                             0.13       3.52 f
+  ADD_2/add_18/SUM[7] (Adder_Nbit9_1_DW01_add_0)          0.00       3.52 f
+  ADD_2/O[7] (Adder_Nbit9_1)                              0.00       3.52 f
+  ADD_3/B[7] (Adder_Nbit9_0)                              0.00       3.52 f
+  ADD_3/add_18/B[7] (Adder_Nbit9_0_DW01_add_0)            0.00       3.52 f
+  ADD_3/add_18/U1_7/CO (FA_X1)                            0.10       3.63 f
+  ADD_3/add_18/U1_8/S (FA_X1)                             0.14       3.77 r
+  ADD_3/add_18/SUM[8] (Adder_Nbit9_0_DW01_add_0)          0.00       3.77 r
+  ADD_3/O[8] (Adder_Nbit9_0)                              0.00       3.77 r
+  ADD_4/B[8] (Adder_Nbit10_4)                             0.00       3.77 r
+  ADD_4/add_18/B[8] (Adder_Nbit10_4_DW01_add_0)           0.00       3.77 r
+  ADD_4/add_18/U1_8/S (FA_X1)                             0.13       3.90 f
+  ADD_4/add_18/SUM[8] (Adder_Nbit10_4_DW01_add_0)         0.00       3.90 f
+  ADD_4/O[8] (Adder_Nbit10_4)                             0.00       3.90 f
+  ADD_5/B[8] (Adder_Nbit10_3)                             0.00       3.90 f
+  ADD_5/add_18/B[8] (Adder_Nbit10_3_DW01_add_0)           0.00       3.90 f
+  ADD_5/add_18/U1_8/CO (FA_X1)                            0.10       4.00 f
+  ADD_5/add_18/U1_9/S (FA_X1)                             0.14       4.14 r
+  ADD_5/add_18/SUM[9] (Adder_Nbit10_3_DW01_add_0)         0.00       4.14 r
+  ADD_5/O[9] (Adder_Nbit10_3)                             0.00       4.14 r
+  ADD_6/B[9] (Adder_Nbit10_2)                             0.00       4.14 r
+  ADD_6/add_18/B[9] (Adder_Nbit10_2_DW01_add_0)           0.00       4.14 r
+  ADD_6/add_18/U1_9/S (FA_X1)                             0.12       4.26 f
+  ADD_6/add_18/SUM[9] (Adder_Nbit10_2_DW01_add_0)         0.00       4.26 f
+  ADD_6/O[9] (Adder_Nbit10_2)                             0.00       4.26 f
+  ADD_7/B[9] (Adder_Nbit10_1)                             0.00       4.26 f
+  ADD_7/add_18/B[9] (Adder_Nbit10_1_DW01_add_0)           0.00       4.26 f
+  ADD_7/add_18/U1_9/S (FA_X1)                             0.15       4.41 r
+  ADD_7/add_18/SUM[9] (Adder_Nbit10_1_DW01_add_0)         0.00       4.41 r
+  ADD_7/O[9] (Adder_Nbit10_1)                             0.00       4.41 r
+  ADD_8/B[9] (Adder_Nbit10_0)                             0.00       4.41 r
+  ADD_8/add_18/B[9] (Adder_Nbit10_0_DW01_add_0)           0.00       4.41 r
+  ADD_8/add_18/U1_9/S (FA_X1)                             0.13       4.54 f
+  ADD_8/add_18/SUM[9] (Adder_Nbit10_0_DW01_add_0)         0.00       4.54 f
+  ADD_8/O[9] (Adder_Nbit10_0)                             0.00       4.54 f
+  ADD_9/B[9] (Adder_Nbit11_1)                             0.00       4.54 f
+  ADD_9/add_18/B[9] (Adder_Nbit11_1_DW01_add_0)           0.00       4.54 f
+  ADD_9/add_18/U1_9/CO (FA_X1)                            0.11       4.65 f
+  ADD_9/add_18/U1_10/S (FA_X1)                            0.14       4.79 r
+  ADD_9/add_18/SUM[10] (Adder_Nbit11_1_DW01_add_0)        0.00       4.79 r
+  ADD_9/O[10] (Adder_Nbit11_1)                            0.00       4.79 r
+  ADD_10/B[10] (Adder_Nbit11_0)                           0.00       4.79 r
+  ADD_10/add_18/B[10] (Adder_Nbit11_0_DW01_add_0)         0.00       4.79 r
+  ADD_10/add_18/U1_10/S (FA_X1)                           0.12       4.90 f
+  ADD_10/add_18/SUM[10] (Adder_Nbit11_0_DW01_add_0)       0.00       4.90 f
+  ADD_10/O[10] (Adder_Nbit11_0)                           0.00       4.90 f
+  U369/ZN (NAND2_X1)                                      0.04       4.94 r
+  U380/ZN (OAI21_X1)                                      0.04       4.98 f
+  FILTER_OUT_DATA_reg[10]/D (DFFR_X1)                     0.01       4.99 f
+  data arrival time                                                  4.99
+
+  clock MY_CLK (rise edge)                               10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.07       9.93
+  FILTER_OUT_DATA_reg[10]/CK (DFFR_X1)                    0.00       9.93 r
+  library setup time                                     -0.04       9.89
+  data required time                                                 9.89
+  --------------------------------------------------------------------------
+  data required time                                                 9.89
+  data arrival time                                                 -4.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.90
+
+
+1

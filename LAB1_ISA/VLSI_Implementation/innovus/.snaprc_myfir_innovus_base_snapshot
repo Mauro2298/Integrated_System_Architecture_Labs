@@ -1,0 +1,21 @@
+#----------------------------------------------------------
+# ./.snaprc_myfir_innovus_base_snapshot : snapshot resource file                          
+# label = myfir_innovus_base_snapshot                                      
+#----------------------------------------------------------
+set tmpstr ""
+set tmpbar ""
+lappend tmpstr "dir" $sdir
+lappend tmpstr "label" myfir_innovus_base_snapshot
+lappend tmpstr "fplan" $sdir/ss_myfir_innovus_base_snapshot.fplan.gif
+lappend tmpstr "amoeba" $sdir/ss_myfir_innovus_base_snapshot.amoeba.gif
+lappend tmpstr "place" $sdir/ss_myfir_innovus_base_snapshot.place.gif
+lappend tmpstr "trgGlbOverflowPctH" 0
+lappend tmpstr "trgGlbOverflowPctV" 0
+lappend tmpbar "Congestion"
+lappend tmpstr "Congestion" 0
+lappend tmpbar WNS
+lappend tmpstr WNS 5.961
+lappend tmpbar TNS
+lappend tmpstr TNS 0.0
+lappend tmpbar Overlap
+lappend tmpstr Overlap 0

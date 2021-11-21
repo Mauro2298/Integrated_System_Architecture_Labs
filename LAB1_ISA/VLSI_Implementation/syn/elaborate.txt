@@ -1,0 +1,63 @@
+Running PRESTO HDLC
+Warning:  ../src/filter.vhd:109: Real types with ranges are not supported and will be ignored. (ELAB-1002)
+Warning:  ../src/filter.vhd:115: Real types with ranges are not supported and will be ignored. (ELAB-1002)
+
+Inferred memory devices in process
+	in routine filter line 118 in file
+		'../src/filter.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     SAMPLES_reg     | Flip-flop |  13   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        A_reg        | Flip-flop |  143  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine filter line 137 in file
+		'../src/filter.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| FILTER_OUT_VOUT_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| FILTER_OUT_DATA_reg | Flip-flop |  13   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine filter line 154 in file
+		'../src/filter.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     ENABLE_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'filter'.
+Information: Building the design 'Mult' instantiated from design 'filter' with
+	the parameters "Nbit=13". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg' instantiated from design 'filter' with
+	the parameters "NB=13". (HDL-193)
+
+Inferred memory devices in process
+	in routine reg_NB13 line 18 in file
+		'../src/reg.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      DOUT_reg       | Flip-flop |  13   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Adder' instantiated from design 'filter' with
+	the parameters "Nbit=8". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Adder' instantiated from design 'filter' with
+	the parameters "Nbit=9". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Adder' instantiated from design 'filter' with
+	the parameters "Nbit=10". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Adder' instantiated from design 'filter' with
+	the parameters "Nbit=11". (HDL-193)
+Presto compilation completed successfully.
+1

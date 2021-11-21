@@ -1,0 +1,5 @@
+define_design_lib WORK -path ./work
+set search_path [list . /software/synopsys/syn_current_64.18/libraries/syn /software/dk/nangate45/synopsys ]
+set link_library [list "*" "NangateOpenCellLibrary_typical_ecsm_nowlm.db" "dw_foundation.sldb" ]
+set target_library [list "NangateOpenCellLibrary_typical_ecsm_nowlm.db" ]
+set synthetic_library [list "dw_foundation.sldb" ]

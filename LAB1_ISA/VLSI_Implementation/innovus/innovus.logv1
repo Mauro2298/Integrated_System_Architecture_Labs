@@ -1,0 +1,1726 @@
+[11/01 17:35:23      0s] 
+[11/01 17:35:23      0s] Cadence Innovus(TM) Implementation System.
+[11/01 17:35:23      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[11/01 17:35:23      0s] 
+[11/01 17:35:23      0s] Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+[11/01 17:35:23      0s] Options:	
+[11/01 17:35:23      0s] Date:		Mon Nov  1 17:35:23 2021
+[11/01 17:35:23      0s] Host:		localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Westmere E56xx/L56xx/X56xx (Nehalem-C) 4096KB)
+[11/01 17:35:23      0s] OS:		CentOS Linux release 7.6.1810 (Core) 
+[11/01 17:35:23      0s] 
+[11/01 17:35:23      0s] License:
+[11/01 17:35:23      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[11/01 17:35:23      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[11/01 17:36:01     20s] @(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+[11/01 17:36:01     20s] @(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+[11/01 17:36:01     20s] @(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+[11/01 17:36:01     20s] @(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+[11/01 17:36:01     20s] @(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+[11/01 17:36:01     20s] @(#)CDS: CPE v17.11-s095
+[11/01 17:36:01     20s] @(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+[11/01 17:36:01     20s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[11/01 17:36:01     20s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[11/01 17:36:01     20s] @(#)CDS: RCDB 11.10
+[11/01 17:36:01     20s] --- Running on localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Westmere E56xx/L56xx/X56xx (Nehalem-C) 4096KB) ---
+[11/01 17:36:01     20s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_15279_localhost.localdomain_isa05_2021_2022_JPz38m.
+
+[11/01 17:36:01     20s] Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[11/01 17:36:04     21s] 
+[11/01 17:36:04     21s] **INFO:  MMMC transition support version v31-84 
+[11/01 17:36:04     21s] 
+[11/01 17:36:04     21s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/01 17:36:04     21s] <CMD> suppressMessage ENCEXT-2799
+[11/01 17:36:05     22s] <CMD> getDrawView
+[11/01 17:36:05     22s] <CMD> loadWorkspace -name Physical
+[11/01 17:36:05     22s] <CMD> win
+[11/01 17:36:14     22s] <CMD> setLayerPreference allM7 -isVisible 0
+[11/01 17:36:14     22s] <CMD> setLayerPreference allM2Cont -isVisible 1
+[11/01 17:36:14     22s] <CMD> setLayerPreference allM3Cont -isVisible 1
+[11/01 17:36:14     22s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[11/01 17:36:14     22s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[11/01 17:36:14     22s] <CMD> setLayerPreference allM6Cont -isVisible 1
+[11/01 17:36:14     22s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[11/01 17:36:14     22s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[11/01 17:36:14     22s] <CMD> setLayerPreference allM9Cont -isVisible 1
+[11/01 17:36:14     22s] <CMD> setLayerPreference allM10Cont -isVisible 1
+[11/01 17:36:14     22s] <CMD> setLayerPreference allM11Cont -isVisible 1
+[11/01 17:36:14     22s] <CMD> setLayerPreference allM12Cont -isVisible 1
+[11/01 17:38:43     29s] can't read "lIB_DIR": no such variable
+[11/01 17:41:16     36s] <CMD> set init_design_netlisttype verilog
+[11/01 17:41:16     36s] <CMD> set init_design_settop 1
+[11/01 17:41:16     36s] <CMD> set init_top_cell myfir
+[11/01 17:41:16     36s] <CMD> set init_verilog ../netlist/myfir.v
+[11/01 17:41:16     36s] <CMD> set init_lef_file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef
+[11/01 17:41:16     36s] <CMD> set init_gnd_net VSS
+[11/01 17:41:16     36s] <CMD> set init_pwr_net VDD
+[11/01 17:41:33     37s] <CMD> init_design
+[11/01 17:41:33     37s] 
+[11/01 17:41:33     37s] Loading LEF file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef ...
+[11/01 17:41:33     37s] Set DBUPerIGU to M2 pitch 380.
+[11/01 17:41:33     37s] 
+[11/01 17:41:33     37s] viaInitial starts at Mon Nov  1 17:41:33 2021
+viaInitial ends at Mon Nov  1 17:41:33 2021
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.62min, fe_real=6.17min, fe_mem=500.8M) ***
+[11/01 17:41:33     37s] #% Begin Load netlist data ... (date=11/01 17:41:33, mem=420.0M)
+[11/01 17:41:33     37s] *** Begin netlist parsing (mem=500.8M) ***
+[11/01 17:41:33     37s] Created 0 new cells from 0 timing libraries.
+[11/01 17:41:33     37s] Reading netlist ...
+[11/01 17:41:33     37s] Backslashed names will retain backslash and a trailing blank character.
+[11/01 17:41:33     37s] Reading verilog netlist '../netlist/myfir.v'
+[11/01 17:41:33     37s] 
+[11/01 17:41:33     37s] *** Memory Usage v#1 (Current mem = 504.824M, initial mem = 179.684M) ***
+[11/01 17:41:33     37s] *** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=504.8M) ***
+[11/01 17:41:33     37s] #% End Load netlist data ... (date=11/01 17:41:33, total cpu=0:00:00.1, real=0:00:00.0, peak res=423.4M, current mem=423.4M)
+[11/01 17:41:33     37s] Set top cell to myfir.
+[11/01 17:41:34     37s] Hooked 0 DB cells to tlib cells.
+[11/01 17:41:34     37s] Starting recursive module instantiation check.
+[11/01 17:41:34     37s] No recursion found.
+[11/01 17:41:34     37s] Building hierarchical netlist for Cell myfir ...
+[11/01 17:41:34     37s] *** Netlist is unique.
+[11/01 17:41:34     37s] ** info: there are 135 modules.
+[11/01 17:41:34     37s] ** info: there are 4878 stdCell insts.
+[11/01 17:41:34     37s] 
+[11/01 17:41:34     37s] *** Memory Usage v#1 (Current mem = 514.488M, initial mem = 179.684M) ***
+[11/01 17:41:34     37s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[11/01 17:41:34     37s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[11/01 17:41:34     37s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[11/01 17:41:34     37s] Set Default Net Delay as 1000 ps.
+[11/01 17:41:34     37s] Set Default Net Load as 0.5 pF. 
+[11/01 17:41:34     37s] Set Default Input Pin Transition as 0.1 ps.
+[11/01 17:41:34     38s] **WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+[11/01 17:41:34     38s] Patterns Extraction called explicitly through PreRoutePatternsIfNeeded call 
+[11/01 17:41:34     38s] Extraction setup Started 
+[11/01 17:41:34     38s] 
+[11/01 17:41:34     38s] *** Summary of all messages that are not suppressed in this session:
+[11/01 17:41:34     38s] Severity  ID               Count  Summary                                  
+[11/01 17:41:34     38s] WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+[11/01 17:41:34     38s] *** Message Summary: 1 warning(s), 0 error(s)
+[11/01 17:41:34     38s] 
+[11/01 17:41:45     38s] <CMD> getIoFlowFlag
+[11/01 17:42:09     40s] <CMD> setIoFlowFlag 0
+[11/01 17:42:09     40s] <CMD> floorPlan -coreMarginsBy die -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.1 0.6 5.0 5.0 5.0 5.0
+[11/01 17:42:09     40s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[11/01 17:42:09     40s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[11/01 17:42:09     40s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[11/01 17:42:09     40s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[11/01 17:42:10     40s] <CMD> uiSetTool select
+[11/01 17:42:10     40s] <CMD> getIoFlowFlag
+[11/01 17:42:10     40s] <CMD> fit
+[11/01 17:42:15     40s] <CMD> getIoFlowFlag
+[11/01 17:42:43     42s] <CMD> setIoFlowFlag 0
+[11/01 17:42:43     42s] <CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 1 0.6 5 5 5 5
+[11/01 17:42:43     42s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[11/01 17:42:43     42s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[11/01 17:42:43     42s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[11/01 17:42:43     42s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[11/01 17:42:43     42s] <CMD> uiSetTool select
+[11/01 17:42:43     42s] <CMD> getIoFlowFlag
+[11/01 17:42:44     42s] <CMD> fit
+[11/01 17:42:45     42s] <CMD> setIoFlowFlag 0
+[11/01 17:42:45     42s] <CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.98752034726 0.599654 5.13 5.04 5.13 5.04
+[11/01 17:42:45     42s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[11/01 17:42:45     42s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[11/01 17:42:45     42s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[11/01 17:42:45     42s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[11/01 17:42:45     42s] <CMD> uiSetTool select
+[11/01 17:42:45     42s] <CMD> getIoFlowFlag
+[11/01 17:42:45     42s] <CMD> fit
+[11/01 17:42:59     43s] <CMD> set sprCreateIeRingOffset 1.0
+[11/01 17:42:59     43s] <CMD> set sprCreateIeRingThreshold 1.0
+[11/01 17:42:59     43s] <CMD> set sprCreateIeRingJogDistance 1.0
+[11/01 17:42:59     43s] <CMD> set sprCreateIeRingLayers {}
+[11/01 17:42:59     43s] <CMD> set sprCreateIeRingOffset 1.0
+[11/01 17:42:59     43s] <CMD> set sprCreateIeRingThreshold 1.0
+[11/01 17:42:59     43s] <CMD> set sprCreateIeRingJogDistance 1.0
+[11/01 17:42:59     43s] <CMD> set sprCreateIeRingLayers {}
+[11/01 17:42:59     43s] <CMD> set sprCreateIeStripeWidth 10.0
+[11/01 17:42:59     43s] <CMD> set sprCreateIeStripeThreshold 1.0
+[11/01 17:42:59     43s] <CMD> set sprCreateIeStripeWidth 10.0
+[11/01 17:42:59     43s] <CMD> set sprCreateIeStripeThreshold 1.0
+[11/01 17:42:59     43s] <CMD> set sprCreateIeRingOffset 1.0
+[11/01 17:42:59     43s] <CMD> set sprCreateIeRingThreshold 1.0
+[11/01 17:42:59     43s] <CMD> set sprCreateIeRingJogDistance 1.0
+[11/01 17:42:59     43s] <CMD> set sprCreateIeRingLayers {}
+[11/01 17:43:00     43s] <CMD> set sprCreateIeStripeWidth 10.0
+[11/01 17:43:00     43s] <CMD> set sprCreateIeStripeThreshold 1.0
+[11/01 17:43:22     44s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal10 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[11/01 17:43:22     44s] The ring targets are set to core/block ring wires.
+[11/01 17:43:22     44s] addRing command will consider rows while creating rings.
+[11/01 17:43:22     44s] addRing command will disallow rings to go over rows.
+[11/01 17:43:22     44s] addRing command will ignore shorts while creating rings.
+[11/01 17:43:22     44s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 0.8 bottom 0.8 left 0.8 right 0.8} -spacing {top 0.8 bottom 0.8 left 0.8 right 0.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[11/01 17:43:22     44s] 
+[11/01 17:43:22     44s] Ring generation is complete.
+[11/01 17:43:22     44s] vias are now being generated.
+[11/01 17:43:22     44s] addRing created 8 wires.
+[11/01 17:43:22     44s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[11/01 17:43:22     44s] +--------+----------------+----------------+
+[11/01 17:43:22     44s] |  Layer |     Created    |     Deleted    |
+[11/01 17:43:22     44s] +--------+----------------+----------------+
+[11/01 17:43:22     44s] | metal1 |        4       |       NA       |
+[11/01 17:43:22     44s] |  via1  |        8       |        0       |
+[11/01 17:43:22     44s] | metal2 |        4       |       NA       |
+[11/01 17:43:22     44s] +--------+----------------+----------------+
+[11/01 17:44:45     48s] <CMD> clearGlobalNets
+[11/01 17:44:45     48s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -module {}
+[11/01 17:44:45     48s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -module {}
+[11/01 17:45:00     49s] <CMD> setSrouteMode -viaConnectToShape { noshape }
+[11/01 17:45:00     49s] <CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1(1) metal10(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal10(10) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal10(10) }
+[11/01 17:45:00     49s] *** Begin SPECIAL ROUTE on Mon Nov  1 17:45:00 2021 ***
+[11/01 17:45:00     49s] SPECIAL ROUTE ran on directory: /home/isa05_2021_2022/Desktop/LAB_1/innovus
+[11/01 17:45:00     49s] SPECIAL ROUTE ran on machine: localhost.localdomain (Linux 3.10.0-957.5.1.el7.x86_64 x86_64 1.99Ghz)
+[11/01 17:45:00     49s] 
+[11/01 17:45:00     49s] Begin option processing ...
+[11/01 17:45:00     49s] srouteConnectPowerBump set to false
+[11/01 17:45:00     49s] routeSelectNet set to "VDD VSS"
+[11/01 17:45:00     49s] routeSpecial set to true
+[11/01 17:45:00     49s] srouteBlockPin set to "useLef"
+[11/01 17:45:00     49s] srouteBottomLayerLimit set to 1
+[11/01 17:45:00     49s] srouteBottomTargetLayerLimit set to 1
+[11/01 17:45:00     49s] srouteConnectConverterPin set to false
+[11/01 17:45:00     49s] srouteCrossoverViaBottomLayer set to 1
+[11/01 17:45:00     49s] srouteCrossoverViaTopLayer set to 10
+[11/01 17:45:00     49s] srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+[11/01 17:45:00     49s] srouteFollowCorePinEnd set to 3
+[11/01 17:45:00     49s] srouteJogControl set to "preferWithChanges differentLayer"
+[11/01 17:45:00     49s] srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+[11/01 17:45:00     49s] sroutePadPinAllPorts set to true
+[11/01 17:45:00     49s] sroutePreserveExistingRoutes set to true
+[11/01 17:45:00     49s] srouteRoutePowerBarPortOnBothDir set to true
+[11/01 17:45:00     49s] srouteStopBlockPin set to "nearestTarget"
+[11/01 17:45:00     49s] srouteTopLayerLimit set to 10
+[11/01 17:45:00     49s] srouteTopTargetLayerLimit set to 10
+[11/01 17:45:00     49s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1540.00 megs.
+[11/01 17:45:00     49s] 
+[11/01 17:45:00     49s] Reading DB technology information...
+[11/01 17:45:00     49s] Finished reading DB technology information.
+[11/01 17:45:00     49s] Reading floorplan and netlist information...
+[11/01 17:45:00     49s] Finished reading floorplan and netlist information.
+[11/01 17:45:01     49s] Read in 20 layers, 10 routing layers, 1 overlap layer
+[11/01 17:45:01     49s] Read in 134 macros, 20 used
+[11/01 17:45:01     49s] Read in 20 components
+[11/01 17:45:01     49s]   20 core components: 20 unplaced, 0 placed, 0 fixed
+[11/01 17:45:01     49s] Read in 173 logical pins
+[11/01 17:45:01     49s] Read in 173 nets
+[11/01 17:45:01     49s] Read in 2 special nets, 2 routed
+[11/01 17:45:01     49s] Read in 40 terminals
+[11/01 17:45:01     49s] 2 nets selected.
+[11/01 17:45:01     49s] 
+[11/01 17:45:01     49s] Begin power routing ...
+[11/01 17:45:01     49s] **WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+[11/01 17:45:01     49s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[11/01 17:45:01     49s] Type 'man IMPSR-1256' for more detail.
+[11/01 17:45:01     49s] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[11/01 17:45:01     49s] **WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+[11/01 17:45:01     49s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[11/01 17:45:01     49s] Type 'man IMPSR-1256' for more detail.
+[11/01 17:45:01     49s] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[11/01 17:45:01     49s] CPU time for FollowPin 0 seconds
+[11/01 17:45:01     49s] CPU time for FollowPin 0 seconds
+[11/01 17:45:01     49s]   Number of IO ports routed: 0
+[11/01 17:45:01     49s]   Number of Block ports routed: 0
+[11/01 17:45:01     49s]   Number of Stripe ports routed: 0
+[11/01 17:45:01     49s]   Number of Core ports routed: 182
+[11/01 17:45:01     49s]   Number of Pad ports routed: 0
+[11/01 17:45:01     49s]   Number of Power Bump ports routed: 0
+[11/01 17:45:01     49s]   Number of Followpin connections: 91
+[11/01 17:45:01     49s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1549.00 megs.
+[11/01 17:45:01     49s] 
+[11/01 17:45:01     49s] 
+[11/01 17:45:01     49s] 
+[11/01 17:45:01     49s]  Begin updating DB with routing results ...
+[11/01 17:45:01     49s]  Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+[11/01 17:45:01     49s] Pin and blockage extraction finished
+[11/01 17:45:01     49s] 
+[11/01 17:45:01     49s] sroute created 273 wires.
+[11/01 17:45:01     49s] ViaGen created 182 vias, deleted 0 via to avoid violation.
+[11/01 17:45:01     49s] +--------+----------------+----------------+
+[11/01 17:45:01     49s] |  Layer |     Created    |     Deleted    |
+[11/01 17:45:01     49s] +--------+----------------+----------------+
+[11/01 17:45:01     49s] | metal1 |       273      |       NA       |
+[11/01 17:45:01     49s] |  via1  |       182      |        0       |
+[11/01 17:45:01     49s] +--------+----------------+----------------+
+[11/01 17:45:18     50s] <CMD> setPlaceMode -prerouteAsObs {1 2 3 4 5 6 7 8}
+[11/01 17:45:24     51s] <CMD> setPlaceMode -fp false
+[11/01 17:45:24     51s] <CMD> placeDesign
+[11/01 17:45:24     51s] **WARN: (IMPSP-9513):	Timing constraint file does not exist
+[11/01 17:45:24     51s] **WARN: (IMPSP-9514):	Non-TimingDriven placement will be performed.
+[11/01 17:45:25     51s] *** Starting placeDesign default flow ***
+[11/01 17:45:25     51s] Deleted 0 physical inst  (cell - / prefix -).
+[11/01 17:45:25     51s] *** Starting "NanoPlace(TM) placement v#10 (mem=808.6M)" ...
+[11/01 17:45:25     51s] No user setting net weight.
+[11/01 17:45:25     51s] Options: clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+[11/01 17:45:25     51s] Scan chains were not defined.
+[11/01 17:45:25     51s] #std cell=4878 (0 fixed + 4878 movable) #block=0 (0 floating + 0 preplaced)
+[11/01 17:45:25     51s] #ioInst=0 #net=6197 #term=18822 #term/net=3.04, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=173
+[11/01 17:45:25     51s] stdCell: 4878 single + 0 double + 0 multi
+[11/01 17:45:25     51s] Total standard cell length = 7.0399 (mm), area = 0.0099 (mm^2)
+[11/01 17:45:25     51s] Core basic site is FreePDK45_38x28_10R_NP_162NW_34O
+[11/01 17:45:25     51s] Estimated cell power/ground rail width = 0.197 um
+[11/01 17:45:25     51s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/01 17:45:25     51s] Apply auto density screen in pre-place stage.
+[11/01 17:45:25     51s] Auto density screen increases utilization from 0.599 to 0.599
+[11/01 17:45:25     51s] Auto density screen runtime: cpu = 0:00:00.0 real = 0:00:00.0 mem = 808.6M
+[11/01 17:45:25     51s] Average module density = 0.599.
+[11/01 17:45:25     51s] Density for the design = 0.599.
+[11/01 17:45:25     51s]        = stdcell_area 37052 sites (9856 um^2) / alloc_area 61830 sites (16447 um^2).
+[11/01 17:45:25     51s] Pin Density = 0.3044.
+[11/01 17:45:25     51s]             = total # of pins 18822 / total area 61830.
+[11/01 17:45:25     51s] Initial padding reaches pin density 0.409 for top
+[11/01 17:45:25     51s] Min area ratio padding skipped minAreaTgt 1.050, addOnArea 1274.500
+[11/01 17:45:25     51s] Initial padding increases density from 0.599 to 0.929 for top
+[11/01 17:45:25     51s] === lastAutoLevel = 8 
+[11/01 17:45:25     51s] [adp] 0:1:0:1
+[11/01 17:45:25     51s] **WARN: (IMPSP-9531):	Turning off clkGateAware when timingDriven is off
+[11/01 17:45:26     51s] Iteration  1: Total net bbox = 1.651e-10 (6.11e-11 1.04e-10)
+[11/01 17:45:26     51s]               Est.  stn bbox = 1.776e-10 (6.39e-11 1.14e-10)
+[11/01 17:45:26     51s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 818.6M
+[11/01 17:45:26     51s] Iteration  2: Total net bbox = 1.651e-10 (6.11e-11 1.04e-10)
+[11/01 17:45:26     51s]               Est.  stn bbox = 1.776e-10 (6.39e-11 1.14e-10)
+[11/01 17:45:26     51s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 818.6M
+[11/01 17:45:26     51s] exp_mt_sequential is set from setPlaceMode option to 1
+[11/01 17:45:26     51s] Setting dotProdMode from setPlaceMode option to Multi-thread sequential mode (nrThread=1)
+[11/01 17:45:26     51s] place_exp_mt_interval set to default 32
+[11/01 17:45:26     51s] place_exp_mt_interval_bias (first half) set to default 0.750000
+[11/01 17:45:27     51s] Iteration  3: Total net bbox = 1.329e+02 (7.21e+01 6.08e+01)
+[11/01 17:45:27     51s]               Est.  stn bbox = 1.598e+02 (8.64e+01 7.33e+01)
+[11/01 17:45:27     51s]               cpu = 0:00:00.2 real = 0:00:01.0 mem = 836.6M
+[11/01 17:45:29     53s] Iteration  4: Total net bbox = 1.881e+04 (1.10e+04 7.81e+03)
+[11/01 17:45:29     53s]               Est.  stn bbox = 2.309e+04 (1.34e+04 9.71e+03)
+[11/01 17:45:29     53s]               cpu = 0:00:01.4 real = 0:00:02.0 mem = 836.6M
+[11/01 17:45:33     55s] Iteration  5: Total net bbox = 3.178e+04 (1.87e+04 1.30e+04)
+[11/01 17:45:33     55s]               Est.  stn bbox = 3.945e+04 (2.31e+04 1.63e+04)
+[11/01 17:45:33     55s]               cpu = 0:00:02.2 real = 0:00:04.0 mem = 836.6M
+[11/01 17:45:44     59s] Iteration  6: Total net bbox = 4.098e+04 (2.15e+04 1.95e+04)
+[11/01 17:45:44     59s]               Est.  stn bbox = 5.048e+04 (2.66e+04 2.39e+04)
+[11/01 17:45:44     59s]               cpu = 0:00:04.0 real = 0:00:11.0 mem = 836.6M
+[11/01 17:45:44     59s] Starting Early Global Route rough congestion estimation: mem = 836.6M
+[11/01 17:45:44     59s] (I)       Reading DB...
+[11/01 17:45:44     59s] (I)       before initializing RouteDB syMemory usage = 840.4 MB
+[11/01 17:45:44     59s] (I)       congestionReportName   : 
+[11/01 17:45:44     59s] (I)       layerRangeFor2DCongestion : 
+[11/01 17:45:44     59s] (I)       buildTerm2TermWires    : 1
+[11/01 17:45:44     59s] (I)       doTrackAssignment      : 1
+[11/01 17:45:44     59s] (I)       dumpBookshelfFiles     : 0
+[11/01 17:45:44     59s] (I)       numThreads             : 1
+[11/01 17:45:44     59s] (I)       bufferingAwareRouting  : false
+[11/01 17:45:44     59s] [NR-eGR] honorMsvRouteConstraint: false
+[11/01 17:45:44     59s] (I)       honorPin               : false
+[11/01 17:45:44     59s] (I)       honorPinGuide          : true
+[11/01 17:45:44     59s] (I)       honorPartition         : false
+[11/01 17:45:44     59s] (I)       allowPartitionCrossover: false
+[11/01 17:45:44     59s] (I)       honorSingleEntry       : true
+[11/01 17:45:44     59s] (I)       honorSingleEntryStrong : true
+[11/01 17:45:44     59s] (I)       handleViaSpacingRule   : false
+[11/01 17:45:44     59s] (I)       handleEolSpacingRule   : false
+[11/01 17:45:44     59s] (I)       PDConstraint           : none
+[11/01 17:45:44     59s] (I)       expBetterNDRHandling   : false
+[11/01 17:45:44     59s] [NR-eGR] honorClockSpecNDR      : 0
+[11/01 17:45:44     59s] (I)       routingEffortLevel     : 3
+[11/01 17:45:44     59s] (I)       effortLevel            : standard
+[11/01 17:45:44     59s] [NR-eGR] minRouteLayer          : 2
+[11/01 17:45:44     59s] [NR-eGR] maxRouteLayer          : 127
+[11/01 17:45:44     59s] (I)       relaxedTopLayerCeiling : 127
+[11/01 17:45:44     59s] (I)       relaxedBottomLayerFloor: 2
+[11/01 17:45:44     59s] (I)       numRowsPerGCell        : 6
+[11/01 17:45:44     59s] (I)       speedUpLargeDesign     : 0
+[11/01 17:45:44     59s] (I)       multiThreadingTA       : 1
+[11/01 17:45:44     59s] (I)       blkAwareLayerSwitching : 1
+[11/01 17:45:44     59s] (I)       optimizationMode       : false
+[11/01 17:45:44     59s] (I)       routeSecondPG          : false
+[11/01 17:45:44     59s] (I)       scenicRatioForLayerRelax: 0.00
+[11/01 17:45:44     59s] (I)       detourLimitForLayerRelax: 0.00
+[11/01 17:45:44     59s] (I)       punchThroughDistance   : 500.00
+[11/01 17:45:44     59s] (I)       scenicBound            : 1.15
+[11/01 17:45:44     59s] (I)       maxScenicToAvoidBlk    : 100.00
+[11/01 17:45:44     59s] (I)       source-to-sink ratio   : 0.00
+[11/01 17:45:44     59s] (I)       targetCongestionRatioH : 1.00
+[11/01 17:45:44     59s] (I)       targetCongestionRatioV : 1.00
+[11/01 17:45:44     59s] (I)       layerCongestionRatio   : 0.70
+[11/01 17:45:44     59s] (I)       m1CongestionRatio      : 0.10
+[11/01 17:45:44     59s] (I)       m2m3CongestionRatio    : 0.70
+[11/01 17:45:44     59s] (I)       localRouteEffort       : 1.00
+[11/01 17:45:44     59s] (I)       numSitesBlockedByOneVia: 8.00
+[11/01 17:45:44     59s] (I)       supplyScaleFactorH     : 1.00
+[11/01 17:45:44     59s] (I)       supplyScaleFactorV     : 1.00
+[11/01 17:45:44     59s] (I)       highlight3DOverflowFactor: 0.00
+[11/01 17:45:44     59s] (I)       doubleCutViaModelingRatio: 0.00
+[11/01 17:45:44     59s] (I)       routeVias              : 
+[11/01 17:45:44     59s] (I)       readTROption           : true
+[11/01 17:45:44     59s] (I)       extraSpacingFactor     : 1.00
+[11/01 17:45:44     59s] [NR-eGR] numTracksPerClockWire  : 0
+[11/01 17:45:44     59s] (I)       routeSelectedNetsOnly  : false
+[11/01 17:45:44     59s] (I)       clkNetUseMaxDemand     : false
+[11/01 17:45:44     59s] (I)       extraDemandForClocks   : 0
+[11/01 17:45:44     59s] (I)       steinerRemoveLayers    : false
+[11/01 17:45:44     59s] (I)       demoteLayerScenicScale : 1.00
+[11/01 17:45:44     59s] (I)       nonpreferLayerCostScale : 100.00
+[11/01 17:45:44     59s] (I)       similarTopologyRoutingFast : false
+[11/01 17:45:44     59s] (I)       spanningTreeRefinement : false
+[11/01 17:45:44     59s] (I)       spanningTreeRefinementAlpha : 0.50
+[11/01 17:45:44     59s] (I)       starting read tracks
+[11/01 17:45:44     59s] (I)       build grid graph
+[11/01 17:45:44     59s] (I)       build grid graph start
+[11/01 17:45:44     59s] [NR-eGR] Layer1 has no routable track
+[11/01 17:45:44     59s] [NR-eGR] Layer2 has single uniform track structure
+[11/01 17:45:44     59s] [NR-eGR] Layer3 has single uniform track structure
+[11/01 17:45:44     59s] [NR-eGR] Layer4 has single uniform track structure
+[11/01 17:45:44     59s] [NR-eGR] Layer5 has single uniform track structure
+[11/01 17:45:44     59s] [NR-eGR] Layer6 has single uniform track structure
+[11/01 17:45:44     59s] [NR-eGR] Layer7 has single uniform track structure
+[11/01 17:45:44     59s] [NR-eGR] Layer8 has single uniform track structure
+[11/01 17:45:44     59s] [NR-eGR] Layer9 has single uniform track structure
+[11/01 17:45:44     59s] [NR-eGR] Layer10 has single uniform track structure
+[11/01 17:45:44     59s] (I)       build grid graph end
+[11/01 17:45:44     59s] (I)       numViaLayers=10
+[11/01 17:45:44     59s] (I)       Reading via via1_8 for layer: 0 
+[11/01 17:45:44     59s] (I)       Reading via via2_8 for layer: 1 
+[11/01 17:45:44     59s] (I)       Reading via via3_2 for layer: 2 
+[11/01 17:45:44     59s] (I)       Reading via via4_0 for layer: 3 
+[11/01 17:45:44     59s] (I)       Reading via via5_0 for layer: 4 
+[11/01 17:45:44     59s] (I)       Reading via via6_0 for layer: 5 
+[11/01 17:45:44     59s] (I)       Reading via via7_0 for layer: 6 
+[11/01 17:45:44     59s] (I)       Reading via via8_0 for layer: 7 
+[11/01 17:45:44     59s] (I)       Reading via via9_0 for layer: 8 
+[11/01 17:45:44     59s] (I)       end build via table
+[11/01 17:45:44     59s] [NR-eGR] numRoutingBlks=0 numInstBlks=0 numPGBlocks=194 numBumpBlks=0 numBoundaryFakeBlks=0
+[11/01 17:45:44     59s] [NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[11/01 17:45:44     59s] (I)       readDataFromPlaceDB
+[11/01 17:45:44     59s] (I)       Read net information..
+[11/01 17:45:44     59s] [NR-eGR] Read numTotalNets=6026  numIgnoredNets=0
+[11/01 17:45:44     59s] (I)       Read testcase time = 0.000 seconds
+[11/01 17:45:44     59s] 
+[11/01 17:45:44     59s] (I)       read default dcut vias
+[11/01 17:45:44     59s] (I)       Reading via via1_4 for layer: 0 
+[11/01 17:45:44     59s] (I)       Reading via via2_8 for layer: 1 
+[11/01 17:45:44     59s] (I)       Reading via via3_2 for layer: 2 
+[11/01 17:45:44     59s] (I)       Reading via via4_0 for layer: 3 
+[11/01 17:45:44     59s] (I)       Reading via via5_0 for layer: 4 
+[11/01 17:45:44     59s] (I)       Reading via via6_0 for layer: 5 
+[11/01 17:45:44     59s] (I)       Reading via via7_0 for layer: 6 
+[11/01 17:45:44     59s] (I)       Reading via via8_0 for layer: 7 
+[11/01 17:45:44     59s] (I)       Reading via via9_0 for layer: 8 
+[11/01 17:45:44     59s] (I)       build grid graph start
+[11/01 17:45:44     59s] (I)       build grid graph end
+[11/01 17:45:44     59s] (I)       Model blockage into capacity
+[11/01 17:45:44     59s] (I)       Read numBlocks=194  numPreroutedWires=0  numCapScreens=0
+[11/01 17:45:44     59s] (I)       blocked area on Layer1 : 0  (0.00%)
+[11/01 17:45:44     59s] (I)       blocked area on Layer2 : 3246016800  (4.24%)
+[11/01 17:45:44     59s] (I)       blocked area on Layer3 : 0  (0.00%)
+[11/01 17:45:44     59s] (I)       blocked area on Layer4 : 0  (0.00%)
+[11/01 17:45:44     59s] (I)       blocked area on Layer5 : 0  (0.00%)
+[11/01 17:45:44     59s] (I)       blocked area on Layer6 : 0  (0.00%)
+[11/01 17:45:44     59s] (I)       blocked area on Layer7 : 0  (0.00%)
+[11/01 17:45:44     59s] (I)       blocked area on Layer8 : 0  (0.00%)
+[11/01 17:45:44     59s] (I)       blocked area on Layer9 : 0  (0.00%)
+[11/01 17:45:44     59s] (I)       blocked area on Layer10 : 0  (0.00%)
+[11/01 17:45:44     59s] (I)       Modeling time = 0.000 seconds
+[11/01 17:45:44     59s] 
+[11/01 17:45:44     59s] (I)       Number of ignored nets = 0
+[11/01 17:45:44     59s] (I)       Number of fixed nets = 0.  Ignored: Yes
+[11/01 17:45:44     59s] (I)       Number of clock nets = 0.  Ignored: No
+[11/01 17:45:44     59s] (I)       Number of analog nets = 0.  Ignored: Yes
+[11/01 17:45:44     59s] (I)       Number of special nets = 0.  Ignored: Yes
+[11/01 17:45:44     59s] (I)       Number of mixed signal nets = 0.  Ignored: Yes
+[11/01 17:45:44     59s] (I)       Number of skip routing nets = 0.  Ignored: Yes
+[11/01 17:45:44     59s] (I)       Number of nets with ignore route flag = 0.  Ignored: No
+[11/01 17:45:44     59s] (I)       Number of nets with one or no pins = 0.  Ignored: Yes
+[11/01 17:45:44     59s] (I)       Number of two pin nets which has pins at the same location = 0.  Ignored: Yes
+[11/01 17:45:44     59s] (I)       Before initializing earlyGlobalRoute syMemory usage = 840.4 MB
+[11/01 17:45:44     59s] (I)       Ndr track 0 does not exist
+[11/01 17:45:44     59s] (I)       Layer1  viaCost=200.00
+[11/01 17:45:44     59s] (I)       Layer2  viaCost=200.00
+[11/01 17:45:44     59s] (I)       Layer3  viaCost=100.00
+[11/01 17:45:44     59s] (I)       Layer4  viaCost=100.00
+[11/01 17:45:44     59s] (I)       Layer5  viaCost=100.00
+[11/01 17:45:44     59s] (I)       Layer6  viaCost=100.00
+[11/01 17:45:44     59s] (I)       Layer7  viaCost=100.00
+[11/01 17:45:44     59s] (I)       Layer8  viaCost=100.00
+[11/01 17:45:44     59s] (I)       Layer9  viaCost=100.00
+[11/01 17:45:44     59s] (I)       ---------------------Grid Graph Info--------------------
+[11/01 17:45:44     59s] (I)       routing area        :  (0, 0) - (281580, 272160)
+[11/01 17:45:44     59s] (I)       core area           :  (10260, 10080) - (271320, 262080)
+[11/01 17:45:44     59s] (I)       Site Width          :   380  (dbu)
+[11/01 17:45:44     59s] (I)       Row Height          :  2800  (dbu)
+[11/01 17:45:44     59s] (I)       GCell Width         : 16800  (dbu)
+[11/01 17:45:44     59s] (I)       GCell Height        : 16800  (dbu)
+[11/01 17:45:44     59s] (I)       grid                :    17    17    10
+[11/01 17:45:44     59s] (I)       vertical capacity   :     0 16800     0 16800     0 16800     0 16800     0 16800
+[11/01 17:45:44     59s] (I)       horizontal capacity :     0     0 16800     0 16800     0 16800     0 16800     0
+[11/01 17:45:44     59s] (I)       Default wire width  :   140   140   140   280   280   280   800   800  1600  1600
+[11/01 17:45:44     59s] (I)       Default wire space  :   130   140   140   280   280   280   800   800  1600  1600
+[11/01 17:45:44     59s] (I)       Default pitch size  :   270   380   280   560   560   560  1680  1680  3200  3360
+[11/01 17:45:44     59s] (I)       First Track Coord   :     0   190   140   370   700   370  1820  2050  3820  3730
+[11/01 17:45:44     59s] (I)       Num tracks per GCell: 62.22 44.21 60.00 30.00 30.00 30.00 10.00 10.00  5.25  5.00
+[11/01 17:45:44     59s] (I)       Total num of tracks :     0   741   972   502   485   502   161   167    84    83
+[11/01 17:45:44     59s] (I)       Num of masks        :     1     1     1     1     1     1     1     1     1     1
+[11/01 17:45:44     59s] (I)       Num of trim masks   :     0     0     0     0     0     0     0     0     0     0
+[11/01 17:45:44     59s] (I)       --------------------------------------------------------
+[11/01 17:45:44     59s] 
+[11/01 17:45:44     59s] [NR-eGR] ============ Routing rule table ============
+[11/01 17:45:44     59s] [NR-eGR] Rule id 0. Nets 6026 
+[11/01 17:45:44     59s] [NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[11/01 17:45:44     59s] [NR-eGR] Pitch:  L1=270  L2=380  L3=280  L4=560  L5=560  L6=560  L7=1680  L8=1680  L9=3200  L10=3360
+[11/01 17:45:44     59s] (I)       NumUsedTracks:  L1=1  L2=1  L3=1  L4=1  L5=1  L6=1  L7=1  L8=1  L9=1  L10=1
+[11/01 17:45:44     59s] (I)       NumFullyUsedTracks:  L1=1  L2=1  L3=1  L4=1  L5=1  L6=1  L7=1  L8=1  L9=1  L10=1
+[11/01 17:45:44     59s] [NR-eGR] ========================================
+[11/01 17:45:44     59s] [NR-eGR] 
+[11/01 17:45:44     59s] (I)       After initializing earlyGlobalRoute syMemory usage = 840.4 MB
+[11/01 17:45:44     59s] (I)       Loading and dumping file time : 0.05 seconds
+[11/01 17:45:44     59s] (I)       ============= Initialization =============
+[11/01 17:45:44     59s] (I)       numLocalWires=15458  numGlobalNetBranches=3775  numLocalNetBranches=3954
+[11/01 17:45:44     59s] (I)       totalPins=18478  totalGlobalPin=7357 (39.81%)
+[11/01 17:45:44     59s] (I)       total 2D Cap : 62401 = (28934 H, 33467 V)
+[11/01 17:45:44     59s] (I)       ============  Phase 1a Route ============
+[11/01 17:45:44     59s] (I)       Phase 1a runs 0.00 seconds
+[11/01 17:45:44     59s] (I)       blkAvoiding Routing :  time=0.00  numBlkSegs=0
+[11/01 17:45:44     59s] (I)       Usage: 5680 = (2945 H, 2735 V) = (10.18% H, 8.17% V) = (2.474e+04um H, 2.297e+04um V)
+[11/01 17:45:44     59s] (I)       
+[11/01 17:45:44     59s] (I)       ============  Phase 1b Route ============
+[11/01 17:45:44     59s] (I)       Usage: 5680 = (2945 H, 2735 V) = (10.18% H, 8.17% V) = (2.474e+04um H, 2.297e+04um V)
+[11/01 17:45:44     59s] (I)       
+[11/01 17:45:44     59s] (I)       earlyGlobalRoute overflow: 0.00% H + 0.00% V
+[11/01 17:45:44     59s] 
+[11/01 17:45:44     59s] [NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[11/01 17:45:44     59s] Finished Early Global Route rough congestion estimation: mem = 840.4M
+[11/01 17:45:44     59s] earlyGlobalRoute rough estimation gcell size 6 row height
+[11/01 17:45:44     59s] Congestion driven padding in post-place stage.
+[11/01 17:45:44     59s] Congestion driven padding increases utilization from 0.929 to 0.929
+[11/01 17:45:44     59s] Congestion driven padding runtime: cpu = 0:00:00.0 real = 0:00:00.0 mem = 840.4M
+[11/01 17:45:44     59s] Global placement CDP skipped at cutLevel 7.
+[11/01 17:45:44     59s] Iteration  7: Total net bbox = 6.662e+04 (3.57e+04 3.09e+04)
+[11/01 17:45:44     59s]               Est.  stn bbox = 7.617e+04 (4.08e+04 3.54e+04)
+[11/01 17:45:44     59s]               cpu = 0:00:00.2 real = 0:00:00.0 mem = 840.4M
+[11/01 17:45:44     59s] Iteration  8: Total net bbox = 6.662e+04 (3.57e+04 3.09e+04)
+[11/01 17:45:44     59s]               Est.  stn bbox = 7.617e+04 (4.08e+04 3.54e+04)
+[11/01 17:45:44     59s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 840.4M
+[11/01 17:45:47     61s] Starting Early Global Route rough congestion estimation: mem = 840.4M
+[11/01 17:45:47     61s] (I)       Reading DB...
+[11/01 17:45:47     61s] (I)       before initializing RouteDB syMemory usage = 841.9 MB
+[11/01 17:45:47     61s] (I)       congestionReportName   : 
+[11/01 17:45:47     61s] (I)       layerRangeFor2DCongestion : 
+[11/01 17:45:47     61s] (I)       buildTerm2TermWires    : 1
+[11/01 17:45:47     61s] (I)       doTrackAssignment      : 1
+[11/01 17:45:47     61s] (I)       dumpBookshelfFiles     : 0
+[11/01 17:45:47     61s] (I)       numThreads             : 1
+[11/01 17:45:47     61s] (I)       bufferingAwareRouting  : false
+[11/01 17:45:47     61s] [NR-eGR] honorMsvRouteConstraint: false
+[11/01 17:45:47     61s] (I)       honorPin               : false
+[11/01 17:45:47     61s] (I)       honorPinGuide          : true
+[11/01 17:45:47     61s] (I)       honorPartition         : false
+[11/01 17:45:47     61s] (I)       allowPartitionCrossover: false
+[11/01 17:45:47     61s] (I)       honorSingleEntry       : true
+[11/01 17:45:47     61s] (I)       honorSingleEntryStrong : true
+[11/01 17:45:47     61s] (I)       handleViaSpacingRule   : false
+[11/01 17:45:47     61s] (I)       handleEolSpacingRule   : false
+[11/01 17:45:47     61s] (I)       PDConstraint           : none
+[11/01 17:45:47     61s] (I)       expBetterNDRHandling   : false
+[11/01 17:45:47     61s] [NR-eGR] honorClockSpecNDR      : 0
+[11/01 17:45:47     61s] (I)       routingEffortLevel     : 3
+[11/01 17:45:47     61s] (I)       effortLevel            : standard
+[11/01 17:45:47     61s] [NR-eGR] minRouteLayer          : 2
+[11/01 17:45:47     61s] [NR-eGR] maxRouteLayer          : 127
+[11/01 17:45:47     61s] (I)       relaxedTopLayerCeiling : 127
+[11/01 17:45:47     61s] (I)       relaxedBottomLayerFloor: 2
+[11/01 17:45:47     61s] (I)       numRowsPerGCell        : 3
+[11/01 17:45:47     61s] (I)       speedUpLargeDesign     : 0
+[11/01 17:45:47     61s] (I)       multiThreadingTA       : 1
+[11/01 17:45:47     61s] (I)       blkAwareLayerSwitching : 1
+[11/01 17:45:47     61s] (I)       optimizationMode       : false
+[11/01 17:45:47     61s] (I)       routeSecondPG          : false
+[11/01 17:45:47     61s] (I)       scenicRatioForLayerRelax: 0.00
+[11/01 17:45:47     61s] (I)       detourLimitForLayerRelax: 0.00
+[11/01 17:45:47     61s] (I)       punchThroughDistance   : 500.00
+[11/01 17:45:47     61s] (I)       scenicBound            : 1.15
+[11/01 17:45:47     61s] (I)       maxScenicToAvoidBlk    : 100.00
+[11/01 17:45:47     61s] (I)       source-to-sink ratio   : 0.00
+[11/01 17:45:47     61s] (I)       targetCongestionRatioH : 1.00
+[11/01 17:45:47     61s] (I)       targetCongestionRatioV : 1.00
+[11/01 17:45:47     61s] (I)       layerCongestionRatio   : 0.70
+[11/01 17:45:47     61s] (I)       m1CongestionRatio      : 0.10
+[11/01 17:45:47     61s] (I)       m2m3CongestionRatio    : 0.70
+[11/01 17:45:47     61s] (I)       localRouteEffort       : 1.00
+[11/01 17:45:47     61s] (I)       numSitesBlockedByOneVia: 8.00
+[11/01 17:45:47     61s] (I)       supplyScaleFactorH     : 1.00
+[11/01 17:45:47     61s] (I)       supplyScaleFactorV     : 1.00
+[11/01 17:45:47     61s] (I)       highlight3DOverflowFactor: 0.00
+[11/01 17:45:47     61s] (I)       doubleCutViaModelingRatio: 0.00
+[11/01 17:45:47     61s] (I)       routeVias              : 
+[11/01 17:45:47     61s] (I)       readTROption           : true
+[11/01 17:45:47     61s] (I)       extraSpacingFactor     : 1.00
+[11/01 17:45:47     61s] [NR-eGR] numTracksPerClockWire  : 0
+[11/01 17:45:47     61s] (I)       routeSelectedNetsOnly  : false
+[11/01 17:45:47     61s] (I)       clkNetUseMaxDemand     : false
+[11/01 17:45:47     61s] (I)       extraDemandForClocks   : 0
+[11/01 17:45:47     61s] (I)       steinerRemoveLayers    : false
+[11/01 17:45:47     61s] (I)       demoteLayerScenicScale : 1.00
+[11/01 17:45:47     61s] (I)       nonpreferLayerCostScale : 100.00
+[11/01 17:45:47     61s] (I)       similarTopologyRoutingFast : false
+[11/01 17:45:47     61s] (I)       spanningTreeRefinement : false
+[11/01 17:45:47     61s] (I)       spanningTreeRefinementAlpha : 0.50
+[11/01 17:45:47     61s] (I)       starting read tracks
+[11/01 17:45:47     61s] (I)       build grid graph
+[11/01 17:45:47     61s] (I)       build grid graph start
+[11/01 17:45:47     61s] [NR-eGR] Layer1 has no routable track
+[11/01 17:45:47     61s] [NR-eGR] Layer2 has single uniform track structure
+[11/01 17:45:47     61s] [NR-eGR] Layer3 has single uniform track structure
+[11/01 17:45:47     61s] [NR-eGR] Layer4 has single uniform track structure
+[11/01 17:45:47     61s] [NR-eGR] Layer5 has single uniform track structure
+[11/01 17:45:47     61s] [NR-eGR] Layer6 has single uniform track structure
+[11/01 17:45:47     61s] [NR-eGR] Layer7 has single uniform track structure
+[11/01 17:45:47     61s] [NR-eGR] Layer8 has single uniform track structure
+[11/01 17:45:47     61s] [NR-eGR] Layer9 has single uniform track structure
+[11/01 17:45:47     61s] [NR-eGR] Layer10 has single uniform track structure
+[11/01 17:45:47     61s] (I)       build grid graph end
+[11/01 17:45:47     61s] (I)       numViaLayers=10
+[11/01 17:45:47     61s] (I)       Reading via via1_8 for layer: 0 
+[11/01 17:45:47     61s] (I)       Reading via via2_8 for layer: 1 
+[11/01 17:45:47     61s] (I)       Reading via via3_2 for layer: 2 
+[11/01 17:45:47     61s] (I)       Reading via via4_0 for layer: 3 
+[11/01 17:45:47     61s] (I)       Reading via via5_0 for layer: 4 
+[11/01 17:45:47     61s] (I)       Reading via via6_0 for layer: 5 
+[11/01 17:45:47     61s] (I)       Reading via via7_0 for layer: 6 
+[11/01 17:45:47     61s] (I)       Reading via via8_0 for layer: 7 
+[11/01 17:45:47     61s] (I)       Reading via via9_0 for layer: 8 
+[11/01 17:45:47     61s] (I)       end build via table
+[11/01 17:45:47     61s] [NR-eGR] numRoutingBlks=0 numInstBlks=0 numPGBlocks=194 numBumpBlks=0 numBoundaryFakeBlks=0
+[11/01 17:45:47     61s] [NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[11/01 17:45:47     61s] (I)       readDataFromPlaceDB
+[11/01 17:45:47     61s] (I)       Read net information..
+[11/01 17:45:47     61s] [NR-eGR] Read numTotalNets=6026  numIgnoredNets=0
+[11/01 17:45:47     61s] (I)       Read testcase time = 0.010 seconds
+[11/01 17:45:47     61s] 
+[11/01 17:45:47     61s] (I)       read default dcut vias
+[11/01 17:45:47     61s] (I)       Reading via via1_4 for layer: 0 
+[11/01 17:45:47     61s] (I)       Reading via via2_8 for layer: 1 
+[11/01 17:45:47     61s] (I)       Reading via via3_2 for layer: 2 
+[11/01 17:45:47     61s] (I)       Reading via via4_0 for layer: 3 
+[11/01 17:45:47     61s] (I)       Reading via via5_0 for layer: 4 
+[11/01 17:45:47     61s] (I)       Reading via via6_0 for layer: 5 
+[11/01 17:45:47     61s] (I)       Reading via via7_0 for layer: 6 
+[11/01 17:45:47     61s] (I)       Reading via via8_0 for layer: 7 
+[11/01 17:45:47     61s] (I)       Reading via via9_0 for layer: 8 
+[11/01 17:45:47     61s] (I)       build grid graph start
+[11/01 17:45:47     61s] (I)       build grid graph end
+[11/01 17:45:47     61s] (I)       Model blockage into capacity
+[11/01 17:45:47     61s] (I)       Read numBlocks=194  numPreroutedWires=0  numCapScreens=0
+[11/01 17:45:47     61s] (I)       blocked area on Layer1 : 0  (0.00%)
+[11/01 17:45:47     61s] (I)       blocked area on Layer2 : 3246016800  (4.24%)
+[11/01 17:45:47     61s] (I)       blocked area on Layer3 : 0  (0.00%)
+[11/01 17:45:47     61s] (I)       blocked area on Layer4 : 0  (0.00%)
+[11/01 17:45:47     61s] (I)       blocked area on Layer5 : 0  (0.00%)
+[11/01 17:45:47     61s] (I)       blocked area on Layer6 : 0  (0.00%)
+[11/01 17:45:47     61s] (I)       blocked area on Layer7 : 0  (0.00%)
+[11/01 17:45:47     61s] (I)       blocked area on Layer8 : 0  (0.00%)
+[11/01 17:45:47     61s] (I)       blocked area on Layer9 : 0  (0.00%)
+[11/01 17:45:47     61s] (I)       blocked area on Layer10 : 0  (0.00%)
+[11/01 17:45:47     61s] (I)       Modeling time = 0.000 seconds
+[11/01 17:45:47     61s] 
+[11/01 17:45:47     61s] (I)       Number of ignored nets = 0
+[11/01 17:45:47     61s] (I)       Number of fixed nets = 0.  Ignored: Yes
+[11/01 17:45:47     61s] (I)       Number of clock nets = 0.  Ignored: No
+[11/01 17:45:47     61s] (I)       Number of analog nets = 0.  Ignored: Yes
+[11/01 17:45:47     61s] (I)       Number of special nets = 0.  Ignored: Yes
+[11/01 17:45:47     61s] (I)       Number of mixed signal nets = 0.  Ignored: Yes
+[11/01 17:45:47     61s] (I)       Number of skip routing nets = 0.  Ignored: Yes
+[11/01 17:45:47     61s] (I)       Number of nets with ignore route flag = 0.  Ignored: No
+[11/01 17:45:47     61s] (I)       Number of nets with one or no pins = 0.  Ignored: Yes
+[11/01 17:45:47     61s] (I)       Number of two pin nets which has pins at the same location = 0.  Ignored: Yes
+[11/01 17:45:47     61s] (I)       Before initializing earlyGlobalRoute syMemory usage = 841.9 MB
+[11/01 17:45:47     61s] (I)       Ndr track 0 does not exist
+[11/01 17:45:47     61s] (I)       Layer1  viaCost=200.00
+[11/01 17:45:47     61s] (I)       Layer2  viaCost=200.00
+[11/01 17:45:47     61s] (I)       Layer3  viaCost=100.00
+[11/01 17:45:47     61s] (I)       Layer4  viaCost=100.00
+[11/01 17:45:47     61s] (I)       Layer5  viaCost=100.00
+[11/01 17:45:47     61s] (I)       Layer6  viaCost=100.00
+[11/01 17:45:47     61s] (I)       Layer7  viaCost=100.00
+[11/01 17:45:47     61s] (I)       Layer8  viaCost=100.00
+[11/01 17:45:47     61s] (I)       Layer9  viaCost=100.00
+[11/01 17:45:47     61s] (I)       ---------------------Grid Graph Info--------------------
+[11/01 17:45:47     61s] (I)       routing area        :  (0, 0) - (281580, 272160)
+[11/01 17:45:47     61s] (I)       core area           :  (10260, 10080) - (271320, 262080)
+[11/01 17:45:47     61s] (I)       Site Width          :   380  (dbu)
+[11/01 17:45:47     61s] (I)       Row Height          :  2800  (dbu)
+[11/01 17:45:47     61s] (I)       GCell Width         :  8400  (dbu)
+[11/01 17:45:47     61s] (I)       GCell Height        :  8400  (dbu)
+[11/01 17:45:47     61s] (I)       grid                :    34    33    10
+[11/01 17:45:47     61s] (I)       vertical capacity   :     0  8400     0  8400     0  8400     0  8400     0  8400
+[11/01 17:45:47     61s] (I)       horizontal capacity :     0     0  8400     0  8400     0  8400     0  8400     0
+[11/01 17:45:47     61s] (I)       Default wire width  :   140   140   140   280   280   280   800   800  1600  1600
+[11/01 17:45:47     61s] (I)       Default wire space  :   130   140   140   280   280   280   800   800  1600  1600
+[11/01 17:45:47     61s] (I)       Default pitch size  :   270   380   280   560   560   560  1680  1680  3200  3360
+[11/01 17:45:47     61s] (I)       First Track Coord   :     0   190   140   370   700   370  1820  2050  3820  3730
+[11/01 17:45:47     61s] (I)       Num tracks per GCell: 31.11 22.11 30.00 15.00 15.00 15.00  5.00  5.00  2.62  2.50
+[11/01 17:45:47     61s] (I)       Total num of tracks :     0   741   972   502   485   502   161   167    84    83
+[11/01 17:45:47     61s] (I)       Num of masks        :     1     1     1     1     1     1     1     1     1     1
+[11/01 17:45:47     61s] (I)       Num of trim masks   :     0     0     0     0     0     0     0     0     0     0
+[11/01 17:45:47     61s] (I)       --------------------------------------------------------
+[11/01 17:45:47     61s] 
+[11/01 17:45:47     61s] [NR-eGR] ============ Routing rule table ============
+[11/01 17:45:47     61s] [NR-eGR] Rule id 0. Nets 6026 
+[11/01 17:45:47     61s] [NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[11/01 17:45:47     61s] [NR-eGR] Pitch:  L1=270  L2=380  L3=280  L4=560  L5=560  L6=560  L7=1680  L8=1680  L9=3200  L10=3360
+[11/01 17:45:47     61s] (I)       NumUsedTracks:  L1=1  L2=1  L3=1  L4=1  L5=1  L6=1  L7=1  L8=1  L9=1  L10=1
+[11/01 17:45:47     61s] (I)       NumFullyUsedTracks:  L1=1  L2=1  L3=1  L4=1  L5=1  L6=1  L7=1  L8=1  L9=1  L10=1
+[11/01 17:45:47     61s] [NR-eGR] ========================================
+[11/01 17:45:47     61s] [NR-eGR] 
+[11/01 17:45:47     61s] (I)       After initializing earlyGlobalRoute syMemory usage = 841.9 MB
+[11/01 17:45:47     61s] (I)       Loading and dumping file time : 0.05 seconds
+[11/01 17:45:47     61s] (I)       ============= Initialization =============
+[11/01 17:45:47     61s] (I)       numLocalWires=9393  numGlobalNetBranches=2593  numLocalNetBranches=2104
+[11/01 17:45:47     61s] (I)       totalPins=18478  totalGlobalPin=11917 (64.49%)
+[11/01 17:45:47     61s] (I)       total 2D Cap : 122815 = (57868 H, 64947 V)
+[11/01 17:45:47     61s] (I)       ============  Phase 1a Route ============
+[11/01 17:45:47     61s] (I)       Phase 1a runs 0.00 seconds
+[11/01 17:45:47     61s] (I)       blkAvoiding Routing :  time=0.00  numBlkSegs=0
+[11/01 17:45:47     61s] (I)       Usage: 12036 = (6322 H, 5714 V) = (10.92% H, 8.80% V) = (2.655e+04um H, 2.400e+04um V)
+[11/01 17:45:47     61s] (I)       
+[11/01 17:45:47     61s] (I)       ============  Phase 1b Route ============
+[11/01 17:45:47     61s] (I)       Usage: 12036 = (6322 H, 5714 V) = (10.92% H, 8.80% V) = (2.655e+04um H, 2.400e+04um V)
+[11/01 17:45:47     61s] (I)       
+[11/01 17:45:47     61s] (I)       earlyGlobalRoute overflow: 0.00% H + 0.00% V
+[11/01 17:45:47     61s] 
+[11/01 17:45:47     61s] [NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[11/01 17:45:47     61s] Finished Early Global Route rough congestion estimation: mem = 841.9M
+[11/01 17:45:47     61s] earlyGlobalRoute rough estimation gcell size 3 row height
+[11/01 17:45:47     61s] Congestion driven padding in post-place stage.
+[11/01 17:45:47     61s] Congestion driven padding increases utilization from 0.929 to 0.929
+[11/01 17:45:47     61s] Congestion driven padding runtime: cpu = 0:00:00.1 real = 0:00:00.0 mem = 841.9M
+[11/01 17:45:47     61s] Global placement CDP skipped at cutLevel 9.
+[11/01 17:45:47     61s] Iteration  9: Total net bbox = 6.875e+04 (3.69e+04 3.18e+04)
+[11/01 17:45:47     61s]               Est.  stn bbox = 7.801e+04 (4.18e+04 3.62e+04)
+[11/01 17:45:47     61s]               cpu = 0:00:02.2 real = 0:00:03.0 mem = 841.9M
+[11/01 17:45:47     61s] Iteration 10: Total net bbox = 6.875e+04 (3.69e+04 3.18e+04)
+[11/01 17:45:47     61s]               Est.  stn bbox = 7.801e+04 (4.18e+04 3.62e+04)
+[11/01 17:45:47     61s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 841.9M
+[11/01 17:45:54     65s] Iteration 11: Total net bbox = 7.194e+04 (3.83e+04 3.36e+04)
+[11/01 17:45:54     65s]               Est.  stn bbox = 8.122e+04 (4.32e+04 3.80e+04)
+[11/01 17:45:54     65s]               cpu = 0:00:03.5 real = 0:00:07.0 mem = 841.9M
+[11/01 17:45:54     65s] Iteration 12: Total net bbox = 7.194e+04 (3.83e+04 3.36e+04)
+[11/01 17:45:54     65s]               Est.  stn bbox = 8.122e+04 (4.32e+04 3.80e+04)
+[11/01 17:45:54     65s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 841.9M
+[11/01 17:45:54     65s] *** cost = 7.194e+04 (3.83e+04 3.36e+04) (cpu for global=0:00:13.9) real=0:00:29.0***
+[11/01 17:45:54     65s] Solver runtime cpu: 0:00:12.9 real: 0:00:26.7
+[11/01 17:45:54     65s] Core Placement runtime cpu: 0:00:13.5 real: 0:00:29.0
+[11/01 17:45:54     65s] **WARN: (IMPSP-9025):	No scan chain specified/traced.
+[11/01 17:45:54     65s] Type 'man IMPSP-9025' for more detail.
+[11/01 17:45:54     65s] #spOpts: mergeVia=F 
+[11/01 17:45:54     65s] Core basic site is FreePDK45_38x28_10R_NP_162NW_34O
+[11/01 17:45:54     65s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/01 17:45:54     65s] *** Starting refinePlace (0:01:05 mem=841.9M) ***
+[11/01 17:45:54     65s] Total net bbox length = 7.209e+04 (3.847e+04 3.363e+04) (ext = 2.426e+04)
+[11/01 17:45:54     65s] Move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+[11/01 17:45:54     65s] Starting refinePlace ...
+[11/01 17:45:54     65s] default core: bins with density >  0.75 = 2.22 % ( 2 / 90 )
+[11/01 17:45:54     65s] Density distribution unevenness ratio = 4.519%
+[11/01 17:45:55     65s]   Spread Effort: high, standalone mode, useDDP on.
+[11/01 17:45:55     65s] [CPU] RefinePlace/preRPlace (cpu=0:00:00.1, real=0:00:01.0, mem=841.9MB) @(0:01:05 - 0:01:06).
+[11/01 17:45:55     65s] Move report: preRPlace moves 4878 insts, mean move: 0.42 um, max move: 3.13 um
+[11/01 17:45:55     65s] 	Max move on inst (MUL_6_mult_17_U76): (21.84, 40.65) --> (20.90, 42.84)
+[11/01 17:45:55     65s] 	Length: 16 sites, height: 1 rows, site name: FreePDK45_38x28_10R_NP_162NW_34O, cell type: FA_X1
+[11/01 17:45:55     65s] wireLenOptFixPriorityInst 0 inst fixed
+[11/01 17:45:55     65s] Placement tweakage begins.
+[11/01 17:45:55     65s] wire length = 5.708e+04
+[11/01 17:45:58     66s] wire length = 5.441e+04
+[11/01 17:45:58     66s] Placement tweakage ends.
+[11/01 17:45:58     66s] Move report: tweak moves 656 insts, mean move: 2.32 um, max move: 22.33 um
+[11/01 17:45:58     66s] 	Max move on inst (U347): (97.47, 65.24) --> (96.14, 86.24)
+[11/01 17:45:58     66s] [CPU] RefinePlace/TweakPlacement (cpu=0:00:01.3, real=0:00:03.0, mem=841.9MB) @(0:01:06 - 0:01:07).
+[11/01 17:45:58     66s] Move report: legalization moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+[11/01 17:45:58     66s] [CPU] RefinePlace/Legalization (cpu=0:00:00.1, real=0:00:00.0, mem=841.9MB) @(0:01:07 - 0:01:07).
+[11/01 17:45:58     66s] Move report: Detail placement moves 4878 insts, mean move: 0.69 um, max move: 22.81 um
+[11/01 17:45:58     66s] 	Max move on inst (U347): (97.41, 64.70) --> (96.14, 86.24)
+[11/01 17:45:58     66s] 	Runtime: CPU: 0:00:01.6 REAL: 0:00:04.0 MEM: 841.9MB
+[11/01 17:45:58     66s] Statistics of distance of Instance movement in refine placement:
+[11/01 17:45:58     66s]   maximum (X+Y) =        22.81 um
+[11/01 17:45:58     66s]   inst (U347) with max move: (97.4065, 64.701) -> (96.14, 86.24)
+[11/01 17:45:58     66s]   mean    (X+Y) =         0.69 um
+[11/01 17:45:58     66s] Total instances flipped for WireLenOpt: 429
+[11/01 17:45:58     66s] Summary Report:
+[11/01 17:45:58     66s] Instances move: 4878 (out of 4878 movable)
+[11/01 17:45:58     66s] Instances flipped: 0
+[11/01 17:45:58     66s] Mean displacement: 0.69 um
+[11/01 17:45:58     66s] Max displacement: 22.81 um (Instance: U347) (97.4065, 64.701) -> (96.14, 86.24)
+[11/01 17:45:58     66s] 	Length: 3 sites, height: 1 rows, site name: FreePDK45_38x28_10R_NP_162NW_34O, cell type: BUF_X1
+[11/01 17:45:58     66s] Total instances moved : 4878
+[11/01 17:45:58     67s] Total net bbox length = 7.002e+04 (3.612e+04 3.391e+04) (ext = 2.403e+04)
+[11/01 17:45:58     67s] Runtime: CPU: 0:00:01.6 REAL: 0:00:04.0 MEM: 841.9MB
+[11/01 17:45:58     67s] [CPU] RefinePlace/total (cpu=0:00:01.6, real=0:00:04.0, mem=841.9MB) @(0:01:05 - 0:01:07).
+[11/01 17:45:58     67s] *** Finished refinePlace (0:01:07 mem=841.9M) ***
+[11/01 17:45:58     67s] *** End of Placement (cpu=0:00:15.6, real=0:00:33.0, mem=841.9M) ***
+[11/01 17:45:58     67s] #spOpts: mergeVia=F 
+[11/01 17:45:58     67s] Core basic site is FreePDK45_38x28_10R_NP_162NW_34O
+[11/01 17:45:58     67s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/01 17:45:58     67s] default core: bins with density >  0.75 = 2.22 % ( 2 / 90 )
+[11/01 17:45:58     67s] Density distribution unevenness ratio = 4.511%
+[11/01 17:45:58     67s] Starting congestion repair ...
+[11/01 17:45:58     67s] congRepair options: -clkGateAware 1 -rplaceIncrNPClkGateAwareMode 4.
+[11/01 17:45:58     67s] Starting Early Global Route congestion estimation: mem = 841.9M
+[11/01 17:45:58     67s] (I)       Reading DB...
+[11/01 17:45:58     67s] (I)       before initializing RouteDB syMemory usage = 843.4 MB
+[11/01 17:45:58     67s] (I)       congestionReportName   : 
+[11/01 17:45:58     67s] (I)       layerRangeFor2DCongestion : 
+[11/01 17:45:58     67s] (I)       buildTerm2TermWires    : 1
+[11/01 17:45:58     67s] (I)       doTrackAssignment      : 1
+[11/01 17:45:58     67s] (I)       dumpBookshelfFiles     : 0
+[11/01 17:45:58     67s] (I)       numThreads             : 1
+[11/01 17:45:58     67s] (I)       bufferingAwareRouting  : false
+[11/01 17:45:58     67s] [NR-eGR] honorMsvRouteConstraint: false
+[11/01 17:45:58     67s] (I)       honorPin               : false
+[11/01 17:45:58     67s] (I)       honorPinGuide          : true
+[11/01 17:45:58     67s] (I)       honorPartition         : false
+[11/01 17:45:58     67s] (I)       allowPartitionCrossover: false
+[11/01 17:45:58     67s] (I)       honorSingleEntry       : true
+[11/01 17:45:58     67s] (I)       honorSingleEntryStrong : true
+[11/01 17:45:58     67s] (I)       handleViaSpacingRule   : false
+[11/01 17:45:58     67s] (I)       handleEolSpacingRule   : false
+[11/01 17:45:58     67s] (I)       PDConstraint           : none
+[11/01 17:45:58     67s] (I)       expBetterNDRHandling   : false
+[11/01 17:45:58     67s] [NR-eGR] honorClockSpecNDR      : 0
+[11/01 17:45:58     67s] (I)       routingEffortLevel     : 3
+[11/01 17:45:58     67s] (I)       effortLevel            : standard
+[11/01 17:45:58     67s] [NR-eGR] minRouteLayer          : 2
+[11/01 17:45:58     67s] [NR-eGR] maxRouteLayer          : 127
+[11/01 17:45:58     67s] (I)       relaxedTopLayerCeiling : 127
+[11/01 17:45:58     67s] (I)       relaxedBottomLayerFloor: 2
+[11/01 17:45:58     67s] (I)       numRowsPerGCell        : 1
+[11/01 17:45:58     67s] (I)       speedUpLargeDesign     : 0
+[11/01 17:45:58     67s] (I)       multiThreadingTA       : 1
+[11/01 17:45:58     67s] (I)       blkAwareLayerSwitching : 1
+[11/01 17:45:58     67s] (I)       optimizationMode       : false
+[11/01 17:45:58     67s] (I)       routeSecondPG          : false
+[11/01 17:45:58     67s] (I)       scenicRatioForLayerRelax: 0.00
+[11/01 17:45:58     67s] (I)       detourLimitForLayerRelax: 0.00
+[11/01 17:45:58     67s] (I)       punchThroughDistance   : 500.00
+[11/01 17:45:58     67s] (I)       scenicBound            : 1.15
+[11/01 17:45:58     67s] (I)       maxScenicToAvoidBlk    : 100.00
+[11/01 17:45:58     67s] (I)       source-to-sink ratio   : 0.00
+[11/01 17:45:58     67s] (I)       targetCongestionRatioH : 1.00
+[11/01 17:45:58     67s] (I)       targetCongestionRatioV : 1.00
+[11/01 17:45:58     67s] (I)       layerCongestionRatio   : 0.70
+[11/01 17:45:58     67s] (I)       m1CongestionRatio      : 0.10
+[11/01 17:45:58     67s] (I)       m2m3CongestionRatio    : 0.70
+[11/01 17:45:58     67s] (I)       localRouteEffort       : 1.00
+[11/01 17:45:58     67s] (I)       numSitesBlockedByOneVia: 8.00
+[11/01 17:45:58     67s] (I)       supplyScaleFactorH     : 1.00
+[11/01 17:45:58     67s] (I)       supplyScaleFactorV     : 1.00
+[11/01 17:45:58     67s] (I)       highlight3DOverflowFactor: 0.00
+[11/01 17:45:58     67s] (I)       doubleCutViaModelingRatio: 0.00
+[11/01 17:45:58     67s] (I)       routeVias              : 
+[11/01 17:45:58     67s] (I)       readTROption           : true
+[11/01 17:45:58     67s] (I)       extraSpacingFactor     : 1.00
+[11/01 17:45:58     67s] [NR-eGR] numTracksPerClockWire  : 0
+[11/01 17:45:58     67s] (I)       routeSelectedNetsOnly  : false
+[11/01 17:45:58     67s] (I)       clkNetUseMaxDemand     : false
+[11/01 17:45:58     67s] (I)       extraDemandForClocks   : 0
+[11/01 17:45:58     67s] (I)       steinerRemoveLayers    : false
+[11/01 17:45:58     67s] (I)       demoteLayerScenicScale : 1.00
+[11/01 17:45:58     67s] (I)       nonpreferLayerCostScale : 100.00
+[11/01 17:45:58     67s] (I)       similarTopologyRoutingFast : false
+[11/01 17:45:58     67s] (I)       spanningTreeRefinement : false
+[11/01 17:45:58     67s] (I)       spanningTreeRefinementAlpha : 0.50
+[11/01 17:45:58     67s] (I)       starting read tracks
+[11/01 17:45:58     67s] (I)       build grid graph
+[11/01 17:45:58     67s] (I)       build grid graph start
+[11/01 17:45:58     67s] [NR-eGR] Layer1 has no routable track
+[11/01 17:45:58     67s] [NR-eGR] Layer2 has single uniform track structure
+[11/01 17:45:58     67s] [NR-eGR] Layer3 has single uniform track structure
+[11/01 17:45:58     67s] [NR-eGR] Layer4 has single uniform track structure
+[11/01 17:45:58     67s] [NR-eGR] Layer5 has single uniform track structure
+[11/01 17:45:58     67s] [NR-eGR] Layer6 has single uniform track structure
+[11/01 17:45:58     67s] [NR-eGR] Layer7 has single uniform track structure
+[11/01 17:45:58     67s] [NR-eGR] Layer8 has single uniform track structure
+[11/01 17:45:58     67s] [NR-eGR] Layer9 has single uniform track structure
+[11/01 17:45:58     67s] [NR-eGR] Layer10 has single uniform track structure
+[11/01 17:45:58     67s] (I)       build grid graph end
+[11/01 17:45:58     67s] (I)       numViaLayers=10
+[11/01 17:45:58     67s] (I)       Reading via via1_8 for layer: 0 
+[11/01 17:45:58     67s] (I)       Reading via via2_8 for layer: 1 
+[11/01 17:45:58     67s] (I)       Reading via via3_2 for layer: 2 
+[11/01 17:45:58     67s] (I)       Reading via via4_0 for layer: 3 
+[11/01 17:45:58     67s] (I)       Reading via via5_0 for layer: 4 
+[11/01 17:45:58     67s] (I)       Reading via via6_0 for layer: 5 
+[11/01 17:45:58     67s] (I)       Reading via via7_0 for layer: 6 
+[11/01 17:45:58     67s] (I)       Reading via via8_0 for layer: 7 
+[11/01 17:45:58     67s] (I)       Reading via via9_0 for layer: 8 
+[11/01 17:45:58     67s] (I)       end build via table
+[11/01 17:45:58     67s] [NR-eGR] numRoutingBlks=0 numInstBlks=0 numPGBlocks=194 numBumpBlks=0 numBoundaryFakeBlks=0
+[11/01 17:45:58     67s] [NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[11/01 17:45:58     67s] (I)       readDataFromPlaceDB
+[11/01 17:45:58     67s] (I)       Read net information..
+[11/01 17:45:58     67s] [NR-eGR] Read numTotalNets=6026  numIgnoredNets=0
+[11/01 17:45:58     67s] (I)       Read testcase time = 0.010 seconds
+[11/01 17:45:58     67s] 
+[11/01 17:45:58     67s] (I)       read default dcut vias
+[11/01 17:45:58     67s] (I)       Reading via via1_4 for layer: 0 
+[11/01 17:45:58     67s] (I)       Reading via via2_8 for layer: 1 
+[11/01 17:45:58     67s] (I)       Reading via via3_2 for layer: 2 
+[11/01 17:45:58     67s] (I)       Reading via via4_0 for layer: 3 
+[11/01 17:45:58     67s] (I)       Reading via via5_0 for layer: 4 
+[11/01 17:45:58     67s] (I)       Reading via via6_0 for layer: 5 
+[11/01 17:45:58     67s] (I)       Reading via via7_0 for layer: 6 
+[11/01 17:45:58     67s] (I)       Reading via via8_0 for layer: 7 
+[11/01 17:45:58     67s] (I)       Reading via via9_0 for layer: 8 
+[11/01 17:45:58     67s] (I)       build grid graph start
+[11/01 17:45:58     67s] (I)       build grid graph end
+[11/01 17:45:58     67s] (I)       Model blockage into capacity
+[11/01 17:45:58     67s] (I)       Read numBlocks=194  numPreroutedWires=0  numCapScreens=0
+[11/01 17:45:58     67s] (I)       blocked area on Layer1 : 0  (0.00%)
+[11/01 17:45:58     67s] (I)       blocked area on Layer2 : 3246016800  (4.24%)
+[11/01 17:45:58     67s] (I)       blocked area on Layer3 : 0  (0.00%)
+[11/01 17:45:58     67s] (I)       blocked area on Layer4 : 0  (0.00%)
+[11/01 17:45:58     67s] (I)       blocked area on Layer5 : 0  (0.00%)
+[11/01 17:45:58     67s] (I)       blocked area on Layer6 : 0  (0.00%)
+[11/01 17:45:58     67s] (I)       blocked area on Layer7 : 0  (0.00%)
+[11/01 17:45:58     67s] (I)       blocked area on Layer8 : 0  (0.00%)
+[11/01 17:45:58     67s] (I)       blocked area on Layer9 : 0  (0.00%)
+[11/01 17:45:58     67s] (I)       blocked area on Layer10 : 0  (0.00%)
+[11/01 17:45:58     67s] (I)       Modeling time = 0.000 seconds
+[11/01 17:45:58     67s] 
+[11/01 17:45:58     67s] (I)       Number of ignored nets = 0
+[11/01 17:45:58     67s] (I)       Number of fixed nets = 0.  Ignored: Yes
+[11/01 17:45:58     67s] (I)       Number of clock nets = 0.  Ignored: No
+[11/01 17:45:58     67s] (I)       Number of analog nets = 0.  Ignored: Yes
+[11/01 17:45:58     67s] (I)       Number of special nets = 0.  Ignored: Yes
+[11/01 17:45:58     67s] (I)       Number of mixed signal nets = 0.  Ignored: Yes
+[11/01 17:45:58     67s] (I)       Number of skip routing nets = 0.  Ignored: Yes
+[11/01 17:45:58     67s] (I)       Number of nets with ignore route flag = 0.  Ignored: No
+[11/01 17:45:58     67s] (I)       Number of nets with one or no pins = 0.  Ignored: Yes
+[11/01 17:45:58     67s] (I)       Number of two pin nets which has pins at the same location = 0.  Ignored: Yes
+[11/01 17:45:58     67s] (I)       Before initializing earlyGlobalRoute syMemory usage = 844.4 MB
+[11/01 17:45:58     67s] (I)       Ndr track 0 does not exist
+[11/01 17:45:58     67s] (I)       Layer1  viaCost=200.00
+[11/01 17:45:58     67s] (I)       Layer2  viaCost=200.00
+[11/01 17:45:58     67s] (I)       Layer3  viaCost=100.00
+[11/01 17:45:58     67s] (I)       Layer4  viaCost=100.00
+[11/01 17:45:58     67s] (I)       Layer5  viaCost=100.00
+[11/01 17:45:58     67s] (I)       Layer6  viaCost=100.00
+[11/01 17:45:58     67s] (I)       Layer7  viaCost=100.00
+[11/01 17:45:58     67s] (I)       Layer8  viaCost=100.00
+[11/01 17:45:58     67s] (I)       Layer9  viaCost=100.00
+[11/01 17:45:58     67s] (I)       ---------------------Grid Graph Info--------------------
+[11/01 17:45:58     67s] (I)       routing area        :  (0, 0) - (281580, 272160)
+[11/01 17:45:58     67s] (I)       core area           :  (10260, 10080) - (271320, 262080)
+[11/01 17:45:58     67s] (I)       Site Width          :   380  (dbu)
+[11/01 17:45:58     67s] (I)       Row Height          :  2800  (dbu)
+[11/01 17:45:58     67s] (I)       GCell Width         :  2800  (dbu)
+[11/01 17:45:58     67s] (I)       GCell Height        :  2800  (dbu)
+[11/01 17:45:58     67s] (I)       grid                :   100    97    10
+[11/01 17:45:58     67s] (I)       vertical capacity   :     0  2800     0  2800     0  2800     0  2800     0  2800
+[11/01 17:45:58     67s] (I)       horizontal capacity :     0     0  2800     0  2800     0  2800     0  2800     0
+[11/01 17:45:58     67s] (I)       Default wire width  :   140   140   140   280   280   280   800   800  1600  1600
+[11/01 17:45:58     67s] (I)       Default wire space  :   130   140   140   280   280   280   800   800  1600  1600
+[11/01 17:45:58     67s] (I)       Default pitch size  :   270   380   280   560   560   560  1680  1680  3200  3360
+[11/01 17:45:58     67s] (I)       First Track Coord   :     0   190   140   370   700   370  1820  2050  3820  3730
+[11/01 17:45:58     67s] (I)       Num tracks per GCell: 10.37  7.37 10.00  5.00  5.00  5.00  1.67  1.67  0.88  0.83
+[11/01 17:45:58     67s] (I)       Total num of tracks :     0   741   972   502   485   502   161   167    84    83
+[11/01 17:45:58     67s] (I)       Num of masks        :     1     1     1     1     1     1     1     1     1     1
+[11/01 17:45:58     67s] (I)       Num of trim masks   :     0     0     0     0     0     0     0     0     0     0
+[11/01 17:45:58     67s] (I)       --------------------------------------------------------
+[11/01 17:45:58     67s] 
+[11/01 17:45:58     67s] [NR-eGR] ============ Routing rule table ============
+[11/01 17:45:58     67s] [NR-eGR] Rule id 0. Nets 6026 
+[11/01 17:45:58     67s] [NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[11/01 17:45:58     67s] [NR-eGR] Pitch:  L1=270  L2=380  L3=280  L4=560  L5=560  L6=560  L7=1680  L8=1680  L9=3200  L10=3360
+[11/01 17:45:58     67s] (I)       NumUsedTracks:  L1=1  L2=1  L3=1  L4=1  L5=1  L6=1  L7=1  L8=1  L9=1  L10=1
+[11/01 17:45:58     67s] (I)       NumFullyUsedTracks:  L1=1  L2=1  L3=1  L4=1  L5=1  L6=1  L7=1  L8=1  L9=1  L10=1
+[11/01 17:45:58     67s] [NR-eGR] ========================================
+[11/01 17:45:58     67s] [NR-eGR] 
+[11/01 17:45:58     67s] (I)       After initializing earlyGlobalRoute syMemory usage = 844.4 MB
+[11/01 17:45:58     67s] (I)       Loading and dumping file time : 0.06 seconds
+[11/01 17:45:58     67s] (I)       ============= Initialization =============
+[11/01 17:45:58     67s] (I)       totalPins=19039  totalGlobalPin=18576 (97.57%)
+[11/01 17:45:58     67s] (I)       total 2D Cap : 361055 = (170200 H, 190855 V)
+[11/01 17:45:58     67s] [NR-eGR] Layer group 1: route 6026 net(s) in layer range [2, 10]
+[11/01 17:45:58     67s] (I)       ============  Phase 1a Route ============
+[11/01 17:45:59     67s] (I)       Phase 1a runs 0.02 seconds
+[11/01 17:45:59     67s] (I)       Usage: 37777 = (19119 H, 18658 V) = (11.23% H, 9.78% V) = (2.677e+04um H, 2.612e+04um V)
+[11/01 17:45:59     67s] (I)       
+[11/01 17:45:59     67s] (I)       ============  Phase 1b Route ============
+[11/01 17:45:59     67s] (I)       Usage: 37777 = (19119 H, 18658 V) = (11.23% H, 9.78% V) = (2.677e+04um H, 2.612e+04um V)
+[11/01 17:45:59     67s] (I)       
+[11/01 17:45:59     67s] (I)       earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 5.288780e+04um
+[11/01 17:45:59     67s] (I)       ============  Phase 1c Route ============
+[11/01 17:45:59     67s] (I)       Usage: 37777 = (19119 H, 18658 V) = (11.23% H, 9.78% V) = (2.677e+04um H, 2.612e+04um V)
+[11/01 17:45:59     67s] (I)       
+[11/01 17:45:59     67s] (I)       ============  Phase 1d Route ============
+[11/01 17:45:59     67s] (I)       Usage: 37777 = (19119 H, 18658 V) = (11.23% H, 9.78% V) = (2.677e+04um H, 2.612e+04um V)
+[11/01 17:45:59     67s] (I)       
+[11/01 17:45:59     67s] (I)       ============  Phase 1e Route ============
+[11/01 17:45:59     67s] (I)       Phase 1e runs 0.00 seconds
+[11/01 17:45:59     67s] (I)       Usage: 37777 = (19119 H, 18658 V) = (11.23% H, 9.78% V) = (2.677e+04um H, 2.612e+04um V)
+[11/01 17:45:59     67s] (I)       
+[11/01 17:45:59     67s] [NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 5.288780e+04um
+[11/01 17:45:59     67s] [NR-eGR] 
+[11/01 17:45:59     67s] (I)       ============  Phase 1l Route ============
+[11/01 17:45:59     67s] (I)       Phase 1l runs 0.04 seconds
+[11/01 17:45:59     67s] (I)       
+[11/01 17:45:59     67s] [NR-eGR] Congestion Analysis Layer By layer: (blocked Gcells are excluded) 
+[11/01 17:45:59     67s] [NR-eGR]                OverCon            
+[11/01 17:45:59     67s] [NR-eGR]                 #Gcell     %Gcell
+[11/01 17:45:59     67s] [NR-eGR] Layer              (0)    OverCon 
+[11/01 17:45:59     67s] [NR-eGR] ------------------------------------
+[11/01 17:45:59     67s] [NR-eGR] Layer1       0( 0.00%)   ( 0.00%) 
+[11/01 17:45:59     67s] [NR-eGR] Layer2       0( 0.00%)   ( 0.00%) 
+[11/01 17:45:59     67s] [NR-eGR] Layer3       0( 0.00%)   ( 0.00%) 
+[11/01 17:45:59     67s] [NR-eGR] Layer4       0( 0.00%)   ( 0.00%) 
+[11/01 17:45:59     67s] [NR-eGR] Layer5       0( 0.00%)   ( 0.00%) 
+[11/01 17:45:59     67s] [NR-eGR] Layer6       0( 0.00%)   ( 0.00%) 
+[11/01 17:45:59     67s] [NR-eGR] Layer7       0( 0.00%)   ( 0.00%) 
+[11/01 17:45:59     67s] [NR-eGR] Layer8       0( 0.00%)   ( 0.00%) 
+[11/01 17:45:59     67s] [NR-eGR] Layer9       0( 0.00%)   ( 0.00%) 
+[11/01 17:45:59     67s] [NR-eGR] Layer10       0( 0.00%)   ( 0.00%) 
+[11/01 17:45:59     67s] [NR-eGR] ------------------------------------
+[11/01 17:45:59     67s] [NR-eGR] Total        0( 0.00%)   ( 0.00%) 
+[11/01 17:45:59     67s] [NR-eGR] 
+[11/01 17:45:59     67s] (I)       Total Global Routing Runtime: 0.08 seconds
+[11/01 17:45:59     67s] (I)       total 2D Cap : 361057 = (170200 H, 190857 V)
+[11/01 17:45:59     67s] [NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[11/01 17:45:59     67s] [NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+[11/01 17:45:59     67s] Early Global Route congestion estimation runtime: 0.16 seconds, mem = 844.4M
+[11/01 17:45:59     67s] [hotspot] +------------+---------------+---------------+
+[11/01 17:45:59     67s] [hotspot] |            |   max hotspot | total hotspot |
+[11/01 17:45:59     67s] [hotspot] +------------+---------------+---------------+
+[11/01 17:45:59     67s] [hotspot] | normalized |          0.00 |          0.00 |
+[11/01 17:45:59     67s] [hotspot] +------------+---------------+---------------+
+[11/01 17:45:59     67s] Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+[11/01 17:45:59     67s] [hotspot] max/total 0.00/0.00, big hotspot (>10) total 0.00
+[11/01 17:45:59     67s] Skipped repairing congestion.
+[11/01 17:45:59     67s] Starting Early Global Route wiring: mem = 844.4M
+[11/01 17:45:59     67s] (I)       ============= track Assignment ============
+[11/01 17:45:59     67s] (I)       extract Global 3D Wires
+[11/01 17:45:59     67s] (I)       Extract Global WL : time=0.01
+[11/01 17:45:59     67s] (I)       Initialize Greedy Track Assignment (maxPinLayer=Layer11, numCutBoxes=0)
+[11/01 17:45:59     67s] (I)       Initialization real time=0.00 seconds
+[11/01 17:45:59     67s] (I)       Run Multi-thread track assignment
+[11/01 17:45:59     67s] (I)       merging nets...
+[11/01 17:45:59     67s] (I)       merging nets done
+[11/01 17:45:59     67s] (I)       Kernel real time=0.40 seconds
+[11/01 17:45:59     67s] (I)       End Greedy Track Assignment
+[11/01 17:45:59     67s] [NR-eGR] --------------------------------------------------------------------------
+[11/01 17:45:59     67s] [NR-eGR] Layer1(metal1)(F) length: 0.000000e+00um, number of vias: 19039
+[11/01 17:45:59     67s] [NR-eGR] Layer2(metal2)(V) length: 1.521440e+04um, number of vias: 23325
+[11/01 17:45:59     67s] [NR-eGR] Layer3(metal3)(H) length: 2.661467e+04um, number of vias: 8284
+[11/01 17:45:59     67s] [NR-eGR] Layer4(metal4)(V) length: 1.203617e+04um, number of vias: 343
+[11/01 17:45:59     67s] [NR-eGR] Layer5(metal5)(H) length: 9.238175e+02um, number of vias: 299
+[11/01 17:45:59     67s] [NR-eGR] Layer6(metal6)(V) length: 1.735750e+03um, number of vias: 2
+[11/01 17:45:59     67s] [NR-eGR] Layer7(metal7)(H) length: 2.800000e-01um, number of vias: 0
+[11/01 17:45:59     67s] [NR-eGR] Layer8(metal8)(V) length: 0.000000e+00um, number of vias: 0
+[11/01 17:45:59     67s] [NR-eGR] Layer9(metal9)(H) length: 0.000000e+00um, number of vias: 0
+[11/01 17:45:59     67s] [NR-eGR] Layer10(metal10)(V) length: 0.000000e+00um, number of vias: 0
+[11/01 17:45:59     67s] [NR-eGR] Total length: 5.652508e+04um, number of vias: 51292
+[11/01 17:45:59     67s] [NR-eGR] --------------------------------------------------------------------------
+[11/01 17:45:59     67s] [NR-eGR] Total clock nets wire length: 0.000000e+00um 
+[11/01 17:45:59     67s] [NR-eGR] --------------------------------------------------------------------------
+[11/01 17:45:59     67s] Early Global Route wiring runtime: 0.20 seconds, mem = 844.4M
+[11/01 17:45:59     67s] End of congRepair (cpu=0:00:00.4, real=0:00:01.0)
+[11/01 17:45:59     67s] *** Finishing placeDesign default flow ***
+[11/01 17:45:59     67s] **placeDesign ... cpu = 0: 0:16, real = 0: 0:35, mem = 844.4M **
+[11/01 17:46:00     67s] 
+[11/01 17:46:00     67s] *** Summary of all messages that are not suppressed in this session:
+[11/01 17:46:00     67s] Severity  ID               Count  Summary                                  
+[11/01 17:46:00     67s] WARNING   IMPSP-9513           1  Timing constraint file does not exist    
+[11/01 17:46:00     67s] WARNING   IMPSP-9514           1  Non-TimingDriven placement will be perfo...
+[11/01 17:46:00     67s] WARNING   IMPSP-9531           1  Turning off clkGateAware when timingDriv...
+[11/01 17:46:00     67s] WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+[11/01 17:46:00     67s] *** Message Summary: 4 warning(s), 0 error(s)
+[11/01 17:46:00     67s] 
+[11/01 17:46:22     68s] <CMD> viewLast
+[11/01 17:46:38     69s] <CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+[11/01 17:46:39     69s] <CMD> optDesign -postCTS
+[11/01 17:46:39     69s] **WARN: (IMPOPT-576):	173 nets have unplaced terms. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-576' for more detail.
+[11/01 17:46:39     69s] **INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+[11/01 17:46:39     69s] Core basic site is FreePDK45_38x28_10R_NP_162NW_34O
+[11/01 17:46:39     69s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/01 17:46:39     69s] #spOpts: mergeVia=F 
+[11/01 17:46:39     69s] GigaOpt running with 1 threads.
+[11/01 17:46:39     69s] Info: 1 threads available for lower-level modules during optimization.
+[11/01 17:46:39     69s] #spOpts: mergeVia=F 
+[11/01 17:46:39     69s] Creating Cell Server ...(0, 0, 0, 0)
+[11/01 17:46:39     69s] Summary for sequential cells identification: 
+[11/01 17:46:39     69s]   Identified SBFF number: 0
+[11/01 17:46:39     69s]   Identified MBFF number: 0
+[11/01 17:46:39     69s]   Identified SB Latch number: 0
+[11/01 17:46:39     69s]   Identified MB Latch number: 0
+[11/01 17:46:39     69s]   Not identified SBFF number: 0
+[11/01 17:46:39     69s]   Not identified MBFF number: 0
+[11/01 17:46:39     69s]   Not identified SB Latch number: 0
+[11/01 17:46:39     69s]   Not identified MB Latch number: 0
+[11/01 17:46:39     69s]   Number of sequential cells which are not FFs: 0
+[11/01 17:46:39     69s] **WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+[11/01 17:46:39     69s] Type 'man IMPOPT-3000' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+[11/01 17:46:39     69s] Type 'man IMPOPT-3001' for more detail.
+[11/01 17:46:39     69s] Creating Cell Server, finished. 
+[11/01 17:46:39     69s] 
+[11/01 17:46:39     69s] **WARN: No usable buffer/inverter becasue of dont-use/dont-touch setting.
+[11/01 17:46:39     69s] Updating RC grid for preRoute extraction ...
+[11/01 17:46:39     69s] 
+[11/01 17:46:39     69s] Creating Lib Analyzer ...
+[11/01 17:46:39     69s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+[11/01 17:46:39     69s] Deleting Cell Server ...
+[11/01 17:46:39     69s] Creating Cell Server ...(0, 1, 1, 1)
+[11/01 17:46:39     69s] Summary for sequential cells identification: 
+[11/01 17:46:39     69s]   Identified SBFF number: 0
+[11/01 17:46:39     69s]   Identified MBFF number: 0
+[11/01 17:46:39     69s]   Identified SB Latch number: 0
+[11/01 17:46:39     69s]   Identified MB Latch number: 0
+[11/01 17:46:39     69s]   Not identified SBFF number: 0
+[11/01 17:46:39     69s]   Not identified MBFF number: 0
+[11/01 17:46:39     69s]   Not identified SB Latch number: 0
+[11/01 17:46:39     69s]   Not identified MB Latch number: 0
+[11/01 17:46:39     69s]   Number of sequential cells which are not FFs: 0
+[11/01 17:46:39     69s] Total number of combinational cells: 0
+[11/01 17:46:39     69s] Total number of sequential cells: 0
+[11/01 17:46:39     69s] Total number of tristate cells: 0
+[11/01 17:46:39     69s] Total number of level shifter cells: 0
+[11/01 17:46:39     69s] Total number of power gating cells: 0
+[11/01 17:46:39     69s] Total number of isolation cells: 0
+[11/01 17:46:39     69s] Total number of power switch cells: 0
+[11/01 17:46:39     69s] Total number of pulse generator cells: 0
+[11/01 17:46:39     69s] Total number of always on buffers: 0
+[11/01 17:46:39     69s] Total number of retention cells: 0
+[11/01 17:46:39     69s] List of usable buffers:
+[11/01 17:46:39     69s] Total number of usable buffers: 0
+[11/01 17:46:39     69s] List of unusable buffers:
+[11/01 17:46:39     69s] Total number of unusable buffers: 0
+[11/01 17:46:39     69s] List of usable inverters:
+[11/01 17:46:39     69s] Total number of usable inverters: 0
+[11/01 17:46:39     69s] List of unusable inverters:
+[11/01 17:46:39     69s] Total number of unusable inverters: 0
+[11/01 17:46:39     69s] List of identified usable delay cells:
+[11/01 17:46:39     69s] Total number of identified usable delay cells: 0
+[11/01 17:46:39     69s] List of identified unusable delay cells:
+[11/01 17:46:39     69s] Total number of identified unusable delay cells: 0
+[11/01 17:46:39     69s] Creating Cell Server, finished. 
+[11/01 17:46:39     69s] 
+[11/01 17:46:39     69s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[11/01 17:46:39     69s] Deleting Cell Server ...
+[11/01 17:46:39     69s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+[11/01 17:46:39     69s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+[11/01 17:46:39     69s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] Creating Cell Server ...(0, 0, 0, 0)
+[11/01 17:46:39     69s] Summary for sequential cells identification: 
+[11/01 17:46:39     69s]   Identified SBFF number: 0
+[11/01 17:46:39     69s]   Identified MBFF number: 0
+[11/01 17:46:39     69s]   Identified SB Latch number: 0
+[11/01 17:46:39     69s]   Identified MB Latch number: 0
+[11/01 17:46:39     69s]   Not identified SBFF number: 0
+[11/01 17:46:39     69s]   Not identified MBFF number: 0
+[11/01 17:46:39     69s]   Not identified SB Latch number: 0
+[11/01 17:46:39     69s]   Not identified MB Latch number: 0
+[11/01 17:46:39     69s]   Number of sequential cells which are not FFs: 0
+[11/01 17:46:39     69s] **WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+[11/01 17:46:39     69s] Type 'man IMPOPT-3000' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+[11/01 17:46:39     69s] Type 'man IMPOPT-3001' for more detail.
+[11/01 17:46:39     69s] Creating Cell Server, finished. 
+[11/01 17:46:39     69s] 
+[11/01 17:46:39     69s] 
+[11/01 17:46:39     69s]  View default_view_setup  Weighted 0 StdDelay unweighted -922337203685477632.00, weightedFactor 1.000 
+[11/01 17:46:39     69s]   
+[11/01 17:46:39     69s]  View default_view_hold  Weighted 0 StdDelay unweighted -922337203685477632.00, weightedFactor 1.000 
+[11/01 17:46:39     69s]   Total number of usable buffers from Lib Analyzer: 0 ()
+[11/01 17:46:39     69s] Total number of usable inverters from Lib Analyzer: 0 ()
+[11/01 17:46:39     69s] Total number of usable delay cells from Lib Analyzer: 0 ()
+[11/01 17:46:39     69s] 
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 17:46:39     69s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:46:39     69s] Creating Lib Analyzer, finished. 
+[11/01 17:46:39     69s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+[11/01 17:46:39     69s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	DIN[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	DIN[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	DIN[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	DIN[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	DIN[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	DIN[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	DIN[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	DIN[5] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	DIN[4] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	DIN[3] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	DIN[2] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	DIN[1] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	DIN[0] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	H0[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	H0[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	H0[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	H0[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	H0[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	H0[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (IMPOPT-665):	H0[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:46:39     69s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:46:39     69s] **WARN: (EMS-27):	Message (IMPOPT-665) has exceeded the current message display limit of 20.
+[11/01 17:46:39     69s] To increase the message display limit, refer to the product command reference manual.
+[11/01 17:46:39     69s] Setting timing_disable_library_data_to_data_checks to 'true'.
+[11/01 17:46:39     69s] Setting timing_disable_user_data_to_data_checks to 'true'.
+[11/01 17:46:39     69s] **optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 744.6M, totSessionCpu=0:01:10 **
+[11/01 17:46:39     69s] **ERROR: (IMPOPT-6029):	Timing Library is not loaded yet
+[11/01 17:46:39     69s] 	OPT_RUNTIME:          optDesign (count =  2): (cpu=0:00:00.1 real=0:00:00.4)
+[11/01 17:46:39     69s] Info: pop threads available for lower-level modules during optimization.
+[11/01 17:46:39     69s] Deleting Lib Analyzer.
+[11/01 17:46:40     69s] Info: Destroy the CCOpt slew target map.
+[11/01 17:50:16     79s] <CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+[11/01 17:50:16     79s] <CMD> optDesign -postCTS
+[11/01 17:50:16     79s] **WARN: (IMPOPT-576):	173 nets have unplaced terms. 
+[11/01 17:50:16     79s] Type 'man IMPOPT-576' for more detail.
+[11/01 17:50:16     79s] **INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+[11/01 17:50:16     80s] Core basic site is FreePDK45_38x28_10R_NP_162NW_34O
+[11/01 17:50:16     80s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/01 17:50:16     80s] #spOpts: mergeVia=F 
+[11/01 17:50:16     80s] GigaOpt running with 1 threads.
+[11/01 17:50:16     80s] Info: 1 threads available for lower-level modules during optimization.
+[11/01 17:50:16     80s] #spOpts: mergeVia=F 
+[11/01 17:50:16     80s] **WARN: No usable buffer/inverter becasue of dont-use/dont-touch setting.
+[11/01 17:50:16     80s] 
+[11/01 17:50:16     80s] Creating Lib Analyzer ...
+[11/01 17:50:16     80s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+[11/01 17:50:16     80s] Deleting Cell Server ...
+[11/01 17:50:16     80s] Creating Cell Server ...(0, 1, 1, 1)
+[11/01 17:50:16     80s] Summary for sequential cells identification: 
+[11/01 17:50:16     80s]   Identified SBFF number: 0
+[11/01 17:50:16     80s]   Identified MBFF number: 0
+[11/01 17:50:16     80s]   Identified SB Latch number: 0
+[11/01 17:50:16     80s]   Identified MB Latch number: 0
+[11/01 17:50:16     80s]   Not identified SBFF number: 0
+[11/01 17:50:16     80s]   Not identified MBFF number: 0
+[11/01 17:50:16     80s]   Not identified SB Latch number: 0
+[11/01 17:50:16     80s]   Not identified MB Latch number: 0
+[11/01 17:50:16     80s]   Number of sequential cells which are not FFs: 0
+[11/01 17:50:16     80s] Total number of combinational cells: 0
+[11/01 17:50:16     80s] Total number of sequential cells: 0
+[11/01 17:50:16     80s] Total number of tristate cells: 0
+[11/01 17:50:16     80s] Total number of level shifter cells: 0
+[11/01 17:50:16     80s] Total number of power gating cells: 0
+[11/01 17:50:16     80s] Total number of isolation cells: 0
+[11/01 17:50:16     80s] Total number of power switch cells: 0
+[11/01 17:50:16     80s] Total number of pulse generator cells: 0
+[11/01 17:50:16     80s] Total number of always on buffers: 0
+[11/01 17:50:16     80s] Total number of retention cells: 0
+[11/01 17:50:16     80s] List of usable buffers:
+[11/01 17:50:16     80s] Total number of usable buffers: 0
+[11/01 17:50:16     80s] List of unusable buffers:
+[11/01 17:50:16     80s] Total number of unusable buffers: 0
+[11/01 17:50:16     80s] List of usable inverters:
+[11/01 17:50:16     80s] Total number of usable inverters: 0
+[11/01 17:50:16     80s] List of unusable inverters:
+[11/01 17:50:16     80s] Total number of unusable inverters: 0
+[11/01 17:50:16     80s] List of identified usable delay cells:
+[11/01 17:50:16     80s] Total number of identified usable delay cells: 0
+[11/01 17:50:16     80s] List of identified unusable delay cells:
+[11/01 17:50:16     80s] Total number of identified unusable delay cells: 0
+[11/01 17:50:16     80s] Creating Cell Server, finished. 
+[11/01 17:50:16     80s] 
+[11/01 17:50:16     80s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[11/01 17:50:16     80s] Deleting Cell Server ...
+[11/01 17:50:16     80s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+[11/01 17:50:16     80s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+[11/01 17:50:16     80s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] Creating Cell Server ...(0, 0, 0, 0)
+[11/01 17:50:16     80s] Summary for sequential cells identification: 
+[11/01 17:50:16     80s]   Identified SBFF number: 0
+[11/01 17:50:16     80s]   Identified MBFF number: 0
+[11/01 17:50:16     80s]   Identified SB Latch number: 0
+[11/01 17:50:16     80s]   Identified MB Latch number: 0
+[11/01 17:50:16     80s]   Not identified SBFF number: 0
+[11/01 17:50:16     80s]   Not identified MBFF number: 0
+[11/01 17:50:16     80s]   Not identified SB Latch number: 0
+[11/01 17:50:16     80s]   Not identified MB Latch number: 0
+[11/01 17:50:16     80s]   Number of sequential cells which are not FFs: 0
+[11/01 17:50:16     80s] **WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+[11/01 17:50:16     80s] Type 'man IMPOPT-3000' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+[11/01 17:50:16     80s] Type 'man IMPOPT-3001' for more detail.
+[11/01 17:50:16     80s] Creating Cell Server, finished. 
+[11/01 17:50:16     80s] 
+[11/01 17:50:16     80s] 
+[11/01 17:50:16     80s]  View default_view_setup  Weighted 0 StdDelay unweighted -922337203685477632.00, weightedFactor 1.000 
+[11/01 17:50:16     80s]   
+[11/01 17:50:16     80s]  View default_view_hold  Weighted 0 StdDelay unweighted -922337203685477632.00, weightedFactor 1.000 
+[11/01 17:50:16     80s]   Total number of usable buffers from Lib Analyzer: 0 ()
+[11/01 17:50:16     80s] Total number of usable inverters from Lib Analyzer: 0 ()
+[11/01 17:50:16     80s] Total number of usable delay cells from Lib Analyzer: 0 ()
+[11/01 17:50:16     80s] 
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 17:50:16     80s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 17:50:16     80s] Creating Lib Analyzer, finished. 
+[11/01 17:50:16     80s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+[11/01 17:50:16     80s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	DIN[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	DIN[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	DIN[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	DIN[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	DIN[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	DIN[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	DIN[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	DIN[5] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	DIN[4] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	DIN[3] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	DIN[2] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	DIN[1] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	DIN[0] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	H0[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	H0[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	H0[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	H0[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	H0[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	H0[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (IMPOPT-665):	H0[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 17:50:16     80s] Type 'man IMPOPT-665' for more detail.
+[11/01 17:50:16     80s] **WARN: (EMS-27):	Message (IMPOPT-665) has exceeded the current message display limit of 20.
+[11/01 17:50:16     80s] To increase the message display limit, refer to the product command reference manual.
+[11/01 17:50:16     80s] **optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 745.3M, totSessionCpu=0:01:20 **
+[11/01 17:50:16     80s] **ERROR: (IMPOPT-6029):	Timing Library is not loaded yet
+[11/01 17:50:16     80s] 	OPT_RUNTIME:          optDesign (count =  2): (cpu=0:00:00.1 real=0:00:00.1)
+[11/01 17:50:16     80s] Info: pop threads available for lower-level modules during optimization.
+[11/01 17:50:16     80s] Deleting Lib Analyzer.
+[11/01 17:50:16     80s] Info: Destroy the CCOpt slew target map.
+[11/01 18:00:10    107s] <CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+[11/01 18:00:10    107s] <CMD> optDesign -postCTS
+[11/01 18:00:10    107s] **WARN: (IMPOPT-576):	173 nets have unplaced terms. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-576' for more detail.
+[11/01 18:00:10    107s] **INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+[11/01 18:00:10    107s] Core basic site is FreePDK45_38x28_10R_NP_162NW_34O
+[11/01 18:00:10    107s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/01 18:00:10    107s] #spOpts: mergeVia=F 
+[11/01 18:00:10    107s] GigaOpt running with 1 threads.
+[11/01 18:00:10    107s] Info: 1 threads available for lower-level modules during optimization.
+[11/01 18:00:10    107s] #spOpts: mergeVia=F 
+[11/01 18:00:10    107s] **WARN: No usable buffer/inverter becasue of dont-use/dont-touch setting.
+[11/01 18:00:10    107s] 
+[11/01 18:00:10    107s] Creating Lib Analyzer ...
+[11/01 18:00:10    107s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+[11/01 18:00:10    107s] Deleting Cell Server ...
+[11/01 18:00:10    107s] Creating Cell Server ...(0, 1, 1, 1)
+[11/01 18:00:10    107s] Summary for sequential cells identification: 
+[11/01 18:00:10    107s]   Identified SBFF number: 0
+[11/01 18:00:10    107s]   Identified MBFF number: 0
+[11/01 18:00:10    107s]   Identified SB Latch number: 0
+[11/01 18:00:10    107s]   Identified MB Latch number: 0
+[11/01 18:00:10    107s]   Not identified SBFF number: 0
+[11/01 18:00:10    107s]   Not identified MBFF number: 0
+[11/01 18:00:10    107s]   Not identified SB Latch number: 0
+[11/01 18:00:10    107s]   Not identified MB Latch number: 0
+[11/01 18:00:10    107s]   Number of sequential cells which are not FFs: 0
+[11/01 18:00:10    107s] Total number of combinational cells: 0
+[11/01 18:00:10    107s] Total number of sequential cells: 0
+[11/01 18:00:10    107s] Total number of tristate cells: 0
+[11/01 18:00:10    107s] Total number of level shifter cells: 0
+[11/01 18:00:10    107s] Total number of power gating cells: 0
+[11/01 18:00:10    107s] Total number of isolation cells: 0
+[11/01 18:00:10    107s] Total number of power switch cells: 0
+[11/01 18:00:10    107s] Total number of pulse generator cells: 0
+[11/01 18:00:10    107s] Total number of always on buffers: 0
+[11/01 18:00:10    107s] Total number of retention cells: 0
+[11/01 18:00:10    107s] List of usable buffers:
+[11/01 18:00:10    107s] Total number of usable buffers: 0
+[11/01 18:00:10    107s] List of unusable buffers:
+[11/01 18:00:10    107s] Total number of unusable buffers: 0
+[11/01 18:00:10    107s] List of usable inverters:
+[11/01 18:00:10    107s] Total number of usable inverters: 0
+[11/01 18:00:10    107s] List of unusable inverters:
+[11/01 18:00:10    107s] Total number of unusable inverters: 0
+[11/01 18:00:10    107s] List of identified usable delay cells:
+[11/01 18:00:10    107s] Total number of identified usable delay cells: 0
+[11/01 18:00:10    107s] List of identified unusable delay cells:
+[11/01 18:00:10    107s] Total number of identified unusable delay cells: 0
+[11/01 18:00:10    107s] Creating Cell Server, finished. 
+[11/01 18:00:10    107s] 
+[11/01 18:00:10    107s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[11/01 18:00:10    107s] Deleting Cell Server ...
+[11/01 18:00:10    107s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+[11/01 18:00:10    107s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+[11/01 18:00:10    107s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] Creating Cell Server ...(0, 0, 0, 0)
+[11/01 18:00:10    107s] Summary for sequential cells identification: 
+[11/01 18:00:10    107s]   Identified SBFF number: 0
+[11/01 18:00:10    107s]   Identified MBFF number: 0
+[11/01 18:00:10    107s]   Identified SB Latch number: 0
+[11/01 18:00:10    107s]   Identified MB Latch number: 0
+[11/01 18:00:10    107s]   Not identified SBFF number: 0
+[11/01 18:00:10    107s]   Not identified MBFF number: 0
+[11/01 18:00:10    107s]   Not identified SB Latch number: 0
+[11/01 18:00:10    107s]   Not identified MB Latch number: 0
+[11/01 18:00:10    107s]   Number of sequential cells which are not FFs: 0
+[11/01 18:00:10    107s] **WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+[11/01 18:00:10    107s] Type 'man IMPOPT-3000' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+[11/01 18:00:10    107s] Type 'man IMPOPT-3001' for more detail.
+[11/01 18:00:10    107s] Creating Cell Server, finished. 
+[11/01 18:00:10    107s] 
+[11/01 18:00:10    107s] 
+[11/01 18:00:10    107s]  View default_view_setup  Weighted 0 StdDelay unweighted -922337203685477632.00, weightedFactor 1.000 
+[11/01 18:00:10    107s]   
+[11/01 18:00:10    107s]  View default_view_hold  Weighted 0 StdDelay unweighted -922337203685477632.00, weightedFactor 1.000 
+[11/01 18:00:10    107s]   Total number of usable buffers from Lib Analyzer: 0 ()
+[11/01 18:00:10    107s] Total number of usable inverters from Lib Analyzer: 0 ()
+[11/01 18:00:10    107s] Total number of usable delay cells from Lib Analyzer: 0 ()
+[11/01 18:00:10    107s] 
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 18:00:10    107s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:10    107s] Creating Lib Analyzer, finished. 
+[11/01 18:00:10    107s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+[11/01 18:00:10    107s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	DIN[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	DIN[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	DIN[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	DIN[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	DIN[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	DIN[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	DIN[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	DIN[5] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	DIN[4] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	DIN[3] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	DIN[2] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	DIN[1] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	DIN[0] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	H0[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	H0[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	H0[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	H0[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	H0[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	H0[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (IMPOPT-665):	H0[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:10    107s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:10    107s] **WARN: (EMS-27):	Message (IMPOPT-665) has exceeded the current message display limit of 20.
+[11/01 18:00:10    107s] To increase the message display limit, refer to the product command reference manual.
+[11/01 18:00:10    107s] **optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 748.8M, totSessionCpu=0:01:48 **
+[11/01 18:00:10    107s] **ERROR: (IMPOPT-6029):	Timing Library is not loaded yet
+[11/01 18:00:10    107s] 	OPT_RUNTIME:          optDesign (count =  2): (cpu=0:00:00.1 real=0:00:00.2)
+[11/01 18:00:10    107s] Info: pop threads available for lower-level modules during optimization.
+[11/01 18:00:10    107s] Deleting Lib Analyzer.
+[11/01 18:00:11    107s] Info: Destroy the CCOpt slew target map.
+[11/01 18:00:22    108s] <CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+[11/01 18:00:22    108s] <CMD> optDesign -postCTS
+[11/01 18:00:22    108s] **WARN: (IMPOPT-576):	173 nets have unplaced terms. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-576' for more detail.
+[11/01 18:00:22    108s] **INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+[11/01 18:00:22    108s] Core basic site is FreePDK45_38x28_10R_NP_162NW_34O
+[11/01 18:00:22    108s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/01 18:00:22    108s] #spOpts: mergeVia=F 
+[11/01 18:00:22    108s] GigaOpt running with 1 threads.
+[11/01 18:00:22    108s] Info: 1 threads available for lower-level modules during optimization.
+[11/01 18:00:22    108s] #spOpts: mergeVia=F 
+[11/01 18:00:22    108s] **WARN: No usable buffer/inverter becasue of dont-use/dont-touch setting.
+[11/01 18:00:22    108s] 
+[11/01 18:00:22    108s] Creating Lib Analyzer ...
+[11/01 18:00:22    108s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+[11/01 18:00:22    108s] Deleting Cell Server ...
+[11/01 18:00:22    108s] Creating Cell Server ...(0, 1, 1, 1)
+[11/01 18:00:22    108s] Summary for sequential cells identification: 
+[11/01 18:00:22    108s]   Identified SBFF number: 0
+[11/01 18:00:22    108s]   Identified MBFF number: 0
+[11/01 18:00:22    108s]   Identified SB Latch number: 0
+[11/01 18:00:22    108s]   Identified MB Latch number: 0
+[11/01 18:00:22    108s]   Not identified SBFF number: 0
+[11/01 18:00:22    108s]   Not identified MBFF number: 0
+[11/01 18:00:22    108s]   Not identified SB Latch number: 0
+[11/01 18:00:22    108s]   Not identified MB Latch number: 0
+[11/01 18:00:22    108s]   Number of sequential cells which are not FFs: 0
+[11/01 18:00:22    108s] Total number of combinational cells: 0
+[11/01 18:00:22    108s] Total number of sequential cells: 0
+[11/01 18:00:22    108s] Total number of tristate cells: 0
+[11/01 18:00:22    108s] Total number of level shifter cells: 0
+[11/01 18:00:22    108s] Total number of power gating cells: 0
+[11/01 18:00:22    108s] Total number of isolation cells: 0
+[11/01 18:00:22    108s] Total number of power switch cells: 0
+[11/01 18:00:22    108s] Total number of pulse generator cells: 0
+[11/01 18:00:22    108s] Total number of always on buffers: 0
+[11/01 18:00:22    108s] Total number of retention cells: 0
+[11/01 18:00:22    108s] List of usable buffers:
+[11/01 18:00:22    108s] Total number of usable buffers: 0
+[11/01 18:00:22    108s] List of unusable buffers:
+[11/01 18:00:22    108s] Total number of unusable buffers: 0
+[11/01 18:00:22    108s] List of usable inverters:
+[11/01 18:00:22    108s] Total number of usable inverters: 0
+[11/01 18:00:22    108s] List of unusable inverters:
+[11/01 18:00:22    108s] Total number of unusable inverters: 0
+[11/01 18:00:22    108s] List of identified usable delay cells:
+[11/01 18:00:22    108s] Total number of identified usable delay cells: 0
+[11/01 18:00:22    108s] List of identified unusable delay cells:
+[11/01 18:00:22    108s] Total number of identified unusable delay cells: 0
+[11/01 18:00:22    108s] Creating Cell Server, finished. 
+[11/01 18:00:22    108s] 
+[11/01 18:00:22    108s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[11/01 18:00:22    108s] Deleting Cell Server ...
+[11/01 18:00:22    108s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+[11/01 18:00:22    108s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+[11/01 18:00:22    108s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] Creating Cell Server ...(0, 0, 0, 0)
+[11/01 18:00:22    108s] Summary for sequential cells identification: 
+[11/01 18:00:22    108s]   Identified SBFF number: 0
+[11/01 18:00:22    108s]   Identified MBFF number: 0
+[11/01 18:00:22    108s]   Identified SB Latch number: 0
+[11/01 18:00:22    108s]   Identified MB Latch number: 0
+[11/01 18:00:22    108s]   Not identified SBFF number: 0
+[11/01 18:00:22    108s]   Not identified MBFF number: 0
+[11/01 18:00:22    108s]   Not identified SB Latch number: 0
+[11/01 18:00:22    108s]   Not identified MB Latch number: 0
+[11/01 18:00:22    108s]   Number of sequential cells which are not FFs: 0
+[11/01 18:00:22    108s] **WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+[11/01 18:00:22    108s] Type 'man IMPOPT-3000' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+[11/01 18:00:22    108s] Type 'man IMPOPT-3001' for more detail.
+[11/01 18:00:22    108s] Creating Cell Server, finished. 
+[11/01 18:00:22    108s] 
+[11/01 18:00:22    108s] 
+[11/01 18:00:22    108s]  View default_view_setup  Weighted 0 StdDelay unweighted -922337203685477632.00, weightedFactor 1.000 
+[11/01 18:00:22    108s]   
+[11/01 18:00:22    108s]  View default_view_hold  Weighted 0 StdDelay unweighted -922337203685477632.00, weightedFactor 1.000 
+[11/01 18:00:22    108s]   Total number of usable buffers from Lib Analyzer: 0 ()
+[11/01 18:00:22    108s] Total number of usable inverters from Lib Analyzer: 0 ()
+[11/01 18:00:22    108s] Total number of usable delay cells from Lib Analyzer: 0 ()
+[11/01 18:00:22    108s] 
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+[11/01 18:00:22    108s] ** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+[11/01 18:00:22    108s] Creating Lib Analyzer, finished. 
+[11/01 18:00:22    108s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+[11/01 18:00:22    108s] **DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	DIN[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	DIN[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	DIN[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	DIN[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	DIN[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	DIN[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	DIN[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	DIN[5] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	DIN[4] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	DIN[3] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	DIN[2] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	DIN[1] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	DIN[0] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	H0[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	H0[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	H0[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	H0[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	H0[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	H0[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (IMPOPT-665):	H0[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+[11/01 18:00:22    108s] Type 'man IMPOPT-665' for more detail.
+[11/01 18:00:22    108s] **WARN: (EMS-27):	Message (IMPOPT-665) has exceeded the current message display limit of 20.
+[11/01 18:00:22    108s] To increase the message display limit, refer to the product command reference manual.
+[11/01 18:00:22    108s] **optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 748.8M, totSessionCpu=0:01:48 **
+[11/01 18:00:22    108s] **ERROR: (IMPOPT-6029):	Timing Library is not loaded yet
+[11/01 18:00:22    108s] 	OPT_RUNTIME:          optDesign (count =  2): (cpu=0:00:00.1 real=0:00:00.2)
+[11/01 18:00:22    108s] Info: pop threads available for lower-level modules during optimization.
+[11/01 18:00:22    108s] Deleting Lib Analyzer.
+[11/01 18:00:22    108s] Info: Destroy the CCOpt slew target map.
+[11/01 18:00:37    109s] 
+[11/01 18:00:37    109s] *** Memory Usage v#1 (Current mem = 854.375M, initial mem = 179.684M) ***
+[11/01 18:00:37    109s] 
+[11/01 18:00:37    109s] *** Summary of all messages that are not suppressed in this session:
+[11/01 18:00:37    109s] Severity  ID               Count  Summary                                  
+[11/01 18:00:37    109s] WARNING   IMPFP-325            3  Floorplan of the design is resized. All ...
+[11/01 18:00:37    109s] WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+[11/01 18:00:37    109s] WARNING   IMPSR-1254           2  Cannot find any block pin of net %s. Che...
+[11/01 18:00:37    109s] WARNING   IMPSR-1256           2  Cannot find any CORE class pad pin of ne...
+[11/01 18:00:37    109s] WARNING   IMPSP-9513           1  Timing constraint file does not exist    
+[11/01 18:00:37    109s] WARNING   IMPSP-9514           1  Non-TimingDriven placement will be perfo...
+[11/01 18:00:37    109s] WARNING   IMPSP-9531           1  Turning off clkGateAware when timingDriv...
+[11/01 18:00:37    109s] WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+[11/01 18:00:37    109s] WARNING   IMPOPT-576           4  %d nets have unplaced terms.             
+[11/01 18:00:37    109s] WARNING   IMPOPT-665         692  %s : Net has unplaced terms or is connec...
+[11/01 18:00:37    109s] ERROR     IMPOPT-6029          4  Timing Library is not loaded yet         
+[11/01 18:00:37    109s] WARNING   IMPOPT-3000          5  Buffer footprint is not defined or is an...
+[11/01 18:00:37    109s] WARNING   IMPOPT-3001          5  Inverter footprint is not defined or is ...
+[11/01 18:00:37    109s] *** Message Summary: 718 warning(s), 4 error(s)
+[11/01 18:00:37    109s] 
+[11/01 18:00:37    109s] --- Ending "Innovus" (totcpu=0:01:49, real=0:25:14, mem=854.4M) ---

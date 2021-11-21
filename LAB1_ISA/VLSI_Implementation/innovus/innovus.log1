@@ -1,0 +1,864 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+Options:	
+Date:		Mon Nov  1 17:35:23 2021
+Host:		localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Westmere E56xx/L56xx/X56xx (Nehalem-C) 4096KB)
+OS:		CentOS Linux release 7.6.1810 (Core) 
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM4Cont -isVisible 1
+<CMD> setLayerPreference allM5Cont -isVisible 1
+<CMD> setLayerPreference allM6Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setLayerPreference allM9Cont -isVisible 1
+<CMD> setLayerPreference allM10Cont -isVisible 1
+<CMD> setLayerPreference allM11Cont -isVisible 1
+<CMD> setLayerPreference allM12Cont -isVisible 1
+can't read "lIB_DIR": no such variable
+<CMD> set init_design_netlisttype verilog
+<CMD> set init_design_settop 1
+<CMD> set init_top_cell myfir
+<CMD> set init_verilog ../netlist/myfir.v
+<CMD> set init_lef_file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef
+<CMD> set init_gnd_net VSS
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+
+Loading LEF file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef ...
+Set DBUPerIGU to M2 pitch 380.
+
+viaInitial starts at Mon Nov  1 17:41:33 2021
+viaInitial ends at Mon Nov  1 17:41:33 2021
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.62min, fe_real=6.17min, fe_mem=500.8M) ***
+#% Begin Load netlist data ... (date=11/01 17:41:33, mem=420.0M)
+*** Begin netlist parsing (mem=500.8M) ***
+Created 0 new cells from 0 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../netlist/myfir.v'
+
+*** Memory Usage v#1 (Current mem = 504.824M, initial mem = 179.684M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=504.8M) ***
+#% End Load netlist data ... (date=11/01 17:41:33, total cpu=0:00:00.1, real=0:00:00.0, peak res=423.4M, current mem=423.4M)
+Set top cell to myfir.
+Hooked 0 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell myfir ...
+*** Netlist is unique.
+** info: there are 135 modules.
+** info: there are 4878 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 514.488M, initial mem = 179.684M) ***
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+Extraction setup Started 
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+*** Message Summary: 1 warning(s), 0 error(s)
+
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -coreMarginsBy die -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.1 0.6 5.0 5.0 5.0 5.0
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 1 0.6 5 5 5 5
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.98752034726 0.599654 5.13 5.04 5.13 5.04
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal10 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 0.8 bottom 0.8 left 0.8 right 0.8} -spacing {top 0.8 bottom 0.8 left 0.8 right 0.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| metal1 |        4       |       NA       |
+|  via1  |        8       |        0       |
+| metal2 |        4       |       NA       |
++--------+----------------+----------------+
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -module {}
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -module {}
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1(1) metal10(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal10(10) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal10(10) }
+*** Begin SPECIAL ROUTE on Mon Nov  1 17:45:00 2021 ***
+SPECIAL ROUTE ran on directory: /home/isa05_2021_2022/Desktop/LAB_1/innovus
+SPECIAL ROUTE ran on machine: localhost.localdomain (Linux 3.10.0-957.5.1.el7.x86_64 x86_64 1.99Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 10
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 10
+srouteTopTargetLayerLimit set to 10
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1540.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 20 layers, 10 routing layers, 1 overlap layer
+Read in 134 macros, 20 used
+Read in 20 components
+  20 core components: 20 unplaced, 0 placed, 0 fixed
+Read in 173 logical pins
+Read in 173 nets
+Read in 2 special nets, 2 routed
+Read in 40 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 182
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 91
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1549.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 273 wires.
+ViaGen created 182 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| metal1 |       273      |       NA       |
+|  via1  |       182      |        0       |
++--------+----------------+----------------+
+<CMD> setPlaceMode -prerouteAsObs {1 2 3 4 5 6 7 8}
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign
+**WARN: (IMPSP-9513):	Timing constraint file does not exist
+**WARN: (IMPSP-9514):	Non-TimingDriven placement will be performed.
+*** Starting placeDesign default flow ***
+Deleted 0 physical inst  (cell - / prefix -).
+*** Starting "NanoPlace(TM) placement v#10 (mem=808.6M)" ...
+No user setting net weight.
+Options: clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+Scan chains were not defined.
+#std cell=4878 (0 fixed + 4878 movable) #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=6197 #term=18822 #term/net=3.04, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=173
+stdCell: 4878 single + 0 double + 0 multi
+Total standard cell length = 7.0399 (mm), area = 0.0099 (mm^2)
+Estimated cell power/ground rail width = 0.197 um
+Average module density = 0.599.
+Density for the design = 0.599.
+       = stdcell_area 37052 sites (9856 um^2) / alloc_area 61830 sites (16447 um^2).
+Pin Density = 0.3044.
+            = total # of pins 18822 / total area 61830.
+=== lastAutoLevel = 8 
+**WARN: (IMPSP-9531):	Turning off clkGateAware when timingDriven is off
+Iteration  1: Total net bbox = 1.651e-10 (6.11e-11 1.04e-10)
+              Est.  stn bbox = 1.776e-10 (6.39e-11 1.14e-10)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 818.6M
+Iteration  2: Total net bbox = 1.651e-10 (6.11e-11 1.04e-10)
+              Est.  stn bbox = 1.776e-10 (6.39e-11 1.14e-10)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 818.6M
+Iteration  3: Total net bbox = 1.329e+02 (7.21e+01 6.08e+01)
+              Est.  stn bbox = 1.598e+02 (8.64e+01 7.33e+01)
+              cpu = 0:00:00.2 real = 0:00:01.0 mem = 836.6M
+Iteration  4: Total net bbox = 1.881e+04 (1.10e+04 7.81e+03)
+              Est.  stn bbox = 2.309e+04 (1.34e+04 9.71e+03)
+              cpu = 0:00:01.4 real = 0:00:02.0 mem = 836.6M
+Iteration  5: Total net bbox = 3.178e+04 (1.87e+04 1.30e+04)
+              Est.  stn bbox = 3.945e+04 (2.31e+04 1.63e+04)
+              cpu = 0:00:02.2 real = 0:00:04.0 mem = 836.6M
+Iteration  6: Total net bbox = 4.098e+04 (2.15e+04 1.95e+04)
+              Est.  stn bbox = 5.048e+04 (2.66e+04 2.39e+04)
+              cpu = 0:00:04.0 real = 0:00:11.0 mem = 836.6M
+Iteration  7: Total net bbox = 6.662e+04 (3.57e+04 3.09e+04)
+              Est.  stn bbox = 7.617e+04 (4.08e+04 3.54e+04)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 840.4M
+Iteration  8: Total net bbox = 6.662e+04 (3.57e+04 3.09e+04)
+              Est.  stn bbox = 7.617e+04 (4.08e+04 3.54e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 840.4M
+Iteration  9: Total net bbox = 6.875e+04 (3.69e+04 3.18e+04)
+              Est.  stn bbox = 7.801e+04 (4.18e+04 3.62e+04)
+              cpu = 0:00:02.2 real = 0:00:03.0 mem = 841.9M
+Iteration 10: Total net bbox = 6.875e+04 (3.69e+04 3.18e+04)
+              Est.  stn bbox = 7.801e+04 (4.18e+04 3.62e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 841.9M
+Iteration 11: Total net bbox = 7.194e+04 (3.83e+04 3.36e+04)
+              Est.  stn bbox = 8.122e+04 (4.32e+04 3.80e+04)
+              cpu = 0:00:03.5 real = 0:00:07.0 mem = 841.9M
+Iteration 12: Total net bbox = 7.194e+04 (3.83e+04 3.36e+04)
+              Est.  stn bbox = 8.122e+04 (4.32e+04 3.80e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 841.9M
+*** cost = 7.194e+04 (3.83e+04 3.36e+04) (cpu for global=0:00:13.9) real=0:00:29.0***
+Solver runtime cpu: 0:00:12.9 real: 0:00:26.7
+Core Placement runtime cpu: 0:00:13.5 real: 0:00:29.0
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:01:05 mem=841.9M) ***
+Total net bbox length = 7.209e+04 (3.847e+04 3.363e+04) (ext = 2.426e+04)
+Density distribution unevenness ratio = 4.519%
+Move report: Detail placement moves 4878 insts, mean move: 0.69 um, max move: 22.81 um
+	Max move on inst (U347): (97.41, 64.70) --> (96.14, 86.24)
+	Runtime: CPU: 0:00:01.6 REAL: 0:00:04.0 MEM: 841.9MB
+Summary Report:
+Instances move: 4878 (out of 4878 movable)
+Instances flipped: 0
+Mean displacement: 0.69 um
+Max displacement: 22.81 um (Instance: U347) (97.4065, 64.701) -> (96.14, 86.24)
+	Length: 3 sites, height: 1 rows, site name: FreePDK45_38x28_10R_NP_162NW_34O, cell type: BUF_X1
+Total net bbox length = 7.002e+04 (3.612e+04 3.391e+04) (ext = 2.403e+04)
+Runtime: CPU: 0:00:01.6 REAL: 0:00:04.0 MEM: 841.9MB
+*** Finished refinePlace (0:01:07 mem=841.9M) ***
+*** End of Placement (cpu=0:00:15.6, real=0:00:33.0, mem=841.9M) ***
+default core: bins with density >  0.75 = 2.22 % ( 2 / 90 )
+Density distribution unevenness ratio = 4.511%
+Starting congestion repair ...
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 2
+[NR-eGR] maxRouteLayer          : 127
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has no routable track
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] Layer5 has single uniform track structure
+[NR-eGR] Layer6 has single uniform track structure
+[NR-eGR] Layer7 has single uniform track structure
+[NR-eGR] Layer8 has single uniform track structure
+[NR-eGR] Layer9 has single uniform track structure
+[NR-eGR] Layer10 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=0 numPGBlocks=194 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eGR] Read numTotalNets=6026  numIgnoredNets=0
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 6026 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=270  L2=380  L3=280  L4=560  L5=560  L6=560  L7=1680  L8=1680  L9=3200  L10=3360
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 6026 net(s) in layer range [2, 10]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 5.288780e+04um
+[NR-eGR] 
+[NR-eGR] Congestion Analysis Layer By layer: (blocked Gcells are excluded) 
+[NR-eGR]                OverCon            
+[NR-eGR]                 #Gcell     %Gcell
+[NR-eGR] Layer              (0)    OverCon 
+[NR-eGR] ------------------------------------
+[NR-eGR] Layer1       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer2       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer3       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer4       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer5       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer6       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer7       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer8       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer9       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer10       0( 0.00%)   ( 0.00%) 
+[NR-eGR] ------------------------------------
+[NR-eGR] Total        0( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Layer1(metal1)(F) length: 0.000000e+00um, number of vias: 19039
+[NR-eGR] Layer2(metal2)(V) length: 1.521440e+04um, number of vias: 23325
+[NR-eGR] Layer3(metal3)(H) length: 2.661467e+04um, number of vias: 8284
+[NR-eGR] Layer4(metal4)(V) length: 1.203617e+04um, number of vias: 343
+[NR-eGR] Layer5(metal5)(H) length: 9.238175e+02um, number of vias: 299
+[NR-eGR] Layer6(metal6)(V) length: 1.735750e+03um, number of vias: 2
+[NR-eGR] Layer7(metal7)(H) length: 2.800000e-01um, number of vias: 0
+[NR-eGR] Layer8(metal8)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer9(metal9)(H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer10(metal10)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Total length: 5.652508e+04um, number of vias: 51292
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total clock nets wire length: 0.000000e+00um 
+[NR-eGR] --------------------------------------------------------------------------
+End of congRepair (cpu=0:00:00.4, real=0:00:01.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0:16, real = 0: 0:35, mem = 844.4M **
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSP-9513           1  Timing constraint file does not exist    
+WARNING   IMPSP-9514           1  Non-TimingDriven placement will be perfo...
+WARNING   IMPSP-9531           1  Turning off clkGateAware when timingDriv...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+*** Message Summary: 4 warning(s), 0 error(s)
+
+<CMD> viewLast
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+<CMD> optDesign -postCTS
+**WARN: (IMPOPT-576):	173 nets have unplaced terms. 
+Type 'man IMPOPT-576' for more detail.
+**INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+GigaOpt running with 1 threads.
+**WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+Type 'man IMPOPT-3000' for more detail.
+**WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+Type 'man IMPOPT-3001' for more detail.
+**WARN: No usable buffer/inverter becasue of dont-use/dont-touch setting.
+Updating RC grid for preRoute extraction ...
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+Total number of combinational cells: 0
+Total number of sequential cells: 0
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers:
+Total number of usable buffers: 0
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters:
+Total number of usable inverters: 0
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+**WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+Type 'man IMPOPT-3000' for more detail.
+**WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+Type 'man IMPOPT-3001' for more detail.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+**WARN: (IMPOPT-665):	DIN[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[5] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[4] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[3] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[2] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[1] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[0] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (EMS-27):	Message (IMPOPT-665) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Setting timing_disable_library_data_to_data_checks to 'true'.
+Setting timing_disable_user_data_to_data_checks to 'true'.
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 744.6M, totSessionCpu=0:01:10 **
+**ERROR: (IMPOPT-6029):	Timing Library is not loaded yetInfo: Destroy the CCOpt slew target map.
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+<CMD> optDesign -postCTS
+**WARN: (IMPOPT-576):	173 nets have unplaced terms. 
+Type 'man IMPOPT-576' for more detail.
+**INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+GigaOpt running with 1 threads.
+**WARN: No usable buffer/inverter becasue of dont-use/dont-touch setting.
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+Total number of combinational cells: 0
+Total number of sequential cells: 0
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers:
+Total number of usable buffers: 0
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters:
+Total number of usable inverters: 0
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+**WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+Type 'man IMPOPT-3000' for more detail.
+**WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+Type 'man IMPOPT-3001' for more detail.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+**WARN: (IMPOPT-665):	DIN[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[5] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[4] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[3] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[2] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[1] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[0] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (EMS-27):	Message (IMPOPT-665) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 745.3M, totSessionCpu=0:01:20 **
+**ERROR: (IMPOPT-6029):	Timing Library is not loaded yetInfo: Destroy the CCOpt slew target map.
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+<CMD> optDesign -postCTS
+**WARN: (IMPOPT-576):	173 nets have unplaced terms. 
+Type 'man IMPOPT-576' for more detail.
+**INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+GigaOpt running with 1 threads.
+**WARN: No usable buffer/inverter becasue of dont-use/dont-touch setting.
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+Total number of combinational cells: 0
+Total number of sequential cells: 0
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers:
+Total number of usable buffers: 0
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters:
+Total number of usable inverters: 0
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+**WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+Type 'man IMPOPT-3000' for more detail.
+**WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+Type 'man IMPOPT-3001' for more detail.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+**WARN: (IMPOPT-665):	DIN[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[5] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[4] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[3] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[2] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[1] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[0] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (EMS-27):	Message (IMPOPT-665) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 748.8M, totSessionCpu=0:01:48 **
+**ERROR: (IMPOPT-6029):	Timing Library is not loaded yetInfo: Destroy the CCOpt slew target map.
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+<CMD> optDesign -postCTS
+**WARN: (IMPOPT-576):	173 nets have unplaced terms. 
+Type 'man IMPOPT-576' for more detail.
+**INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+GigaOpt running with 1 threads.
+**WARN: No usable buffer/inverter becasue of dont-use/dont-touch setting.
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+Total number of combinational cells: 0
+Total number of sequential cells: 0
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers:
+Total number of usable buffers: 0
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters:
+Total number of usable inverters: 0
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+**WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+Type 'man IMPOPT-3000' for more detail.
+**WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+Type 'man IMPOPT-3001' for more detail.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+**WARN: (IMPOPT-665):	DIN[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[5] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[4] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[3] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[2] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[1] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	DIN[0] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[11] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[10] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[9] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[8] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[7] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	H0[6] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (EMS-27):	Message (IMPOPT-665) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 748.8M, totSessionCpu=0:01:48 **
+**ERROR: (IMPOPT-6029):	Timing Library is not loaded yetInfo: Destroy the CCOpt slew target map.
+
+*** Memory Usage v#1 (Current mem = 854.375M, initial mem = 179.684M) ***
+*** Message Summary: 718 warning(s), 4 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:49, real=0:25:14, mem=854.4M) ---

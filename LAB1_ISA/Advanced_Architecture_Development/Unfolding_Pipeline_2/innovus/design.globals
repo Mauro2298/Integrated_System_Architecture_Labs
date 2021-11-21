@@ -1,0 +1,36 @@
+## CUSTOMIZE
+
+set IN_DIR "../netlist"
+set TopLevelDesign "myfir"
+set in_verilog_filename "${IN_DIR}/${TopLevelDesign}.v"
+set in_sdc_filename "${IN_DIR}/${TopLevelDesign}.sdc"
+
+## DO NOT TOUCH
+
+set LIB_DIR /software/dk/nangate45/liberty
+set MyTimingLib ${LIB_DIR}/NangateOpenCellLibrary_typical_ecsm_nowlm.lib
+
+set LEF_DIR /software/dk/nangate45/lef
+set LEF_list [list ${LEF_DIR}/NangateOpenCellLibrary.lef]
+
+set init_design_netlisttype "verilog"
+set init_design_settop 1
+set init_top_cell $TopLevelDesign
+set init_verilog $in_verilog_filename
+
+set init_lef_file "${LEF_list}"
+
+set aspect_ratio 1.0
+set target_row_utilization 0.6
+
+set CustomDelayLimit 1000
+set CustomNetDelay 1000.0ps
+set CustomNetLoad 0.5pf
+set CustomInputTranDelay 0.1ps
+
+set MycapTable $LEF_DIR/captables/NCSU_FreePDK_45nm.capTbl
+
+set init_gnd_net {VSS}
+set init_pwr_net {VDD}
+
+

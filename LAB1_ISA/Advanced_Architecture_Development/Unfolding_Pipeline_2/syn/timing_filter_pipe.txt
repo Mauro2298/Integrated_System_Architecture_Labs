@@ -1,0 +1,105 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : myfir
+Version: O-2018.06-SP4
+Date   : Tue Nov  9 23:06:18 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: SAMPLES_reg[2][1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: FIR_BASE_0/PIPE_REG0/DOUT_reg[7]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  myfir              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SAMPLES_reg[2][1]/CK (DFFR_X1)                          0.00       0.00 r
+  SAMPLES_reg[2][1]/Q (DFFR_X1)                           0.10       0.10 r
+  U494/Z (BUF_X1)                                         0.05       0.15 r
+  FIR_BASE_0/SAMPLES[0][1] (fir_base_pipe_NBIT13_NCOEFF11_NKEPT8_0)
+                                                          0.00       0.15 r
+  FIR_BASE_0/MUL0/A[1] (Mult_Nbit13_0)                    0.00       0.15 r
+  FIR_BASE_0/MUL0/mult_17/a[1] (Mult_Nbit13_0_DW_mult_tc_0)
+                                                          0.00       0.15 r
+  FIR_BASE_0/MUL0/mult_17/U409/Z (BUF_X1)                 0.12       0.28 r
+  FIR_BASE_0/MUL0/mult_17/U668/Z (XOR2_X1)                0.10       0.38 r
+  FIR_BASE_0/MUL0/mult_17/U408/ZN (INV_X1)                0.07       0.45 f
+  FIR_BASE_0/MUL0/mult_17/U663/ZN (NAND2_X1)              0.12       0.56 r
+  FIR_BASE_0/MUL0/mult_17/U474/ZN (OAI22_X1)              0.06       0.62 f
+  FIR_BASE_0/MUL0/mult_17/U101/S (HA_X1)                  0.08       0.71 f
+  FIR_BASE_0/MUL0/mult_17/U660/ZN (AOI222_X1)             0.11       0.82 r
+  FIR_BASE_0/MUL0/mult_17/U403/ZN (INV_X1)                0.03       0.84 f
+  FIR_BASE_0/MUL0/mult_17/U659/ZN (AOI222_X1)             0.09       0.94 r
+  FIR_BASE_0/MUL0/mult_17/U402/ZN (INV_X1)                0.03       0.96 f
+  FIR_BASE_0/MUL0/mult_17/U658/ZN (AOI222_X1)             0.09       1.06 r
+  FIR_BASE_0/MUL0/mult_17/U398/ZN (INV_X1)                0.03       1.09 f
+  FIR_BASE_0/MUL0/mult_17/U657/ZN (AOI222_X1)             0.09       1.18 r
+  FIR_BASE_0/MUL0/mult_17/U397/ZN (INV_X1)                0.03       1.21 f
+  FIR_BASE_0/MUL0/mult_17/U656/ZN (AOI222_X1)             0.09       1.30 r
+  FIR_BASE_0/MUL0/mult_17/U400/ZN (INV_X1)                0.03       1.33 f
+  FIR_BASE_0/MUL0/mult_17/U655/ZN (AOI222_X1)             0.09       1.42 r
+  FIR_BASE_0/MUL0/mult_17/U399/ZN (INV_X1)                0.03       1.45 f
+  FIR_BASE_0/MUL0/mult_17/U654/ZN (AOI222_X1)             0.09       1.54 r
+  FIR_BASE_0/MUL0/mult_17/U390/ZN (INV_X1)                0.03       1.57 f
+  FIR_BASE_0/MUL0/mult_17/U653/ZN (AOI222_X1)             0.09       1.66 r
+  FIR_BASE_0/MUL0/mult_17/U389/ZN (INV_X1)                0.03       1.69 f
+  FIR_BASE_0/MUL0/mult_17/U652/ZN (AOI222_X1)             0.09       1.78 r
+  FIR_BASE_0/MUL0/mult_17/U392/ZN (INV_X1)                0.03       1.81 f
+  FIR_BASE_0/MUL0/mult_17/U651/ZN (AOI222_X1)             0.09       1.90 r
+  FIR_BASE_0/MUL0/mult_17/U391/ZN (INV_X1)                0.03       1.93 f
+  FIR_BASE_0/MUL0/mult_17/U650/ZN (AOI222_X1)             0.09       2.02 r
+  FIR_BASE_0/MUL0/mult_17/U394/ZN (INV_X1)                0.03       2.05 f
+  FIR_BASE_0/MUL0/mult_17/U649/ZN (AOI222_X1)             0.09       2.14 r
+  FIR_BASE_0/MUL0/mult_17/U393/ZN (INV_X1)                0.03       2.17 f
+  FIR_BASE_0/MUL0/mult_17/U648/ZN (AOI222_X1)             0.09       2.26 r
+  FIR_BASE_0/MUL0/mult_17/U396/ZN (INV_X1)                0.03       2.29 f
+  FIR_BASE_0/MUL0/mult_17/U647/ZN (AOI222_X1)             0.09       2.38 r
+  FIR_BASE_0/MUL0/mult_17/U395/ZN (INV_X1)                0.03       2.41 f
+  FIR_BASE_0/MUL0/mult_17/U646/ZN (AOI222_X1)             0.09       2.50 r
+  FIR_BASE_0/MUL0/mult_17/U401/ZN (INV_X1)                0.03       2.53 f
+  FIR_BASE_0/MUL0/mult_17/U11/CO (FA_X1)                  0.09       2.62 f
+  FIR_BASE_0/MUL0/mult_17/U10/CO (FA_X1)                  0.09       2.71 f
+  FIR_BASE_0/MUL0/mult_17/U9/CO (FA_X1)                   0.09       2.80 f
+  FIR_BASE_0/MUL0/mult_17/U8/CO (FA_X1)                   0.09       2.89 f
+  FIR_BASE_0/MUL0/mult_17/U7/CO (FA_X1)                   0.09       2.98 f
+  FIR_BASE_0/MUL0/mult_17/U6/CO (FA_X1)                   0.09       3.07 f
+  FIR_BASE_0/MUL0/mult_17/U5/CO (FA_X1)                   0.09       3.16 f
+  FIR_BASE_0/MUL0/mult_17/U444/Z (XOR2_X1)                0.05       3.22 r
+  FIR_BASE_0/MUL0/mult_17/U442/Z (XOR2_X1)                0.12       3.34 r
+  FIR_BASE_0/MUL0/mult_17/product[25] (Mult_Nbit13_0_DW_mult_tc_0)
+                                                          0.00       3.34 r
+  FIR_BASE_0/MUL0/O[25] (Mult_Nbit13_0)                   0.00       3.34 r
+  FIR_BASE_0/PIPE_REG0/DIN[7] (reg_NB13_36)               0.00       3.34 r
+  FIR_BASE_0/PIPE_REG0/U14/ZN (NAND2_X1)                  0.04       3.37 f
+  FIR_BASE_0/PIPE_REG0/U13/ZN (OAI21_X1)                  0.04       3.41 r
+  FIR_BASE_0/PIPE_REG0/DOUT_reg[7]/D (DFFR_X1)            0.01       3.42 r
+  data arrival time                                                  3.42
+
+  clock MY_CLK (rise edge)                                7.20       7.20
+  clock network delay (ideal)                             0.00       7.20
+  FIR_BASE_0/PIPE_REG0/DOUT_reg[7]/CK (DFFR_X1)           0.00       7.20 r
+  library setup time                                     -0.04       7.16
+  data required time                                                 7.16
+  --------------------------------------------------------------------------
+  data required time                                                 7.16
+  data arrival time                                                 -3.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.74
+
+
+1
