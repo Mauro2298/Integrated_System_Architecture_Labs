@@ -1,0 +1,37 @@
+ 
+****************************************
+Report : resources
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Mon Dec 13 23:41:18 2021
+****************************************
+
+Resource Sharing Report for design FPmul in file
+        ../../fpuvhdl/multiplier/fpmul_stage1_struct.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r343     | DW01_add     | width=8    |               | add_1_root_I2/add_126_2 |
+| r347     | DW01_inc     | width=25   |               | I3/I11/add_45        |
+| r349     | DW01_add     | width=8    |               | I3/I9/add_41_aco     |
+| r351     | DW01_add     | width=8    |               | I4/I1/add_41_aco     |
+| r931     | DW_mult_uns  | a_width=32 |               | I2/mult_134          |
+|          |              | b_width=32 |               |                      |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| I2/mult_134        | DW_mult_uns      | pparch (area,speed)                 |
+|                    |                  | mult_arch: benc_radix8              |
+| add_1_root_I2/add_126_2               |                    |                |
+|                    | DW01_add         | rpl                |                |
+| I3/I11/add_45      | DW01_inc         | rpl                |                |
+===============================================================================
+
+1

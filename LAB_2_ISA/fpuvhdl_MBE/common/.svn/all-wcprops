@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/common
+END
+packfp_packfp.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/common/packfp_packfp.vhd
+END
+fpround_fpround.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/common/fpround_fpround.vhd
+END
+fpnormalize_fpnormalize.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/common/fpnormalize_fpnormalize.vhd
+END
+unpackfp_unpackfp.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/common/unpackfp_unpackfp.vhd
+END

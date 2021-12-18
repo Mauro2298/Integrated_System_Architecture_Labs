@@ -1,0 +1,2 @@
+pipeline presto presto_vhdl
+single_cycle presto presto_vhdl

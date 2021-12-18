@@ -1,0 +1,36 @@
+ 
+****************************************
+Report : resources
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Mon Dec 13 23:29:49 2021
+****************************************
+
+Resource Sharing Report for design FPmul in file
+        ../../fpuvhdl/multiplier/fpmul_stage1_struct.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r119     | DW01_add     | width=8    |               | add_1_root_I2/add_126_2 |
+| r121     | DW02_mult    | A_width=32 |               | I2/mult_134          |
+|          |              | B_width=32 |               |                      |
+| r123     | DW01_inc     | width=25   |               | I3/I11/add_45        |
+| r125     | DW01_add     | width=8    |               | I3/I9/add_41_aco     |
+| r127     | DW01_add     | width=8    |               | I4/I1/add_41_aco     |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_1_root_I2/add_126_2               |                    |                |
+|                    | DW01_add         | rpl                |                |
+| I2/mult_134        | DW02_mult        | csa                | csa            |
+| I3/I11/add_45      | DW01_inc         | rpl                |                |
+===============================================================================
+
+1
