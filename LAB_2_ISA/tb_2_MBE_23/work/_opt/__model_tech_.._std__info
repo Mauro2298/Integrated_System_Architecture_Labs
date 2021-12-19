@@ -1,0 +1,43 @@
+m255
+cModel Technology Builtin Library
+13
+dD:\qa\buildsites\6.2g\builds\win32\modeltech
+Pstandard
+OL;C;6.2g;35
+31
+OP;C;6.2g;35
+d.
+8$MODEL_TECH/../vhdl_src/std/standard.vhd
+F$MODEL_TECH/../vhdl_src/std/standard.vhd
+l0
+L8
+V9SL6g`:IK^4S07MiOU]DY2
+OE;C;6.2g;35
+o-s -93 -work std -path $MODEL_TECH/../vhdl_src/std/standard.vhd
+tExplicit 1
+Ptextio
+OL;C;6.2g;35
+31
+b1
+OP;C;6.2g;35
+d.
+8$MODEL_TECH/../vhdl_src/std/textio.vhd
+F$MODEL_TECH/../vhdl_src/std/textio.vhd
+l0
+L11
+VK]Z^fghZ6B=BjnK5NomDT3
+OE;C;6.2g;35
+o-93 -work std -path $MODEL_TECH/../vhdl_src/std/textio.vhd
+tExplicit 1
+Bbody
+DB work textio K]Z^fghZ6B=BjnK5NomDT3
+OL;C;6.2g;35
+31
+OP;C;6.2g;35
+l0
+L11
+V<aSA_n5_Z?BQ97PO]oKmn2
+OE;C;6.2g;35
+o-93 -work std -path $MODEL_TECH/../vhdl_src/std/textio.vhd
+tExplicit 1
+nbody

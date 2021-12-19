@@ -27,7 +27,8 @@ def countSignCol(matr):
 
 l = 2
 i = 0
-nb = 8
+#case 32 bit, can be change for the case 23
+nb = 32
 n = int(nb / 2) + 1
 vect = [2]
 

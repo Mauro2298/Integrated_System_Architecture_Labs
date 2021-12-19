@@ -1,0 +1,34 @@
+Information: Building the design 'FPmul_stage2'. (HDL-193)
+Warning: Cannot find the design 'FPmul_stage2' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'FPmul_stage2' in 'FPmul'. (LINK-5)
+Warning: Design 'FPmul' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : resources
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Wed Dec 15 15:21:21 2021
+****************************************
+
+Resource Sharing Report for design FPmul in file
+        ../../fpuvhdl_MBE/multiplier/fpmul_stage1_struct.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r325     | DW01_inc     | width=25   |               | I3/I11/add_45        |
+| r327     | DW01_add     | width=8    |               | I3/I9/add_41_aco     |
+| r329     | DW01_add     | width=8    |               | I4/I1/add_41_aco     |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| I3/I11/add_45      | DW01_inc         | rpl                |                |
+===============================================================================
+
+1

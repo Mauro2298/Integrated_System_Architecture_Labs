@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : resources
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Tue Dec 14 02:17:13 2021
+****************************************
+
+Resource Sharing Report for design FPmul in file
+        ../../fpuvhdl_2/multiplier/fpmul_stage1_struct.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r118     | I2_add_126_2_DP_OP_291_7755 |  |          | I2/add_126           |
+| r120     | I2_add_126_2_DP_OP_291_7755 |  |          | I2/add_126_2         |
+| r122     | DW02_mult    | A_width=32 |               | I2/mult_134          |
+|          |              | B_width=32 |               |                      |
+| r124     | DW01_inc     | width=25   |               | I3/I11/add_45        |
+| r126     | DW01_add     | width=8    |               | I3/I9/add_41_aco     |
+| r128     | DW01_add     | width=8    |               | I4/I1/add_41_aco     |
+===============================================================================
+
+Datapath Report for design FPmul in file ../../fpuvhdl_2/multiplier/fpmul_stage1_struct.vhd 
+
+RTL-datapath Connections for I2_add_126_2_DP_OP_291_7755-str
+====================================================================
+|                      |                      |            | Bus   |
+| RTL Wire             | Datapath Port        | Direction  | Width |
+====================================================================
+| A_EXP                | I1                   | input      | 8     |
+| B_EXP                | I2                   | input      | 8     |
+| I2/mw_I4sum          | O4                   | output     | 8     |
+====================================================================
+
+
+Datapath Blocks in I2_add_126_2_DP_OP_291_7755-str
+===============================================================================
+|            | Out   |                           | Contained      | Operation |
+| Port       | Width | Datapath Block            | Operation_Line | Type      |
+===============================================================================
+| O4         | 8     | I1 + I2 + 1               | I2/add_126_2   | UNSIGNED  |
+|            |       |                           | I2/add_126     | UNSIGNED  |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| I2/mult_134        | DW02_mult        | pparch (area,speed) | pparch        |
+|                    |                  | mult_arch: benc_radix4              |
+| I3/I11/add_45      | DW01_inc         | pparch (area,speed)                 |
+| I2_add_126_2_DP_OP_291_7755_4         |                    |                |
+|                    | I2_add_126_2_DP_OP_291_7755 | str (area)               |
+===============================================================================
+
+1

@@ -1,0 +1,66 @@
+
+
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/multiplier/HA.vhd
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/multiplier/FA.vhd
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/multiplier/A_coeff.vhd
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/multiplier/sign_extension.vhd
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/multiplier/matrix_package.vhd
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/multiplier/booth_encoder.vhd
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/multiplier/MBE_Multiplier.vhd
+
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/common/unpackfp_unpackfp.vhd
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/common/packfp_packfp.vhd
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/common/fpround_fpround.vhd
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/common/fpnormalize_fpnormalize.vhd
+#analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/multiplier/fpmul_single_cycle.vhd
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/multiplier/fpmul_stage1_struct.vhd
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/multiplier/fpmul_stage2_struct.vhd
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/multiplier/fpmul_stage3_struct.vhd
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/multiplier/fpmul_stage4_struct.vhd
+analyze -f vhdl -lib WORK ../../fpuvhdl_2_MBE_23/multiplier/fpmul_pipeline.vhd
+
+set power_preserve_rtl_hier_names true
+
+elaborate FPmul -arch pipeline -lib WORK > elaborate_FPmul_csa.txt
+
+create_clock -name MY_CLK -period 1.52 clk
+set_dont_touch_network MY_CLK
+
+set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+
+set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk]
+set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+
+set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+set_load $OLOAD [all_outputs]
+
+
+ungroup -all -flatten
+#set_implementation DW02_mult/csa [find cell *mult*]
+compile_ultra
+
+report_resources > resources_FPmul_MBE.txt
+report_timing > timing_FPmul_MBE.txt
+report_area > area_FPmul_MBE.txt
+
+
+
+#change_names -hierarchy -rules verilog
+#write_sdf ../netlist/FPmul.sdf
+#write -f verilog -hierarchy -output ../netlist/FPmul.v
+#write_sdc ../netlist/FPmul.sdc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

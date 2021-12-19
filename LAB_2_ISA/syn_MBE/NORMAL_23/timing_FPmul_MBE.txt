@@ -1,0 +1,61 @@
+Warning: Design 'FPmul' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Wed Dec 15 02:48:53 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I3/EXP_out_round_reg[0]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I4/FP_Z_reg[0]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MY_CLK (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  I3/EXP_out_round_reg[0]/CK (DFF_X1)      0.00       0.00 r
+  I3/EXP_out_round_reg[0]/Q (DFF_X1)       0.09       0.09 r
+  U294/ZN (NAND2_X1)                       0.03       0.12 f
+  U305/ZN (NOR2_X1)                        0.05       0.17 r
+  U196/ZN (NAND2_X1)                       0.03       0.20 f
+  U195/Z (XOR2_X1)                         0.08       0.28 f
+  U299/ZN (AND4_X1)                        0.05       0.33 f
+  U315/ZN (AOI221_X1)                      0.06       0.39 r
+  U314/ZN (OR2_X1)                         0.04       0.43 r
+  U285/ZN (AND2_X1)                        0.05       0.48 r
+  U55/ZN (AND2_X2)                         0.06       0.54 r
+  U352/ZN (NAND2_X2)                       0.06       0.60 f
+  U327/ZN (OAI22_X1)                       0.06       0.66 r
+  I4/FP_Z_reg[0]/D (DFF_X1)                0.01       0.67 r
+  data arrival time                                   0.67
+
+  clock MY_CLK (rise edge)                 0.78       0.78
+  clock network delay (ideal)              0.00       0.78
+  clock uncertainty                       -0.07       0.71
+  I4/FP_Z_reg[0]/CK (DFF_X1)               0.00       0.71 r
+  library setup time                      -0.04       0.67
+  data required time                                  0.67
+  -----------------------------------------------------------
+  data required time                                  0.67
+  data arrival time                                  -0.67
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

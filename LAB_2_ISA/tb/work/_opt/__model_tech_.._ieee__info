@@ -1,0 +1,380 @@
+m255
+cModel Technology Builtin Library
+13
+dD:\qa\buildsites\6.2g\builds\win32\modeltech
+Pmath_complex
+DP work math_real zjAF7SKfg_RPI0GT^n1N`1
+OL;C;6.2g;35
+31
+b1
+M1 work math_real
+OP;C;6.2g;35
+d.
+8$MODEL_TECH/../vhdl_src/ieee/1076-2code.vhd
+F$MODEL_TECH/../vhdl_src/ieee/1076-2code.vhd
+l0
+L687
+V1a;R8Z_kc3Q7^>9;gKVIV0
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/ieee/1076-2code.vhd
+tExplicit 1
+Bbody
+DB work math_complex 1a;R8Z_kc3Q7^>9;gKVIV0
+DP work math_real zjAF7SKfg_RPI0GT^n1N`1
+OL;C;6.2g;35
+31
+M1 work math_real
+OP;C;6.2g;35
+l0
+L687
+VIMmI^hXJEW@Uoa4kJFX:K1
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/ieee/1076-2code.vhd
+tExplicit 1
+nbody
+Pmath_real
+OL;C;6.2g;35
+31
+b1
+OP;C;6.2g;35
+d.
+8$MODEL_TECH/../vhdl_src/ieee/1076-2code.vhd
+F$MODEL_TECH/../vhdl_src/ieee/1076-2code.vhd
+l0
+L55
+VzjAF7SKfg_RPI0GT^n1N`1
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/ieee/1076-2code.vhd
+tExplicit 1
+Bbody
+DB work math_real zjAF7SKfg_RPI0GT^n1N`1
+OL;C;6.2g;35
+31
+OP;C;6.2g;35
+l0
+L55
+V:TOmE?QHig?1Xi[gFIA[l1
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/ieee/1076-2code.vhd
+tExplicit 1
+nbody
+Pnumeric_bit
+OL;C;6.2g;35
+31
+b1
+OP;C;6.2g;35
+d.
+8$MODEL_TECH/../vhdl_src/ieee/mti_numeric_bit.vhd
+F$MODEL_TECH/../vhdl_src/ieee/mti_numeric_bit.vhd
+l0
+L58
+VK1ChclJ;R]bj:<QN8`za13
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/ieee/mti_numeric_bit.vhd -nowarn 3
+tExplicit 1
+Bbody
+DB work numeric_bit K1ChclJ;R]bj:<QN8`za13
+OL;C;6.2g;35
+31
+OP;C;6.2g;35
+l0
+L58
+VMl`J4ca2be3ejNXY`>k4Y1
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/ieee/mti_numeric_bit.vhd -nowarn 3
+tExplicit 1
+nbody
+Pnumeric_std
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+OL;C;6.2g;35
+31
+b1
+M1 ieee std_logic_1164
+OP;C;6.2g;35
+d.
+8$MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd
+F$MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd
+l0
+L57
+V=NSdli^?T5OD8;4F<blj<3
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd -nowarn 3
+tExplicit 1
+Bbody
+DB work numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+OL;C;6.2g;35
+31
+M1 ieee std_logic_1164
+OP;C;6.2g;35
+l0
+L57
+V;m@IM<mVXokEM:EdoJkM40
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd -nowarn 3
+tExplicit 1
+nbody
+Pstd_logic_1164
+OL;C;6.2g;35
+31
+b1
+OP;C;6.2g;35
+d.
+8$MODEL_TECH/../vhdl_src/ieee/stdlogic.vhd
+F$MODEL_TECH/../vhdl_src/ieee/stdlogic.vhd
+l0
+L36
+VGH1=`jDDBJ=`LM;:Ak`kf2
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/ieee/stdlogic.vhd
+tExplicit 1
+Bbody
+DB work std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+OL;C;6.2g;35
+31
+OP;C;6.2g;35
+l0
+L36
+V?YNEkS<^lY?<6LBZLFa8D0
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/ieee/stdlogic.vhd
+tExplicit 1
+nbody
+Pstd_logic_arith
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+OL;C;6.2g;35
+31
+b1
+M1 ieee std_logic_1164
+OP;C;6.2g;35
+d.
+8$MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_arith.vhd
+F$MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_arith.vhd
+l0
+L25
+VGJbAT?7@hRQU9IQ702DT]2
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_arith.vhd
+tExplicit 1
+Bbody
+DB work std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+OL;C;6.2g;35
+31
+M1 ieee std_logic_1164
+OP;C;6.2g;35
+l0
+L25
+VWh`K2GRna_=ITGj@XNmX80
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_arith.vhd
+tExplicit 1
+nbody
+Pstd_logic_misc
+DP synopsys attributes oP@SNI848YZ9iazan5Mg_2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+OL;C;6.2g;35
+31
+b1
+M2 ieee std_logic_1164
+M1 synopsys attributes
+OP;C;6.2g;35
+d.
+8$MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_misc.vhd
+F$MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_misc.vhd
+l0
+L24
+VD2f;@P3IKJA9T^H8HI[9K0
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_misc.vhd
+tExplicit 1
+Bbody
+DB work std_logic_misc D2f;@P3IKJA9T^H8HI[9K0
+DP synopsys attributes oP@SNI848YZ9iazan5Mg_2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+OL;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 synopsys attributes
+OP;C;6.2g;35
+l0
+L24
+V>2Z50F2Um7SR`gOQH`oSK0
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_misc.vhd
+tExplicit 1
+nbody
+Pstd_logic_signed
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+OL;C;6.2g;35
+31
+b1
+M2 ieee std_logic_1164
+M1 ieee std_logic_arith
+OP;C;6.2g;35
+d.
+8$MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_signed.vhd
+F$MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_signed.vhd
+l0
+L35
+V<9<Kcl:S52:oW`F]FQhb20
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_signed.vhd
+tExplicit 1
+Bbody
+DB work std_logic_signed <9<Kcl:S52:oW`F]FQhb20
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+OL;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee std_logic_arith
+OP;C;6.2g;35
+l0
+L35
+VDR>6>65S7FR:e[I>ADUQO1
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_signed.vhd
+tExplicit 1
+nbody
+Pstd_logic_textio
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+OL;C;6.2g;35
+31
+b1
+M2 std textio
+M1 ieee std_logic_1164
+OP;C;6.2g;35
+d.
+8$MODEL_TECH/../vhdl_src/synopsys/std_logic_textio.vhd
+F$MODEL_TECH/../vhdl_src/synopsys/std_logic_textio.vhd
+l0
+L22
+V8YS?iX`WD1REQG`ZRYQGB2
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/synopsys/std_logic_textio.vhd
+tExplicit 1
+Bbody
+DB work std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+OL;C;6.2g;35
+31
+M2 std textio
+M1 ieee std_logic_1164
+OP;C;6.2g;35
+l0
+L22
+Vj9DSczGXI>dbiF;m2[GMa2
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/synopsys/std_logic_textio.vhd
+tExplicit 1
+nbody
+Pstd_logic_unsigned
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+OL;C;6.2g;35
+31
+b1
+M2 ieee std_logic_1164
+M1 ieee std_logic_arith
+OP;C;6.2g;35
+d.
+8$MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_unsigned.vhd
+F$MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_unsigned.vhd
+l0
+L34
+VhEMVMlaNCR^<OOoVNV;m90
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_unsigned.vhd
+tExplicit 1
+Bbody
+DB work std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+OL;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee std_logic_arith
+OP;C;6.2g;35
+l0
+L34
+V1=Y]oOSl8JChnzj5R39ha2
+OE;C;6.2g;35
+o-93 -work ieee -path $MODEL_TECH/../vhdl_src/synopsys/mti_std_logic_unsigned.vhd
+tExplicit 1
+nbody
+Pvital_primitives
+DP ieee vital_timing OBWK>;kUYmkG<OChK2lhV1
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+OL;C;6.2g;35
+30
+b1
+M2 ieee std_logic_1164
+M1 ieee vital_timing
+OP;C;6.2g;35
+d.
+8$MODEL_TECH/../vhdl_src/vital95/prmtvs_p.vhd
+F$MODEL_TECH/../vhdl_src/vital95/prmtvs_p.vhd
+l0
+L47
+VE9g6AWKAc2T]enMfl94If3
+OE;C;6.2g;35
+o-87 -novital -novital -work ieee -path $MODEL_TECH/../vhdl_src/vital95/prmtvs_p.vhd
+tExplicit 1
+Bbody
+DB work vital_primitives E9g6AWKAc2T]enMfl94If3
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee vital_timing OBWK>;kUYmkG<OChK2lhV1
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+OL;C;6.2g;35
+30
+M3 ieee std_logic_1164
+M2 ieee vital_timing
+M1 std textio
+OP;C;6.2g;35
+8$MODEL_TECH/../vhdl_src/vital95/prmtvs_b.vhd
+F$MODEL_TECH/../vhdl_src/vital95/prmtvs_b.vhd
+l0
+L47
+V>[EMmIIzoCHn?@614I_=a3
+OE;C;6.2g;35
+o-87 -novital -novital -work ieee -path $MODEL_TECH/../vhdl_src/vital95/prmtvs_b.vhd
+tExplicit 1
+nbody
+Pvital_timing
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+OL;C;6.2g;35
+30
+b1
+M1 ieee std_logic_1164
+OP;C;6.2g;35
+d.
+8$MODEL_TECH/../vhdl_src/vital95/timing_p.vhd
+F$MODEL_TECH/../vhdl_src/vital95/timing_p.vhd
+l0
+L46
+VOBWK>;kUYmkG<OChK2lhV1
+OE;C;6.2g;35
+o-87 -novital -novital -work ieee -path $MODEL_TECH/../vhdl_src/vital95/timing_p.vhd
+tExplicit 1
+Bbody
+DB work vital_timing OBWK>;kUYmkG<OChK2lhV1
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+OL;C;6.2g;35
+30
+M2 ieee std_logic_1164
+M1 std textio
+OP;C;6.2g;35
+8$MODEL_TECH/../vhdl_src/vital95/timing_b.vhd
+F$MODEL_TECH/../vhdl_src/vital95/timing_b.vhd
+l0
+L46
+VfN[Pf:HE;^Z^LCeH6gGI81
+OE;C;6.2g;35
+o-87 -novital -novital -work ieee -path $MODEL_TECH/../vhdl_src/vital95/timing_b.vhd
+tExplicit 1
+nbody

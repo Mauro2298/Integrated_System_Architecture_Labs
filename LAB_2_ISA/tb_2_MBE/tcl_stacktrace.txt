@@ -1,0 +1,10 @@
+Sat Dec 11 03:18:51 PM CET 2021
+Trace back: window name "tmpcolsep3" already exists in parent
+    while executing
+"frame $grid.tmpcolsep$num  -width  $mtiGrid($grid:-separatorWidth)  -height $sep_height  -bd     $mtiGrid($grid:-separatorBorder)  -bg     black  -rel..."
+    (procedure "mtigrid_colsep_pressed" line 45)
+    invoked from within
+"mtigrid_colsep_pressed .main_pane.mdi.interior.cs.vm.paneset.cli_0.wf.clip.cs.pw.wf.grid 3 .main_pane.mdi.interior.cs.vm.paneset.cli_0.wf.clip.cs.pw.w..."
+    (command bound to event)
+  2: ::tkerror {window name "tmpcolsep3" already exists in parent}
+  1: ::bgerror {window name "tmpcolsep3" already exists in parent}

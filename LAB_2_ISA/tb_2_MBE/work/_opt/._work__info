@@ -1,0 +1,537 @@
+m255
+13
+cModel Technology
+d/home/isa05_2021_2022/Desktop/LAB_2/tb_2_MBE
+T_opt
+VEfgD6D=jPDmC7]UoSGJ@;1
+06 2 3 ./work tb beh 1
+o-quiet -auto_acc_if_foreign -work work
+tExplicit 1
+OE;O;6.2g;35
+Ea_coeff
+w1638913748
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/A_coeff.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/A_coeff.vhd
+l0
+L6
+VKfNSJ<DlFTFk4]@<SEzmP3
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Abeh
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work a_coeff KfNSJ<DlFTFk4]@<SEzmP3
+32
+M1 ieee std_logic_1164
+l21
+L19
+V_?Q40MOHX9<OSO1z1]VcN2
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Pbf
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+w1639314470
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/matrix_package.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/matrix_package.vhd
+l0
+L4
+V>V`i@Z9G5W`BkClUKd[zB2
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Ebooth_encoder
+w1638913751
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/booth_encoder.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/booth_encoder.vhd
+l0
+L4
+V>O<78P;N=4DCkYX`iJXRJ0
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Astructural
+DE work a_coeff KfNSJ<DlFTFk4]@<SEzmP3
+DE work sign_extension K`9VF4I9P;cT2_6HgG@K[0
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work booth_encoder >O<78P;N=4DCkYX`iJXRJ0
+32
+M1 ieee std_logic_1164
+l39
+L14
+VmV<l0<Ic?n]glETc2:S]_3
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Eclk_gen
+w1634494045
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/tb_2_MBE/clk_gen.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/tb_2_MBE/clk_gen.vhd
+l0
+L6
+V9>XQk1@5b0]>9Gf2aS]582
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Abeh
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work clk_gen 9>XQk1@5b0]>9Gf2aS]582
+32
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+l19
+L13
+VKNz>[LWJF7S]aMb@NOiV62
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Edata_maker
+w1639091207
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/tb_2_MBE/data_maker example.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/tb_2_MBE/data_maker example.vhd
+l0
+L11
+VLb9WaiaQMdme;I0ZN9U980
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Abeh
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work data_maker Lb9WaiaQMdme;I0ZN9U980
+32
+M6 ieee std_logic_1164
+M5 ieee std_logic_arith
+M4 ieee std_logic_unsigned
+M3 ieee std_logic_textio
+M2 std textio
+M1 ieee numeric_std
+l21
+L19
+V9G5NN=1fL>^<@=2=3cHkU1
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Efa
+w1638913755
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/FA.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/FA.vhd
+l0
+L4
+V=W7?ehzN73fIY3zKdGJT63
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Astruct
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work fa =W7?ehzN73fIY3zKdGJT63
+32
+M1 ieee std_logic_1164
+l18
+L16
+VD]T@PAXB7GokoQX9ZdSe[2
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Efpmul
+w1637055802
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/fpmul_pipeline.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/fpmul_pipeline.vhd
+l0
+L16
+VMTNARGigef09?4bdLdKEj2
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Apipeline
+DE work fpmul_stage4 N1GY_8IF3EoF4kH5SbF;o0
+DE work fpmul_stage3 Q3o@L>cmoeJeoT?6@jEN^1
+DE work fpmul_stage2 XnDgZj[EI0K611[[;lKBU3
+DE work fpmul_stage1 zaU7S:07LL<1B@Qm[ML^U2
+DE work fpmul MTNARGigef09?4bdLdKEj2
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+M2 ieee std_logic_1164
+M1 ieee std_logic_arith
+l165
+L45
+VfeBo_[VejYIOhYHGET9?H2
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Efpmul_stage1
+w1635783080
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/fpmul_stage1_struct.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/fpmul_stage1_struct.vhd
+l0
+L16
+VzaU7S:07LL<1B@Qm[ML^U2
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Astruct
+DE work unpackfp UD4QzDMVAZMzcP]Lb;DC_0
+DE work fpmul_stage1 zaU7S:07LL<1B@Qm[ML^U2
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+M2 ieee std_logic_1164
+M1 ieee std_logic_arith
+l99
+L53
+VlOjBZ6h]iIGQg?4SXkN5I1
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Efpmul_stage2
+w1639236835
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/fpmul_stage2_struct.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/fpmul_stage2_struct.vhd
+l0
+L16
+VXnDgZj[EI0K611[[;lKBU3
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Astruct
+DE work mbe_multiplier Wc3jG[?:h^8b2>n<`f85k3
+DE work fpmul_stage2 XnDgZj[EI0K611[[;lKBU3
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP work bf >V`i@Z9G5W`BkClUKd[zB2
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+M4 ieee std_logic_1164
+M3 ieee std_logic_arith
+M2 work bf
+M1 ieee numeric_std
+l85
+L60
+V7HI]]mPmJSk8o<`HWES^k1
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Efpmul_stage3
+w1635783081
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/fpmul_stage3_struct.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/fpmul_stage3_struct.vhd
+l0
+L16
+VQ3o@L>cmoeJeoT?6@jEN^1
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Astruct
+DE work fpround 1b_2E@OFSlTlh?nojmF=[1
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DE work fpnormalize m?8C<n[ikYJm2_A=12[fI1
+DE work fpmul_stage3 Q3o@L>cmoeJeoT?6@jEN^1
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+l100
+L58
+V[8WIg1A@Tb4@>?bDoA@Zo0
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Efpmul_stage4
+w1635783081
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/fpmul_stage4_struct.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/fpmul_stage4_struct.vhd
+l0
+L16
+VN1GY_8IF3EoF4kH5SbF;o0
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Astruct
+DE work packfp QOKhnVU5Xh6KfNCo>NM9T0
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DE work fpnormalize m?8C<n[ikYJm2_A=12[fI1
+DE work fpmul_stage4 N1GY_8IF3EoF4kH5SbF;o0
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+l96
+L51
+VNhNgWE:TNOJ4Eza01bIUE2
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Efpnormalize
+w1635783080
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/common/fpnormalize_fpnormalize.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/common/fpnormalize_fpnormalize.vhd
+l0
+L17
+Vm?8C<n[ikYJm2_A=12[fI1
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Afpnormalize
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work fpnormalize m?8C<n[ikYJm2_A=12[fI1
+32
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+l35
+L34
+VMUJU^9`I5lLTSMb?OA3N23
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Efpround
+w1635783080
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/common/fpround_fpround.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/common/fpround_fpround.vhd
+l0
+L17
+V1b_2E@OFSlTlh?nojmF=[1
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Afpround
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work fpround 1b_2E@OFSlTlh?nojmF=[1
+32
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+l35
+L34
+V_Haao=oHGMcb5[nI_cA;Z1
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Eha
+w1638913759
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/HA.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/HA.vhd
+l0
+L4
+VPSA4Rj?Q`iY5@WjlBSca]2
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Astruct
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work ha PSA4Rj?Q`iY5@WjlBSca]2
+32
+M1 ieee std_logic_1164
+l16
+L14
+VM0amKd]ZX_3LmnP7To5O=0
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Embe_multiplier
+w1639310101
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP work bf >V`i@Z9G5W`BkClUKd[zB2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/MBE_Multiplier.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/MBE_Multiplier.vhd
+l0
+L6
+VWc3jG[?:h^8b2>n<`f85k3
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Astructural
+DE work ha PSA4Rj?Q`iY5@WjlBSca]2
+DE work fa =W7?ehzN73fIY3zKdGJT63
+DE work booth_encoder >O<78P;N=4DCkYX`iJXRJ0
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP work bf >V`i@Z9G5W`BkClUKd[zB2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work mbe_multiplier Wc3jG[?:h^8b2>n<`f85k3
+32
+M3 ieee std_logic_1164
+M2 work bf
+M1 ieee numeric_std
+l67
+L15
+Vb>OUVlln8kgVWP[QMeMeh1
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Epackfp
+w1635783080
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/common/packfp_packfp.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/common/packfp_packfp.vhd
+l0
+L16
+VQOKhnVU5Xh6KfNCo>NM9T0
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Apackfp
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work packfp QOKhnVU5Xh6KfNCo>NM9T0
+32
+M2 ieee std_logic_1164
+M1 ieee std_logic_arith
+l34
+L33
+VLcDKT2[P<lmKGG:40a]JW2
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Esign_extension
+w1639325623
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/sign_extension.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/multiplier/sign_extension.vhd
+l0
+L5
+VK`9VF4I9P;cT2_6HgG@K[0
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Abeh
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work sign_extension K`9VF4I9P;cT2_6HgG@K[0
+32
+M2 ieee std_logic_1164
+M1 ieee std_logic_arith
+l17
+L15
+V3`mFGge]5EdbDOR:b<;Ad0
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Etb
+w1639232487
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/tb_2_MBE/tb.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/tb_2_MBE/tb.vhd
+l0
+L7
+V4mCQcC@3Wn`H]eEB6l=Jz0
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Abeh
+DE work data_maker Lb9WaiaQMdme;I0ZN9U980
+DE work fpmul MTNARGigef09?4bdLdKEj2
+DE work clk_gen 9>XQk1@5b0]>9Gf2aS]582
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work tb 4mCQcC@3Wn`H]eEB6l=Jz0
+32
+M4 ieee std_logic_1164
+M3 ieee numeric_std
+M2 std textio
+M1 ieee std_logic_textio
+l41
+L11
+V?BoL`W6F_<QoI:TEUEIAg3
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Eunpackfp
+w1635783080
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/common/unpackfp_unpackfp.vhd
+F/home/isa05_2021_2022/Desktop/LAB_2/fpuvhdl_2_MBE/common/unpackfp_unpackfp.vhd
+l0
+L15
+VUD4QzDMVAZMzcP]Lb;DC_0
+OE;C;6.2g;35
+32
+o-work work
+tExplicit 1
+Aunpackfp
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work unpackfp UD4QzDMVAZMzcP]Lb;DC_0
+32
+M2 ieee std_logic_1164
+M1 ieee std_logic_arith
+l37
+L33
+VG]O>dzDI[IW`kWHaXBna82
+OE;C;6.2g;35
+o-work work
+tExplicit 1
