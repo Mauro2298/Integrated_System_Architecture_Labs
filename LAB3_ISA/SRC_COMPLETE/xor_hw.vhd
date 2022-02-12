@@ -1,0 +1,24 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY bitw_xor_hw IS
+        GENERIC (N : INTEGER);
+        PORT (
+            BITW_XOR_IN_A : IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+            BITW_XOR_IN_B : IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+            BITW_XOR_OUT : OUT STD_LOGIC_VECTOR (N-1 DOWNTO 0)
+        );
+END ENTITY;
+
+ARCHITECTURE behavioral OF bitw_xor_hw IS
+
+
+BEGIN
+
+	XOR_OP: FOR index IN 0 TO N-1 GENERATE
+	BEGIN
+    BITW_XOR_OUT(index) <= BITW_XOR_IN_A(index) XOR BITW_XOR_IN_B(index) ;
+	END GENERATE XOR_OP;
+	 
+END behavioral;

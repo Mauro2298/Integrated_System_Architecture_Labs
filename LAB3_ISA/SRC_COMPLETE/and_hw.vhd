@@ -1,0 +1,24 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY bitw_and_hw IS
+        GENERIC (N : INTEGER);
+        PORT (
+            BITW_AND_IN_A : IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+            BITW_AND_IN_B : IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+            BITW_AND_OUT : OUT STD_LOGIC_VECTOR (N-1 DOWNTO 0)
+        );
+END ENTITY;
+
+ARCHITECTURE behavioral OF bitw_and_hw IS
+
+
+BEGIN
+ 
+	AND_OP: FOR index IN 0 TO N-1 GENERATE
+	BEGIN
+    BITW_AND_OUT(index) <= BITW_AND_IN_A(index) AND BITW_AND_IN_B(index) ;
+	END GENERATE AND_OP;
+	
+END behavioral;

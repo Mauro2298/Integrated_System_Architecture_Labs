@@ -1,0 +1,22 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY equal_hw IS
+        GENERIC (N : INTEGER);
+        PORT (
+            EQUAL_IN_A : IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+            EQUAL_IN_B : IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+            EQUAL_OUT : OUT STD_LOGIC_VECTOR (N-1 DOWNTO 0)
+        );
+END ENTITY;
+
+ARCHITECTURE behavioral OF equal_hw IS
+
+
+BEGIN
+
+    EQUAL_OUT <= STD_LOGIC_VECTOR(TO_UNSIGNED(0,N-1)) & '1' WHEN EQUAL_IN_A = EQUAL_IN_B ELSE
+                (OTHERS => '0');
+
+END behavioral;
