@@ -1,0 +1,67 @@
+
+
+analyze -f vhdl -lib WORK ../Top_Entity/dictionary.vhd
+
+analyze -f vhdl -lib WORK ../Execute/mux_2_1.vhd
+analyze -f vhdl -lib WORK ../Execute/arith_shift_right_hw.vhd
+analyze -f vhdl -lib WORK ../Execute/and_hw.vhd
+analyze -f vhdl -lib WORK ../Execute/equal_hw.vhd
+analyze -f vhdl -lib WORK ../Execute/int_adder.vhd
+analyze -f vhdl -lib WORK ../Execute/int_cmp.vhd
+analyze -f vhdl -lib WORK ../Execute/xor_hw.vhd
+analyze -f vhdl -lib WORK ../Execute/ALU.vhd
+analyze -f vhdl -lib WORK ../Execute/FW_unit.vhd
+
+analyze -f vhdl -lib WORK ../Decode/n_bit_register.vhd
+analyze -f vhdl -lib WORK ../Decode/mux32to1.vhd
+analyze -f vhdl -lib WORK ../Decode/decoder.vhd
+analyze -f vhdl -lib WORK ../Decode/RF.vhd
+analyze -f vhdl -lib WORK ../Decode/ALU_control.vhd
+analyze -f vhdl -lib WORK ../Decode/immediate_gen.vhd
+analyze -f vhdl -lib WORK ../Decode/CTRL_unit.vhd
+
+analyze -f vhdl -lib WORK ../Top_Entity/RISCV.vhd
+
+set power_preserve_rtl_hier_names true
+
+elaborate RISCV -arch structural -lib WORK > ./elaborate_RISCV_first.txt
+
+create_clock -name MY_CLK -period 20.0 RISCV_IN_CLK
+set_dont_touch_network MY_CLK
+
+set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+
+set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] CLK]
+set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+
+set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+set_load $OLOAD [all_outputs]
+
+
+compile
+
+report_timing > timing_RISCV_first.txt
+report_area > area_RISCV_first.txt
+
+ungroup -all -flatten
+
+change_names -hierarchy -rules verilog
+
+write_sdf ../netlist/RISCV.sdf
+write -f verilog -hierarchy -output ../netlist/RISCV.v
+write_sdc ../netlist/RISCV.sdc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

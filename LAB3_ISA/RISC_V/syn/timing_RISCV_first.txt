@@ -1,0 +1,203 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISCV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISCV
+Version: O-2018.06-SP4
+Date   : Sun Feb 13 12:49:56 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: WB_RD_ADD_reg[1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: M_ALU_RES_reg[0]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  WB_RD_ADD_reg[1]/CK (DFFR_X1)                           0.00 #     0.00 r
+  WB_RD_ADD_reg[1]/Q (DFFR_X1)                            0.14       0.14 r
+  FORWARDING/FW_IN_RD_WB[1] (FW_unit)                     0.00       0.14 r
+  FORWARDING/U12/ZN (XNOR2_X1)                            0.08       0.22 r
+  FORWARDING/U16/ZN (NAND3_X1)                            0.03       0.25 f
+  FORWARDING/U4/ZN (NOR4_X1)                              0.08       0.33 r
+  FORWARDING/FW_OUT_FW_B_WB (FW_unit)                     0.00       0.33 r
+  U1261/ZN (INV_X1)                                       0.02       0.36 f
+  U1048/ZN (NAND3_X1)                                     0.04       0.40 r
+  U1186/Z (BUF_X1)                                        0.09       0.49 r
+  U1536/ZN (NAND4_X1)                                     0.07       0.56 f
+  U1266/Z (BUF_X1)                                        0.08       0.63 f
+  U1054/ZN (OAI221_X1)                                    0.16       0.79 r
+  ARITMETIC_LOGIC_UNIT/ALU_IN_B[0] (ALU)                  0.00       0.79 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/INT_CMP_IN_B[0] (int_comparator_N32)
+                                                          0.00       0.79 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/B[0] (int_comparator_N32_DW01_sub_0)
+                                                          0.00       0.79 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U31/ZN (INV_X1)
+                                                          0.03       0.82 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U94/ZN (NOR2_X1)
+                                                          0.05       0.87 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U93/ZN (AND2_X1)
+                                                          0.05       0.91 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U92/ZN (OAI22_X1)
+                                                          0.04       0.95 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U91/ZN (OR2_X1)
+                                                          0.06       1.01 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U90/ZN (AOI22_X1)
+                                                          0.07       1.08 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U89/ZN (AND2_X1)
+                                                          0.05       1.13 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U88/ZN (OAI22_X1)
+                                                          0.04       1.17 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U87/ZN (OR2_X1)
+                                                          0.06       1.23 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U86/ZN (AOI22_X1)
+                                                          0.07       1.30 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U85/ZN (AND2_X1)
+                                                          0.05       1.34 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U84/ZN (OAI22_X1)
+                                                          0.04       1.38 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U83/ZN (OR2_X1)
+                                                          0.06       1.44 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U82/ZN (AOI22_X1)
+                                                          0.07       1.51 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U81/ZN (AND2_X1)
+                                                          0.05       1.56 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U80/ZN (OAI22_X1)
+                                                          0.04       1.59 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U79/ZN (OR2_X1)
+                                                          0.06       1.66 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U78/ZN (AOI22_X1)
+                                                          0.07       1.72 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U77/ZN (AND2_X1)
+                                                          0.05       1.77 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U76/ZN (OAI22_X1)
+                                                          0.04       1.81 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U75/ZN (OR2_X1)
+                                                          0.06       1.87 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U74/ZN (AOI22_X1)
+                                                          0.07       1.94 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U73/ZN (AND2_X1)
+                                                          0.05       1.99 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U72/ZN (OAI22_X1)
+                                                          0.04       2.02 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U71/ZN (OR2_X1)
+                                                          0.06       2.09 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U70/ZN (AOI22_X1)
+                                                          0.07       2.15 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U69/ZN (AND2_X1)
+                                                          0.05       2.20 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U68/ZN (OAI22_X1)
+                                                          0.04       2.24 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U67/ZN (OR2_X1)
+                                                          0.06       2.30 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U66/ZN (AOI22_X1)
+                                                          0.07       2.37 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U65/ZN (AND2_X1)
+                                                          0.05       2.41 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U64/ZN (OAI22_X1)
+                                                          0.04       2.45 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U63/ZN (OR2_X1)
+                                                          0.06       2.51 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U62/ZN (AOI22_X1)
+                                                          0.07       2.58 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U61/ZN (AND2_X1)
+                                                          0.05       2.63 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U60/ZN (OAI22_X1)
+                                                          0.04       2.66 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U59/ZN (OR2_X1)
+                                                          0.06       2.73 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U58/ZN (AOI22_X1)
+                                                          0.07       2.79 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U57/ZN (AND2_X1)
+                                                          0.05       2.84 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U56/ZN (OAI22_X1)
+                                                          0.04       2.88 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U55/ZN (OR2_X1)
+                                                          0.06       2.94 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U54/ZN (AOI22_X1)
+                                                          0.07       3.01 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U53/ZN (AND2_X1)
+                                                          0.05       3.06 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U52/ZN (OAI22_X1)
+                                                          0.04       3.09 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U51/ZN (OR2_X1)
+                                                          0.06       3.15 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U50/ZN (AOI22_X1)
+                                                          0.07       3.22 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U49/ZN (AND2_X1)
+                                                          0.05       3.27 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U48/ZN (OAI22_X1)
+                                                          0.04       3.31 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U47/ZN (OR2_X1)
+                                                          0.06       3.37 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U46/ZN (AOI22_X1)
+                                                          0.07       3.43 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U45/ZN (AND2_X1)
+                                                          0.05       3.48 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U44/ZN (OAI22_X1)
+                                                          0.04       3.52 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U43/ZN (OR2_X1)
+                                                          0.06       3.58 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U42/ZN (AOI22_X1)
+                                                          0.07       3.65 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U41/ZN (AND2_X1)
+                                                          0.05       3.70 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U40/ZN (OAI22_X1)
+                                                          0.04       3.73 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U39/ZN (OR2_X1)
+                                                          0.06       3.80 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U38/ZN (AOI22_X1)
+                                                          0.07       3.86 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U37/ZN (AND2_X1)
+                                                          0.05       3.91 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U36/ZN (OAI22_X1)
+                                                          0.04       3.95 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U35/ZN (NOR2_X1)
+                                                          0.05       4.00 r
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U34/ZN (OAI22_X1)
+                                                          0.04       4.04 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/U2_31/S (FA_X1)
+                                                          0.11       4.14 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/sub_21/DIFF[31] (int_comparator_N32_DW01_sub_0)
+                                                          0.00       4.14 f
+  ARITMETIC_LOGIC_UNIT/OP_LESS_THAN/INT_CMP_OUT[0] (int_comparator_N32)
+                                                          0.00       4.14 f
+  ARITMETIC_LOGIC_UNIT/U45/ZN (AOI222_X1)                 0.09       4.24 r
+  ARITMETIC_LOGIC_UNIT/U49/ZN (NAND2_X1)                  0.03       4.27 f
+  ARITMETIC_LOGIC_UNIT/ALU_OUT[0] (ALU)                   0.00       4.27 f
+  U1544/ZN (AOI22_X1)                                     0.05       4.31 r
+  U1543/ZN (OAI21_X1)                                     0.03       4.35 f
+  M_ALU_RES_reg[0]/D (DFFR_X1)                            0.01       4.36 f
+  data arrival time                                                  4.36
+
+  clock MY_CLK (rise edge)                               20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.07      19.93
+  M_ALU_RES_reg[0]/CK (DFFR_X1)                           0.00      19.93 r
+  library setup time                                     -0.04      19.89
+  data required time                                                19.89
+  --------------------------------------------------------------------------
+  data required time                                                19.89
+  data arrival time                                                 -4.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                       15.53
+
+
+1

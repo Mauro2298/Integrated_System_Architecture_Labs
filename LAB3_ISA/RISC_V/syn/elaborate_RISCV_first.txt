@@ -1,0 +1,134 @@
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine RISCV line 201 in file
+		'../Top_Entity/RISCV.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      IF_PC_reg      | Flip-flop |  31   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      IF_PC_reg      | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine RISCV line 236 in file
+		'../Top_Entity/RISCV.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     ID_INST_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      ID_PC_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  ID_PC_PLUS_4_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine RISCV line 354 in file
+		'../Top_Entity/RISCV.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      EX_J_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  EX_ALU_OPCODE_reg  | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     EX_IMML_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     EX_IMMA_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     EX_IMMS_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      EX_B_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     EX_LUI_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    EX_AUIPC_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      EX_S_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      EX_RA_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      EX_EX_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      EX_WB_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      EX_PC_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  EX_PC_PLUS_4_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    EX_RS1_DT_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    EX_RS2_DT_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    EX_IMM_DT_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   EX_RS1_ADD_reg    | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   EX_RS2_ADD_reg    | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    EX_RD_ADD_reg    | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  EX_BRANCH_TGT_reg  | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine RISCV line 507 in file
+		'../Top_Entity/RISCV.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      M_WB_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    M_ALU_RES_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BRANCH_TARGET_reg  | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    M_RS2_DT_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    M_RD_ADD_reg     | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       M_B_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     M_IMML_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|       M_S_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine RISCV line 587 in file
+		'../Top_Entity/RISCV.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      WB_WB_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   WB_ALU_RES_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   WB_MEM_OUT_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    WB_RD_ADD_reg    | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     WB_IMML_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Warning: Overwriting design file '/home/isa05_2021_2022/Desktop/LAB_3/RISC_V/syn/RISCV.db'. (DDB-24)
+Elaborated 1 design.
+Current design is now 'RISCV'.
+Information: Building the design 'int_adder' instantiated from design 'RISCV' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'CTRL_unit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RF'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'immediate_gen'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ALU_control'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FW_unit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ALU'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'decoder'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'n_bit_register' instantiated from design 'RF' with
+	the parameters "n_bit=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine n_bit_register_n_bit32 line 16 in file
+		'../Decode/n_bit_register.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_out_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'mux32to1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'int_comparator' instantiated from design 'ALU' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'equal_hw' instantiated from design 'ALU' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'bitw_and_hw' instantiated from design 'ALU' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'bitw_xor_hw' instantiated from design 'ALU' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'arith_r_sh_hw' instantiated from design 'ALU' with
+	the parameters "N=32". (HDL-193)
+Warning:  ../Execute/arith_shift_right_hw.vhd:10: Real types with ranges are not supported and will be ignored. (ELAB-1002)
+Presto compilation completed successfully.
+Information: Building the design 'mux_2_1'. (HDL-193)
+Presto compilation completed successfully.
+1

@@ -1,0 +1,117 @@
+m255
+13
+cModel Technology
+d/home/isa05_2021_2022/Desktop/LAB_3/RISC_V/Test_files
+T_opt
+VX;imn]:[8oEM=P1h`j]:72
+06 8 4 ./work tb_RISCV fast 0
+o-quiet -auto_acc_if_foreign -work work -L /software/dk/nangate45/verilog/msim6.2g
+tExplicit 1
+OE;O;6.2g;35
+Eclk_gen
+w1644753702
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+8/home/isa05_2021_2022/Desktop/LAB_3/RISC_V/Test_files/clk_gen.vhd
+F/home/isa05_2021_2022/Desktop/LAB_3/RISC_V/Test_files/clk_gen.vhd
+l0
+L6
+V^V3n>E001T^^[dEzPL=M:3
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Abeh
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work clk_gen ^V3n>E001T^^[dEzPL=M:3
+32
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+l18
+L12
+VW[73=RWnJH9U45QbF_lj91
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Edatamem
+w1644748411
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+8/home/isa05_2021_2022/Desktop/LAB_3/RISC_V/Test_files/dataMemory.vhd
+F/home/isa05_2021_2022/Desktop/LAB_3/RISC_V/Test_files/dataMemory.vhd
+l0
+L6
+VUGnoH23MnD==L8iZN:Rh?1
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Abeh
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work datamem UGnoH23MnD==L8iZN:Rh?1
+32
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+l21
+L15
+V5KkHDOE4PR3;mBJl9Z>782
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Einstrmemory
+w1644784453
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+8/home/isa05_2021_2022/Desktop/LAB_3/RISC_V/Test_files/InstrMemory_abs.vhd
+F/home/isa05_2021_2022/Desktop/LAB_3/RISC_V/Test_files/InstrMemory_abs.vhd
+l0
+L4
+VZIkdAiZG:PP7Xo<LEZ`<A0
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+Abeh
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work instrmemory ZIkdAiZG:PP7Xo<LEZ`<A0
+32
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+l52
+L9
+V29OIgf9V>AA=kmWfhIiQ23
+OE;C;6.2g;35
+o-work work
+tExplicit 1
+vRISCV
+IKgJ6HzHfTaJnoVHVIHXPG3
+V?L@JhRbGfjg9kXYJn3^o11
+w1644840420
+8/home/isa05_2021_2022/Desktop/LAB_3/RISC_V/innovus_abs/RISCV.v
+F/home/isa05_2021_2022/Desktop/LAB_3/RISC_V/innovus_abs/RISCV.v
+L0 15
+V?L@JhRbGfjg9kXYJn3^o11
+OE;L;6.2g;35
+r1
+31
+o-work work
+n@r@i@s@c@v
+vtb_RISCV
+Ia;>PR75F`UOdA:DCc?eYX1
+VVE3<NUi?JV]dhn;]a`V[73
+w1644754317
+8/home/isa05_2021_2022/Desktop/LAB_3/RISC_V/Test_files/tb_RISCV.v
+F/home/isa05_2021_2022/Desktop/LAB_3/RISC_V/Test_files/tb_RISCV.v
+L0 3
+VVE3<NUi?JV]dhn;]a`V[73
+OE;L;6.2g;35
+r1
+31
+o-work work
+ntb_@r@i@s@c@v

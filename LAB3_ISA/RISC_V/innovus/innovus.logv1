@@ -1,0 +1,100 @@
+[02/14 12:20:41      0s] 
+[02/14 12:20:41      0s] Cadence Innovus(TM) Implementation System.
+[02/14 12:20:41      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[02/14 12:20:41      0s] 
+[02/14 12:20:41      0s] Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+[02/14 12:20:41      0s] Options:	
+[02/14 12:20:41      0s] Date:		Mon Feb 14 12:20:41 2022
+[02/14 12:20:41      0s] Host:		localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Westmere E56xx/L56xx/X56xx (Nehalem-C) 4096KB)
+[02/14 12:20:41      0s] OS:		CentOS Linux release 7.6.1810 (Core) 
+[02/14 12:20:41      0s] 
+[02/14 12:20:41      0s] License:
+[02/14 12:20:41      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[02/14 12:20:41      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[02/14 12:21:04     21s] @(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+[02/14 12:21:04     21s] @(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+[02/14 12:21:04     21s] @(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+[02/14 12:21:04     21s] @(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+[02/14 12:21:04     21s] @(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+[02/14 12:21:04     21s] @(#)CDS: CPE v17.11-s095
+[02/14 12:21:04     21s] @(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+[02/14 12:21:04     21s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[02/14 12:21:04     21s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[02/14 12:21:04     21s] @(#)CDS: RCDB 11.10
+[02/14 12:21:04     21s] --- Running on localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Westmere E56xx/L56xx/X56xx (Nehalem-C) 4096KB) ---
+[02/14 12:21:04     21s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_32024_localhost.localdomain_isa05_2021_2022_8kYoxG.
+
+[02/14 12:21:04     21s] Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[02/14 12:21:06     22s] 
+[02/14 12:21:06     22s] **INFO:  MMMC transition support version v31-84 
+[02/14 12:21:06     22s] 
+[02/14 12:21:06     22s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[02/14 12:21:06     22s] <CMD> suppressMessage ENCEXT-2799
+[02/14 12:21:06     22s] <CMD> getDrawView
+[02/14 12:21:06     22s] <CMD> loadWorkspace -name Physical
+[02/14 12:21:06     22s] <CMD> win
+[02/14 12:21:59     33s] <CMD> encMessage warning 0
+[02/14 12:21:59     33s] Suppress "**WARN ..." messages.
+[02/14 12:21:59     33s] <CMD> encMessage debug 0
+[02/14 12:21:59     33s] <CMD> encMessage info 0
+[02/14 12:21:59     33s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "/*"
+[02/14 12:22:17     38s] <CMD> encMessage warning 0
+[02/14 12:22:17     38s] Suppress "**WARN ..." messages.
+[02/14 12:22:17     38s] <CMD> encMessage debug 0
+[02/14 12:22:17     38s] <CMD> encMessage info 0
+[02/14 12:22:17     38s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "*|DSPF"
+[02/14 12:22:23     40s] <CMD> encMessage warning 0
+[02/14 12:22:23     40s] Suppress "**WARN ..." messages.
+[02/14 12:22:23     40s] <CMD> encMessage debug 0
+[02/14 12:22:23     40s] <CMD> encMessage info 0
+[02/14 12:22:23     40s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "(DELAYFILE"
+[02/14 12:22:28     41s] <CMD> encMessage warning 0
+[02/14 12:22:28     41s] Suppress "**WARN ..." messages.
+[02/14 12:22:28     41s] <CMD> encMessage debug 0
+[02/14 12:22:28     41s] <CMD> encMessage info 0
+[02/14 12:22:28     41s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: ambiguous command name "*SPEF": PEDATAACCESSISDELAYEDSPEF PEDATAACCESSISRCSOURCETYPESPEF PEDATAACCESSISRCSOURCETYPESSPEF PEDATAACCESSISTOPRCSOURCETYPESPEF PEUPDATEALLCORNERSTOPSPEFILMSETUP READ_SPEF_CORNER_FILE REPORT_SPEF_CORNER_TABLE createTSVNoLoadSPEF
+[02/14 12:22:52     49s] <CMD> encMessage warning 0
+[02/14 12:22:52     49s] Suppress "**WARN ..." messages.
+[02/14 12:22:52     49s] <CMD> encMessage debug 0
+[02/14 12:22:52     49s] <CMD> encMessage info 0
+[02/14 12:28:37    240s] <CMD> encMessage warning 0
+[02/14 12:28:37    240s] Suppress "**WARN ..." messages.
+[02/14 12:28:37    240s] <CMD> encMessage debug 0
+[02/14 12:28:37    240s] <CMD> encMessage info 0
+[02/14 12:28:37    240s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "Verify"
+[02/14 12:28:51    245s] <CMD> encMessage warning 0
+[02/14 12:28:51    245s] Suppress "**WARN ..." messages.
+[02/14 12:28:51    245s] <CMD> encMessage debug 0
+[02/14 12:28:51    245s] <CMD> encMessage info 0
+[02/14 12:28:51    245s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "/*"
+[02/14 12:31:32    271s] <CMD> encMessage warning 0
+[02/14 12:31:32    271s] Suppress "**WARN ..." messages.
+[02/14 12:31:32    271s] <CMD> encMessage debug 0
+[02/14 12:31:32    271s] <CMD> encMessage info 0
+[02/14 12:31:32    271s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: can't read "MyTimingLib": no such variable
+[02/14 12:31:38    274s] <CMD> encMessage warning 0
+[02/14 12:31:38    274s] Suppress "**WARN ..." messages.
+[02/14 12:31:38    274s] <CMD> encMessage debug 0
+[02/14 12:31:38    274s] <CMD> encMessage info 0
+[02/14 12:31:38    274s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "/*"
+[02/14 12:32:40    298s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[02/14 12:32:40    298s] <CMD> suppressMessage ENCEXT-2799
+[02/14 12:32:40    298s] <CMD> getDrawView
+[02/14 12:32:40    298s] <CMD> loadWorkspace -name Physical
+[02/14 12:32:40    298s] <CMD> win
+[02/14 12:32:40    298s] <CMD> set init_design_netlisttype verilog
+[02/14 12:32:40    298s] <CMD> set init_design_settop 1
+[02/14 12:32:40    298s] <CMD> set init_top_cell RISCV
+[02/14 12:32:40    298s] <CMD> set init_verilog ../netlist/RISCV.v
+[02/14 12:32:40    298s] <CMD> set init_lef_file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef
+[02/14 12:32:40    298s] <CMD> set init_gnd_net VSS
+[02/14 12:32:40    298s] <CMD> set init_pwr_net VDD
+[02/14 12:32:40    298s] <CMD> set init_mmmc_file mmm_design.tcl
+[02/14 12:32:40    298s] <CMD> init_design
+[02/14 12:32:40    298s] #% Begin Load MMMC data ... (date=02/14 12:32:40, mem=472.6M)
+[02/14 12:32:40    298s] can't read "MyTimingLib": no such variable
+[02/14 12:33:48    307s] <CMD> encMessage warning 0
+[02/14 12:33:48    307s] Suppress "**WARN ..." messages.
+[02/14 12:33:48    307s] <CMD> encMessage debug 0
+[02/14 12:33:48    307s] <CMD> encMessage info 0
+[02/14 12:33:48    307s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "/*"
