@@ -1,0 +1,12 @@
+rm -rf work
+vlib work
+vcom ../fpuvhdl_2_MBE/multiplier/A_coeff.vhd
+vcom ../fpuvhdl_2_MBE/multiplier/booth_encoder.vhd
+vcom ../fpuvhdl_2_MBE/multiplier/FA.vhd
+vcom ../fpuvhdl_2_MBE/multiplier/HA.vhd
+vcom ../fpuvhdl_2_MBE/multiplier/matrix_package.vhd
+vcom ../fpuvhdl_2_MBE/multiplier/sign_extension.vhd
+vcom ../fpuvhdl_2_MBE/multiplier/MBE_Multiplier.vhd
+vcom ../fpuvhdl_2_MBE/multiplier/MBE.vhd
+vlog -sv ../tb/top.sv
+vsim top

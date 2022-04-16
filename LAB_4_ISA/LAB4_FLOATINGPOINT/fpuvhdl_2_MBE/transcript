@@ -1,0 +1,514 @@
+# //  ModelSim SE-64 6.5b May 21 2009 Linux 2.6.30-1-amd64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+vlib work
+vmap work work
+# Copying /opt/mentor/modeltech/linux_x86_64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/mentor/modeltech/linux_x86_64/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+pwd
+# /afs/ziti.uni-heidelberg.de/home/marcus/designs/opencores/fpuvhdl/fpuvhdl
+ls
+# adder
+# common
+# gpl.html
+# gpl.txt
+# modelsim.ini
+# multiplier
+# README.txt
+# transcript
+# work
+cd multiplier
+# reading /opt/mentor/modeltech/linux_x86_64/../modelsim.ini
+ls
+# fpmul_pipeline.vhd
+# fpmul_single_cycle.vhd
+# fpmul_stage1_struct.vhd
+# fpmul_stage2_struct.vhd
+# fpmul_stage3_struct.vhd
+# fpmul_stage4_struct.vhd
+vcom fpmul_pipeline
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# ** Error: (vcom-7) Failed to open design unit file "fpmul_pipeline" in read mode.
+# No such file or directory. (errno = ENOENT)
+# /opt/mentor/modeltech/linux_x86_64/vcom failed.
+vcom fpmul_pipeline.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# ** Error: Library work not found.
+# ** Error: VHDL Compiler exiting
+# /opt/mentor/modeltech/linux_x86_64/vcom failed.
+cd ..
+# reading modelsim.ini
+ls
+# adder
+# common
+# gpl.html
+# gpl.txt
+# modelsim.ini
+# multiplier
+# README.txt
+# transcript
+# work
+cd common
+# reading /opt/mentor/modeltech/linux_x86_64/../modelsim.ini
+ls
+# fpnormalize_fpnormalize.vhd
+# fpround_fpround.vhd
+# packfp_packfp.vhd
+# unpackfp_unpackfp.vhd
+vcom --help
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# ** Error: (vcom-1902) Option "--help" is either unknown, requires an argument, or was given with a bad argument.
+# Use the -help option for complete vcom usage.
+# /opt/mentor/modeltech/linux_x86_64/vcom failed.
+vcom -g
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# ** Error: (vcom-1902) Option "-g" is either unknown, requires an argument, or was given with a bad argument.
+# Use the -help option for complete vcom usage.
+# /opt/mentor/modeltech/linux_x86_64/vcom failed.
+vcom -h
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# ** Error: (vcom-1902) Option "-h" is either unknown, requires an argument, or was given with a bad argument.
+# Use the -help option for complete vcom usage.
+# /opt/mentor/modeltech/linux_x86_64/vcom failed.
+vcom -help
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# Usage: vcom [options] files
+# Options:
+#   -help              Print this message
+#   -time              Print the compilation wall clock time
+#   -version           Print the version of the compiler
+#   -work <path>       Specify library WORK
+#   -error <msgNumber>[,<msgNumber>...]
+#                      Report the listed messages as errors
+#   -warning <msgNumber>[,<msgNumber>...]
+#                      Report the listed messages as warnings
+#   -note <msgNumber>[,<msgNumber>...]
+#                      Report the listed message as notes
+#   -suppress <msgNumber>[,<msgNumber>...]
+#                      Suppress the listed messages
+#   -87                Enable support for VHDL 1076-1987 only
+#   -93                Enable support for VHDL 1076-1993
+#   -0in               Enable support for the 0in tools
+#   -0in_options opts  Pass options in quotes to the 0in tools
+#   -2002              Enable support for VHDL 1076-2002
+#   -check_synthesis   Check for compliance to some synthesis rules
+#   +acc[=<spec>][+<entity>[(<architecture>)]]
+#                      Enable access to objects indicated by <spec> when
+#                      optimizing with -O4 or -O5, for processes merged under
+#                      certain conditions, where <spec> is the character:
+#                         q (variables, constants, aliases, and generics)
+#                         v (variables, constants, and aliases)
+#                      Optionally, enable access only for specific entities
+#                      and their associated architectures.
+#   -bindAtCompile     Perform default binding at compile time
+#   -bindAtLoad        Perform default binding when the design is loaded
+#   -amsstd            Add VHDL-AMS declarations to package STANDARD
+#   -noamsstd          Do not add VHDL-AMS declarations to package STANDARD
+#   -nocoversub        Ignore VHDL subprograms for code coverage
+#   -coversub          Include VHDL subprograms for code coverage
+#   -coverrespecthandl  Inform code coverage optimizations to look for H and L signal values
+#   -nocoverrespecthandl  Inform code coverage optimizations to ignore H and L signal values
+#   +cover[=sbceftx]   Enable code coverage metrics by specifying one or
+#                      more of the characters:
+#                      s statement
+#                      b branch
+#                      c condition
+#                      e expression
+#                      f fsm
+#                      t toggle
+#                      x extended toggle
+#                      If no character is specified, sbceft is the default.
+#   -coveropt <i>      Specify a digit for code coverage optimization level: 1 through 4.
+#   -coverexcludedefault Automatically exclude case default clauses.
+#   -nocoverfec        Disable Focused Expression Coverage analysis for conditions and expressions.
+#   -nocovershort      Disable short circuiting of expressions/condition when coverage is enabled.
+#   -nocoverexcludedefault Don't automatically exclude case default clauses.
+#   -constimmedassert  Show constant immediate assertions in GUI/UCDB/reports etc.
+#   -togglecountlimit n Quit collecting toggle info after count n is reached.
+#   -togglewidthlimit n Don't collect toggle data on reg's or arrays wider than n.
+#   -maxudprows n      Max number of rows allowed in UDP tables for code coverage.
+#   -maxfecrows n      Max number of input patterns allowed in FEC table for code coverage.
+#   -debugVA           Print VITAL cell optimization information
+#   -defercheck        Defer all compile-time range checking on constant index and
+#                      slice expressions until run time
+#   -deferSubpgmCheck  Defer compile-time range checking on constant index and
+#                      slice expressions in subprograms until run time
+#   -explicit          Resolve resolution conflicts in favor of explicit functions
+#   -f <path>          Specify a file containing more command line arguments
+#   -force_refresh     Force a refresh of the library image from .dat file(s)
+#                      even if there are errors
+#   -nofsmresettrans   Disable recognition of implicit asynchronous reset transitions for FSMs
+#   -fsmresettrans     Enable recognition of implicit asynchronous reset transitions for FSMs
+#   -nofsmsingle       Disable recognition FSMs having single bit current state variable
+#   -fsmsingle         Enable recognition FSMs having single bit current state variable
+#   -fsmimplicittrans  Enable recognition of implicit transitions in FSMs
+#   -fsmmultitrans     Enable recognition of Multi-state transitions in FSMs
+#   -gen_xml <entity> <output>
+#                      Output (into a file) the interface definition of the
+#                      specified design unit in XML format
+#   -ignoredefaultbinding
+#                      Do not generate a default binding during compilation
+#   -ignorevitalerrors Ignore VITAL compliance errors
+#   -just eapbc        Compile only selected design unit kinds
+#                      (e=entity, a=arch, p=package, b=body, c=config)
+#   -line <lineNum>    Specify a starting line number
+#   -lint              Perform lint-style checks
+#   -modelsimini <modelsim.ini>
+#                      Specify path to the modelsim.ini file.
+#   -no1164            Disable optimization for the std_logic_1164 package (same as "-noaccel std_logic_1164")
+#   -noaccel <pname>   Disable optimization for the specified package
+#   -nocasestaticerror Suppress case statement non-static choice warning
+#   -nocheck           Disable run-time range and index checks
+#   -nodebug[=ports][=pli][=ports+pli]
+#                      Do not put symbolic debugging information into the library
+#   -nodbgsym
+#                      Do not generate symbols debugging database
+#   -noDeferSubpgmCheck
+#                      Perform compile-time range checking on constant index and
+#                      slice expressions in subprograms at compile-time
+#   -noindexcheck      Disable run-time index checks
+#   -nologo            Disable startup banner
+#   -noothersstaticerror Suppress array aggregate non-static OTHERS choice warning
+#   -nopsl             Disable embedded PSL language parsing
+#   -norangecheck      Disable run-time range checks
+#   -novital           Disable all VITAL optimizations
+#   -novitalcheck      Disable VITAL Level 1 compliance checking and optimizations
+#   -novopt            Do not run the "vopt" compiler before simulation
+#   -nowarn <number>   Disable specified category of warning messages; verror 1907 to see them
+#   -noconstimmedassert  Do not show constant immediate assertions in GUI/UCDB/reports etc.
+#   -O0                Disable optimizations
+#   -O1                Enable some optimizations
+#   -O4                Enable most optimizations (default)
+#   -O5                Enable additional compiler optimizations
+#   -pedanticerrors    Enforce strict language checks
+#   -performdefaultbinding
+#                      Enable default binding when it has been disabled with the
+#                      RequireConfigForAllDefaultBinding modelsim.ini variable
+#   +protect[=<file>]  Enable use of `protect...`endprotect compiler directives
+#   -pslext            Enable PSL LTL/Universal operators
+#   -pslfile <file>    Compile and bind PSL vunits specified by <file>
+#   -quiet             Disable 'Loading' messages
+#   -rangecheck        Enable run-time range checks
+#   -refresh           Refresh the library image from .dat file(s)
+#   -s                 Do not load package std.standard
+#   -skip eapbc        Compile all but selected design unit kinds
+#                      (e=entity, a=arch, p=package, b=body, c=config)
+#   -source            Print the source line with error messages
+#   -mixedsvvh [b | l | r] [i]
+#                      Facilitates using a VHDL package at the SV-VHDL mixed-language boundary.
+#                         b - treat scalars/vectors in the package as bit
+#                         l - treat scalars/vectors in the package as logic
+#                         r - treat scalars/vectors in the package as reg
+#                         i - ignore range specified with VHDL integer types
+#   -vopt              Run the "vopt" compiler before simulation
+#   -vmake             Collects complete list of command line args for use by vmake.
+ls
+# fpnormalize_fpnormalize.vhd
+# fpround_fpround.vhd
+# packfp_packfp.vhd
+# unpackfp_unpackfp.vhd
+cd ..
+# reading modelsim.ini
+ls
+# adder
+# common
+# gpl.html
+# gpl.txt
+# modelsim.ini
+# multiplier
+# README.txt
+# transcript
+# work
+vcom -work ./work common/*.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity fpnormalize
+# -- Compiling architecture fpnormalize of fpnormalize
+# -- Compiling entity fpround
+# -- Compiling architecture fpround of fpround
+# -- Compiling entity packfp
+# -- Compiling architecture packfp of packfp
+# -- Compiling entity unpackfp
+# -- Compiling architecture unpackfp of unpackfp
+pwd
+# /afs/ziti.uni-heidelberg.de/home/marcus/designs/opencores/fpuvhdl/fpuvhdl
+ls
+# adder
+# common
+# gpl.html
+# gpl.txt
+# modelsim.ini
+# multiplier
+# README.txt
+# transcript
+# work
+cd multiplier
+# reading /opt/mentor/modeltech/linux_x86_64/../modelsim.ini
+ls
+# fpmul_pipeline.vhd
+# fpmul_single_cycle.vhd
+# fpmul_stage1_struct.vhd
+# fpmul_stage2_struct.vhd
+# fpmul_stage3_struct.vhd
+# fpmul_stage4_struct.vhd
+vcom -work ../work fpmul_stage*
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity fpmul_stage1
+# -- Compiling architecture struct of fpmul_stage1
+# -- Loading entity unpackfp
+# -- Compiling entity fpmul_stage2
+# -- Compiling architecture struct of fpmul_stage2
+# -- Compiling entity fpmul_stage3
+# -- Compiling architecture struct of fpmul_stage3
+# -- Loading package std_logic_unsigned
+# -- Loading entity fpnormalize
+# -- Loading entity fpround
+# -- Compiling entity fpmul_stage4
+# -- Compiling architecture struct of fpmul_stage4
+# -- Loading entity packfp
+vcom -work ../work fpmul_pipeline.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity fpmul
+# -- Compiling architecture pipeline of fpmul
+# -- Loading entity fpmul_stage1
+# -- Loading entity fpmul_stage2
+# -- Loading entity fpmul_stage3
+# -- Loading entity fpmul_stage4
+cd ..
+# reading modelsim.ini
+ls
+# adder
+# common
+# gpl.html
+# gpl.txt
+# modelsim.ini
+# multiplier
+# README.txt
+# transcript
+# work
+cd adder
+# reading /opt/mentor/modeltech/linux_x86_64/../modelsim.ini
+ls
+# fpadd_normalize_struct.vhd
+# fpadd_pipeline.vhd
+# fpadd_single_cycle.vhd
+# fpadd_stage1_struct.vhd
+# fpadd_stage2_struct.vhd
+# fpadd_stage3_struct.vhd
+# fpadd_stage4_struct.vhd
+# fpadd_stage5_struct.vhd
+# fpadd_stage6_struct.vhd
+# fpalign_struct.vhd
+# fpinvert_fpinvert.vhd
+# fplzc_fplzc.vhd
+# fpselcomplement_fpselcomplement.vhd
+# fpswap_fpswap.vhd
+vcom -work ../work fpalign_struct.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity fpalign
+# -- Loading package std_logic_unsigned
+# -- Compiling architecture struct of fpalign
+vcom -work ../work fpinvert_fpinvert.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity fpinvert
+# -- Compiling architecture fpinvert of fpinvert
+vcom -work ../work fplzc_fplzc.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity fplzc
+# -- Compiling architecture fplzc of fplzc
+vcom -work ../work fps*
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity fpselcomplement
+# -- Compiling architecture fpselcomplement of fpselcomplement
+# -- Compiling entity fpswap
+# -- Compiling architecture fpswap of fpswap
+vcom -work ../work fpadd_stage*
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity fpadd_stage1
+# -- Compiling architecture struct of fpadd_stage1
+# -- Loading entity unpackfp
+# -- Compiling entity fpadd_stage2
+# -- Compiling architecture struct of fpadd_stage2
+# -- Loading entity fpalign
+# -- Loading entity fpswap
+# -- Compiling entity fpadd_stage3
+# -- Compiling architecture struct of fpadd_stage3
+# -- Loading entity fpinvert
+# -- Compiling entity fpadd_stage4
+# -- Compiling architecture struct of fpadd_stage4
+# ** Error: (vcom-11) Could not find work.fpadd_normalize.
+# ** Error: fpadd_stage4_struct.vhd(99): (vcom-1195) Cannot find expanded name "work.fpadd_normalize".
+# ** Error: fpadd_stage4_struct.vhd(99): (vcom-1105) Name (expanded name) does not denote an entity name.
+# ** Error: fpadd_stage4_struct.vhd(99): Unknown expanded name.
+# -- Loading package std_logic_unsigned
+# -- Loading entity fpselcomplement
+# ** Error: fpadd_stage4_struct.vhd(193): VHDL Compiler exiting
+# /opt/mentor/modeltech/linux_x86_64/vcom failed.
+ls
+# fpadd_normalize_struct.vhd
+# fpadd_pipeline.vhd
+# fpadd_single_cycle.vhd
+# fpadd_stage1_struct.vhd
+# fpadd_stage2_struct.vhd
+# fpadd_stage3_struct.vhd
+# fpadd_stage4_struct.vhd
+# fpadd_stage5_struct.vhd
+# fpadd_stage6_struct.vhd
+# fpalign_struct.vhd
+# fpinvert_fpinvert.vhd
+# fplzc_fplzc.vhd
+# fpselcomplement_fpselcomplement.vhd
+# fpswap_fpswap.vhd
+vcom -work ../work fpadd_normalize_struct.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity fpadd_normalize
+# -- Loading package std_logic_unsigned
+# -- Compiling architecture struct of fpadd_normalize
+# -- Loading entity fplzc
+vcom -work ../work fpadd_stage*
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity fpadd_stage1
+# -- Compiling architecture struct of fpadd_stage1
+# -- Loading entity unpackfp
+# -- Compiling entity fpadd_stage2
+# -- Compiling architecture struct of fpadd_stage2
+# -- Loading entity fpalign
+# -- Loading entity fpswap
+# -- Compiling entity fpadd_stage3
+# -- Compiling architecture struct of fpadd_stage3
+# -- Loading entity fpinvert
+# -- Compiling entity fpadd_stage4
+# -- Compiling architecture struct of fpadd_stage4
+# -- Loading entity fpadd_normalize
+# -- Loading package std_logic_unsigned
+# -- Loading entity fpselcomplement
+# -- Compiling entity fpadd_stage5
+# -- Compiling architecture struct of fpadd_stage5
+# -- Loading entity fpnormalize
+# -- Loading entity fpround
+# -- Compiling entity fpadd_stage6
+# -- Compiling architecture struct of fpadd_stage6
+# -- Loading entity packfp
+vcom -work ../work fpadd_pipeline.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity fpadd
+# -- Compiling architecture pipeline of fpadd
+# -- Loading entity fpadd_stage1
+# -- Loading entity fpadd_stage2
+# -- Loading entity fpadd_stage3
+# -- Loading entity fpadd_stage4
+# -- Loading entity fpadd_stage5
+# -- Loading entity fpadd_stage6
+
+pwd
+# /afs/ziti.uni-heidelberg.de/home/marcus/designs/opencores/fpuvhdl/fpuvhdl/adder
+ls
+# fpadd_normalize_struct.vhd
+# fpadd_pipeline.vhd
+# fpadd_single_cycle.vhd
+# fpadd_stage1_struct.vhd
+# fpadd_stage2_struct.vhd
+# fpadd_stage3_struct.vhd
+# fpadd_stage4_struct.vhd
+# fpadd_stage5_struct.vhd
+# fpadd_stage6_struct.vhd
+# fpalign_struct.vhd
+# fpinvert_fpinvert.vhd
+# fplzc_fplzc.vhd
+# fpselcomplement_fpselcomplement.vhd
+# fpswap_fpswap.vhd
+cd ..
+# reading modelsim.ini
+ls
+# adder
+# common
+# gpl.html
+# gpl.txt
+# modelsim.ini
+# multiplier
+# README.txt
+# transcript
+# work
+vsim work.fpmul
+# vsim work.fpmul 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.fpmul(pipeline)#1
+# Loading work.fpmul_stage1(struct)#1
+# Loading work.unpackfp(unpackfp)#1
+# Loading work.fpmul_stage2(struct)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.fpmul_stage3(struct)#1
+# Loading work.fpnormalize(fpnormalize)#1
+# Loading work.fpround(fpround)#1
+# Loading work.fpmul_stage4(struct)#1
+# Loading work.packfp(packfp)#1
+vsim work.fpadd
+# vsim work.fpadd 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.fpadd(pipeline)#1
+# Loading work.fpadd_stage1(struct)#1
+# Loading work.unpackfp(unpackfp)#1
+# Loading work.fpadd_stage2(struct)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.fpalign(struct)#1
+# Loading work.fpswap(fpswap)#1
+# Loading work.fpadd_stage3(struct)#1
+# Loading work.fpinvert(fpinvert)#1
+# Loading work.fpadd_stage4(struct)#1
+# Loading work.fpadd_normalize(struct)#1
+# Loading work.fplzc(fplzc)#1
+# Loading work.fpselcomplement(fpselcomplement)#1
+# Loading work.fpadd_stage5(struct)#1
+# Loading work.fpnormalize(fpnormalize)#1
+# Loading work.fpround(fpround)#1
+# Loading work.fpadd_stage6(struct)#1
+# Loading work.packfp(packfp)#1

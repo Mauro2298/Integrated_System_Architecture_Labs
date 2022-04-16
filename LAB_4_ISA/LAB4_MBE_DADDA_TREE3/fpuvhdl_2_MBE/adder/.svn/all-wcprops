@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/adder
+END
+fpswap_fpswap.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/adder/fpswap_fpswap.vhd
+END
+fpadd_normalize_struct.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/adder/fpadd_normalize_struct.vhd
+END
+fpadd_pipeline.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/adder/fpadd_pipeline.vhd
+END
+fpalign_struct.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/adder/fpalign_struct.vhd
+END
+fpadd_stage1_struct.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/adder/fpadd_stage1_struct.vhd
+END
+fpadd_stage2_struct.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/adder/fpadd_stage2_struct.vhd
+END
+fpadd_stage3_struct.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/adder/fpadd_stage3_struct.vhd
+END
+fpadd_stage4_struct.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/adder/fpadd_stage4_struct.vhd
+END
+fpadd_stage5_struct.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/adder/fpadd_stage5_struct.vhd
+END
+fpinvert_fpinvert.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/adder/fpinvert_fpinvert.vhd
+END
+fpselcomplement_fpselcomplement.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/adder/fpselcomplement_fpselcomplement.vhd
+END
+fpadd_stage6_struct.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/adder/fpadd_stage6_struct.vhd
+END
+fplzc_fplzc.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/adder/fplzc_fplzc.vhd
+END
+fpadd_single_cycle.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ocsvn/fpuvhdl/!svn/ver/5/fpuvhdl/trunk/fpuvhdl/adder/fpadd_single_cycle.vhd
+END
